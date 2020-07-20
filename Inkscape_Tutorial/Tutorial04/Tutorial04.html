@@ -1,0 +1,2128 @@
+<!doctype html>
+
+<html lang = "en-us" >
+<head>
+  <meta charset = "utf-8" >
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+  <title>Inkscape Tutorial 4 - The Pen Tool</title>
+  <meta name = "author" content = "Roy F. Torley" >
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet" crossorigin="anonymous">
+</head>
+
+<body>
+<div class = "container">
+	<div class = "row">
+		<div class = "col-md-10 offset-md-1">
+<header>
+  <h1>Tutorial 4 &ndash; Drawing with the Pen Tool</h1>
+  <figure>
+    <img src = "images/FinishedLogo.gif" alt = "Logo image file for Tutorial 4"
+    width = "216" height = "218" class = "img-fluid">
+  </figure>
+  <p>Many objects in the Inkscape program can be created by starting with basic shapes and then
+  editing them to create new shapes. In this tutorial, you will use some basic shapes to create a logo.</p>
+</header>
+
+<hr>
+
+<section>
+<header>
+<h4>In this tutorial on the work area, you will learn how to:</h4>
+
+<ul>
+  <li>Draw straight lines.</li>
+  <li>End path segments and split lines.</li>
+  <li>Draw curved lines.</li>
+  <li>Select and adjust curve segments.</li>
+  <li>Draw two types of curves, smooth and pointed.</li>
+  <li>Edit curves, changing from smooth to pointed, and vice versa.</li>
+</ul>
+</header>
+</section>
+
+<section>
+<header>
+  <h2>Getting Started</h2>
+</header>
+<p>The first part of this lesson involves manipulating the Pen tool on a blank artboard.</p>
+<ol>
+  <li>Start Inkscape if it isn't started already.</li>
+  <li>Open the file named <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial04/Tutorial04Image01.svg"><b>Tutorial04Image01.svg</b></a> file in the Tutorial04 folder. The top portion of the artboard shows the path that you will create. Use the bottom half of the page for this exercise.
+    <figure>
+      <img src = "images/Tutorial04Image01.png"
+      alt = "Image file 1 for Tutorial 4" width = "300"
+      class = "img-fluid">
+    </figure>
+  </li>
+  <li>Choose View &gt; Zoom &gt; Drawing to fit the page into the window and then close the palette by choosing View &gt; Show/Hide, and clicking on Palette. You won't need to use it for this lesson.
+  </li>
+  <li><p>Select the Pen tool icon in the toolbox (<img src = "images/PenTool.gif" alt = "Pen tool"
+  width = "26" >). A Tool Controls bar appears at the top of the window dedicated to
+  enhancing your ability to control the Pen tool.</p>
+
+  <figure>
+    <img src = "images/PenToolControlBar.png" alt = "Pen tool controls bar"
+    class = "img-fluid">
+    <figcaption>Pen Tool Controls Bar.</figcaption>
+  </figure>
+  </li>
+  <li>Click on the Create a Sequence of Straight Line Segments icon (<img src = "images/StraightLinesIcon.gif"
+  alt = "Draw straight lines icon" >) in the Pen tool control bar.</li>
+
+  <li>Click and release once near the top of the page. The Pen tool creates a square anchor point.
+  Then, move the mouse away from the original anchor point. See how the line is drawn from the
+  cross at the tip of the pen.
+    <figure>
+        <img src = "images/PenToolWithCross.gif" alt = "Pen tool with cross"
+        class = "img-fluid" >
+    </figure>
+  </li>
+  <li>
+<p>Move the mouse to the right and click once to create the next anchor point in the path.</p>
+
+<p><i><b>Note:</b> The first segment you draw will not be set until you click a second anchor point. Also, if direction handles appear, you've accidentally dragged with the Pen tool; release the mouse left button, press &lt;Delete&gt;, click on the Pen tool straight lines icon to make sure it is active (<img src = "images/StraightLinesActiveIcon.gif" alt = "Pen control tool active" > and click again in the work area. (Direction handles are used to reshape curved paths, but do not print.)</i></p>
+
+<p>The first point connects to the new anchor point. Click back under the initial anchor point to create a zigzag pattern. Click and release from point to point to create the zigzag. Your zigzag is complete when it has
+a total of six anchor points.</p>
+
+    <figure>
+        <img src = "images/Zigzag1.gif" alt = "Zigzag path, last path not set"
+        class = "img-fluid">
+        <figcaption>Zigzag path, last path not set</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/Zigzag2.gif" alt = "Zigzag path, last path set"
+        class = "img-fluid">
+        <figcaption>Left-click to set last path</figcaption>
+    </figure>
+    <figure>
+       <img src = "images/Zigzag3.gif" alt = "Zigzag path, finalized paths"
+       class = "img-fluid">
+        <figcaption>Right-click or press &lt;Enter&gt;<br>to finalize the path</figcaption>
+    </figure>
+
+<p>Choose the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" >). One of the many benefits of using the Pen tool is that you can create custom paths and edit the anchor points that make up the path. You can learn more about the selection tools by reviewing Tutorial 2, "Selection Basics"; here you will see how the selection tools relate to the Pen tool.</p>
+  </li>
+  <li>
+<p>Using the Select tool, click on the zigzag path and see how the zigzag is enclosed in a
+bounding box, signifying that all line segments and anchor points are selected.</p>
+
+    <figure>
+        <img src = "images/SelectedZigzag.gif" alt = "Selected Zigzag path"
+        class = "img-fluid">
+        <figcaption>Zigzag path selected</figcaption>
+    </figure>
+
+<p>Left-click and drag the path to a new location anywhere on the artboard. Notice that all the line
+segments and anchor points travel together, maintaining the zigzag path.</p>
+</li>
+<li>
+Deselect the zigzag path any one of these three ways:
+    <ol type = "a">
+        <li>Use the Select tool and click on an empty section of the artboard.</li>
+        <li>Use Edit > Deselect from the menu.</li>
+        <li>Click once on the Pen tool icon in the Toolbar. Even though it looks like the
+        path is still active, it will not connect to the next anchor point created.</li>
+    </ol>
+    <p><b>Note:</b> Here is an optional way of creating a new path separate from the one you have just
+    created: you can click on the Pen tool again after you have finalized (that is, right-clicked or
+    pressed &lt;Enter&gt;) you last composite path. Even though it looks like the path is
+    still active, it will not connect to the next anchor point created.</p>
+</li>
+<li>
+<p>Choose the <b>Edit paths by nodes</b> tool (<img src = "images/EditPathsByNodesTool.gif" alt = "Edit paths by nodes tool" width = "26" >). Note that a new Tools Control bar appears dedicated to the Edit path tool.</p>
+<figure>
+    <img src = "images/EditNodesToolControlBar.gif"
+    alt = "Edit paths by nodes tools control bar"
+    class = "img-fluid" >
+    <figcaption>Edit paths by nodes tools control bar (full bar)</figcaption>
+</figure>
+    <p>Each icon represents a specific function.</p>
+<figure>
+    <img src = "images/EditNodesToolControlBarLeftHalf.png"
+    alt = "Edit paths by nodes tools control bar left half"
+    class = "img-fluid">
+    <figcaption>Left half of the Edit paths by nodes control bar</figcaption>
+</figure>
+    <br>
+<figure>
+    <img src = "images/EditNodesToolControlBarRightHalf.png"
+    alt = "Edit paths by nodes tools control bar right half"
+    class = "img-fluid">
+    <figcaption>Right half of the Edit paths by nodes control bar</figcaption>
+</figure>
+<p>We'll use several Edit Paths by Nodes tools in this tutorial.</p>
+</li>
+<li>Click on any one point in the zigzag. Using the marquee selection technique with the Edit Paths by Nodes tool, or <b>Node tool</b> for short, can make selecting individual anchor points easier. The selected anchor point turns red, while the rest remain grey.
+    <figure>
+        <img src = "images/Zigzag4.gif"
+        alt = "Using the Node tool to select a single anchor point"
+        class = "img-fluid">
+        <figcaption>Selecting a single anchor point with the Node tool.</figcaption>
+    </figure>
+
+<p><b>Note:</b> the red selected anchor point turns blue when you take the Node cursor off, indicating
+that the point is still selected.</p>
+    <figure>
+        <img src = "images/Zigzag5.gif"
+        alt = "Cursor taken off selected anchor point"
+        class = "img-fluid">
+        <figcaption>A blue anchor point means that it is still selected.</figcaption>
+    </figure>
+
+</li>
+<li>
+With the anchor point selected, click and drag. The anchor point is moving but the others are stationary. This is how you edit a path.
+    <figure>
+        <img src = "images/Zigzag6.gif"
+        alt = "Using the Node tool to edit a single anchor point"
+        class = "img-fluid">
+        <figcaption>Dragging a single anchor point to the right with the Node tool.</figcaption>
+    </figure>
+</li>
+<li>At times, you will need to recreate just one line segment in a path. Click on the Node tool
+(<img src = "images/EditPathsByNodesTool.gif" alt = "Edit paths by nodes tool" width = "26" >),
+and click on any line segment with the Node tool cursor.
+    <figure>
+        <img src = "images/Zigzag7.gif"
+        alt = "Using the Node tool to edit a single path"
+        class = "img-fluid">
+        <figcaption>Select a path on click on with the Node tool.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/Zigzag8.gif"
+        alt = "Selecting a single path using the Node tool"
+        class = "img-fluid">
+        <figcaption>Click on the path with the Node tool.</figcaption>
+    </figure>
+
+<p>Note how the two anchor points for that segment turn blue, indicating that you have selected
+that part of the path.
+</li>
+<li>Click on the Delete Segment Between Two Non-Endpoint Nodes icon
+(<img src = "images/DeleteSegmentBetween2NonEndpointNodes.gif" alt = "Delete Segment Between Two
+Non-Endpoint Nodes" width = "26" >) in the Tools Control Bar. The selected line
+segment disappears.
+    <figure>
+        <img src = "images/Zigzag9.gif"
+        alt = "Line segment is now deleted"
+        class = "img-fluid">
+        <figcaption>Line segment is deleted.</figcaption>
+    </figure>
+</li>
+<li>
+Now choose Edit &gt; Deselect to deselect the two separate paths.
+    <figure>
+        <img src = "images/Zigzag13.gif" alt = "Two separate paths"
+        class = "img-fluid">
+        <figcaption>Two separate paths.</figcaption>
+    </figure>
+</li>
+<li>
+We will now reconnect the two paths.  Click on the Node tool and then click on one of the
+anchor points of the deleted line segment to select it. The anchor point turns red.
+    <figure>
+        <img src = "images/Zigzag10.gif" alt = "Click on a first anchor point"
+        class = "img-fluid">
+        <figcaption>Clicking on a first anchor point.</figcaption>
+    </figure>
+</li>
+<li>Now &lt;Shift&gt;-click on the second anchor point. Note how the anchor points change color.
+The first (blue) anchor point stays selected because you &lt;Shift&gt;-clicked on the second (red) point.
+If you just clicked on the second anchor point without pressing the &lt;Shift&gt; key at the same time,
+you would have deselected the first point. It would have reverted to its original grey color.
+    <figure>
+        <img src = "images/Zigzag11.gif"
+        alt = "Shift-clicking on the second anchor point"
+        class = "img-fluid">
+        <figcaption>&lt;Shift&gt;-clicking on the second anchor point.</figcaption>
+    </figure>
+
+</li>
+<li>With both anchor points selected, click on the Join Selected Endnodes with a New Segment icon
+(<img src = "images/JoinSelectedNodesWithANewSegment.gif"
+alt = "Join selected endnodes with a new segment icon" width = "26" >)
+in the Tools Control Bar. There is now a new line segment connected the selected anchor points.
+    <figure>
+        <img src = "images/Zigzag12.gif" alt = "Anchor point now connected"
+        class = "img-fluid">
+        <figcaption>Anchor points are now connected.</figcaption>
+    </figure>
+</li>
+<li>File &gt; Save and close this file.</li>
+</ol>
+</section>
+
+<section>
+<header><h2>Creating Straight Lines</h2></header>
+<p>In Tutorial 3, you discovered that using the &lt;Ctrl&gt; key in combination with shape tools constrains the shape of objects you create using Inkscape. This is also true with the Pen tool, except that using the &lt;Ctrl&gt; key constrains the paths you create to angles that are multiples of 15&deg;.</p>
+
+<p>In this part of the lesson, you will learn how to draw straight lines.</p>
+
+<ol>
+<li><p>Open the file named <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial04/Tutorial04Image02.svg"><b>Tutorial04Image02.svg</b></a> from the Tutorial04 folder. The top portion of the artboard shows the path that you will create. Use the bottom half of the page for this exercise.</p>
+
+<img src = "images/Tutorial04Image02.png"
+alt = "Image 2 for Inkscape Tutorial 4" width = "400"
+class = "img-fluid">
+</li>
+<li><p>Select the Pen tool (<img src = "images/PenTool.gif" alt = "Pen tool" >), then choose
+the Create a sequence of straight line segments icon (<img src = "images/StraightLinesIcon.gif"
+  alt = "Draw straight lines icon" >) in the Tool Controls bar. Click once in the
+  work area of the page.</p>
+</li>
+<li>Hold the &lt;Ctrl&gt; key down and click about an inch to the right of the original anchor point.
+</li>
+<li><p>While holding down the &lt;Ctrl&gt; key, click and drag with the mouse and try to replicate
+the path in the exercise file.</p>
+    <figure>
+        <img src = "images/ConstrainedPath.gif" alt = "Constrained path"
+        class = "img-fluid">
+        <figcaption>Hold down the &lt;Ctrl&gt; key while clicking<br>and dragging to constrain the path.</figcaption>
+    </figure>
+	<p>The first horizontal line segment is where it's supposed to be. It is just hidden underneath
+	the dashed bounding box.</p>
+</li>
+<li>File &gt; Save and close the file.</li>
+</ol>
+</section>
+
+<section>
+<header><h2>Creating Curved Paths</h2></header>
+<p>In this part of the lesson, you'll learn how to draw smooth, curved lines with the Pen tool. In vector-drawing programs such as Inkscape, you can draw a curve, called a B&eacute;zier curve, using control points. By setting anchor points and dragging direction handles (controls), you can define the shape of the curve. Although drawing curves this way takes some getting used to, it gives you the greatest control and flexibility in creating paths.</p>
+
+<ol>
+    <li>Before we get started with a lesson file, choose File > New to create a new document in Inkscape. Click on the Zoom In or Out icon in the toolbox (<img src = "images/ZoomInOut.gif" alt = "Zoom In or Out icon" width = "26" >) and then click on the Zoom to Fit Page in Window icon in the toolbar that appears when you click on the Zoom In or Out icon (<img src = "images/ZoomToFit.gif" alt = "Zoom to fit icon" width = "26" >). Consider this page a "scratch" page to practice the B&eacute;zier curve.</li>
+
+    <li><p>Click on the Pen tool (<img src = "images/PenTool.gif" alt = "Pen tool" width = "26" >) in the toolbar, and then on the Create Regular B&eacute;zier path icon (<img src = "images/CreateRegularBezierPathIcon.gif" alt = "Create regular Bezier path icon" width = "26" >) in the Pen tool control bar that appears when you click on the Pen tool.</p>
+    <figure>
+        <img src = "images/CurvedPath.gif" alt = "Curved path"
+        class = "img-fluid">
+        <figcaption>Click and drag to create a curved path.</figcaption>
+    </figure>
+
+    <p>Continue clicking and dragging at various locations on the page. The goal for this exercise is not to create anything specific, but to get you accustomed to the feel of the B&eacute;zier curve.</p>
+
+    <p>Notice that as you click and drag, direction handles appear that end in round direction points. The angle and length of the direction handles determine the shape and size of the curved segments. Direction lines do not print and are not visible when the anchor is inactive.</p>
+    </li>
+
+    <li>Choose Edit &gt; Deselect.</li>
+
+    <li><p>Choose the Node tool (<img src = "images/EditPathsByNodesTool.gif" alt = "Edit paths by nodes tool" width = "26" >) and select a curved segment to display the direction handles again. Moving the direction points reshapes the curves.</p>
+
+    <p><i><b>Note:</b> Endpoints are diamond-shaped, and, when selected, appear red when the cursor is on them,
+    blue when the cursor is off them; unselected, they appear grey. Anchor points in the middle of a line or curve segment are squares. Like segment endpoints, they are red when selected and the cursor is on them, blue when selected and the cursor is off them. Direction points are circles. These lines and points do not print with the artwork.</i></p>
+
+    <figure>
+        <img src = "images/EditNodesSelectedCurve.gif" alt = "Curved path"
+        class = "img-fluid">
+        <figcaption>Select anchor points to<br>access the direction handles.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/EditNodesEndpointSelected.gif"
+        alt = "Curved path with endpoint selected"
+        class = "img-fluid">
+        <figcaption>Select an endpoint to<br>access direction handles for a path segment.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/EditNodesNonEndpointSelected.gif"
+        alt = "Curved path with non-endpoint selected"
+        class = "img-fluid">
+        <figcaption>Select non-endpoint anchor points to<br>access direction handles of<br>
+        contiguous path segments.</figcaption>
+    </figure>
+    </li>
+
+    <li>Choose File > Close and do not save this file.</li>
+</ol>
+</section>
+
+<aside style = "background-color: #ffccff;">
+<header><h3>Components of a Path</h3></header>
+<p>A smooth anchor point always has two direction handles that move together as a single, straight unit. When you drag the direction anchor point of either direction line on a smooth anchor point, both direction handles move simultaneously, maintaining a continuous curve at that anchor point.</p>
+<figure>
+    <img src = "images/CurvedPathAnatomy.gif" alt = "Anatomy of a curved path"
+    class = "img-fluid">
+    <figcaption><b>A.</b> Anchor point. <b>B.</b> Direction line.<br>
+    <b>C.</b> Direction point (or handle).</figcaption>
+</figure>
+
+<p>In comparison, a corner point can have two, one, or no direction handles, depending on whether it joins two, one, or no curved segments, respectively. Corner point direction handles maintain the corner by using different angles. When you drag a direction point on a corner point's direction line, the other direction line, if present, does not move.</p>
+</aside>
+
+<section>
+<header><h2>Building a Curve</h2></header>
+<p>In this part of the tutorial, you will learn how to control the direction handles
+in order to control curves.</p>
+
+<ol>
+    <li><p>Open the file named <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial04/Tutorial04Image03.svg" ><b>Tutorial04Image03.svg</b></a> from the Tutorial04 folder. On this page you can see the paths that you will create. A template layer has been created in this file so that you can practice using the Pen tool by tracing. The work area below the path is for additional practice on your own.</p>
+
+  <figure>
+    <img src = "images/Tutorial04Image03.png" alt = "Image 3 for Tutorial 04"
+    width = "300" class = "img-fluid">
+  </figure>
+    </li>
+    <li><p>Click on the Zoom In or Out icon (<img src = "images/ZoomInOut.gif" alt = "Zoom In or Out icon" width = "26" >) in the toolbox and drag a marquee around the first curve.</p>
+    <figure>
+        <img src = "images/MarqueeAroundFirstCurve.gif"
+        alt = "Marquee around the first curve"
+        class = "img-fluid">
+        <figcaption>Zoom in to a specified area by dragging<br>a marquee when on the
+        Zoom In or Out tool.</figcaption>
+    </figure>
+    </li>
+    <li><p>Select the Pen tool (<img src = "images/PenTool.gif" alt = "Pen tool" width = "26" >) and click and hold at the base of the left side of the arch, and drag up to create a direction line going the same direction as the arch. It helps to remember to always follow the direction of the curve. Release the mouse when the direction line is slightly above the arch.</p>
+    <figure>
+        <img src = "images/DirectionLine1.gif"
+        alt = "Creating a direction line"
+        class = "img-fluid">
+        <figcaption>When a curve goes up, the<br>direction line should also go up.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/DirectionLine2.gif"
+        alt = "Creating a direction line"
+        class = "img-fluid">
+        <figcaption>When you release the mouse and<br>move the cursor away from the<br>
+        direction line, the direction line stays put.</figcaption>
+    </figure>
+
+    <p><i><b>Note:</b> The artboard might scroll as you drag the anchor point. If you lose visibility
+    of the curve, you can roll the mouse wheel to move your artwork up or down, or &lt;Shift&gt;-roll
+    the mouse wheel to move your work left or right, or &lt;Ctrl&gt;-roll the mouse wheel to magnify
+    or demagnify your work to bring the path back into view.</i></p>
+    </li>
+    <li>
+    <p>Click on the lower right base of the arch path and drag down. Release the mouse when the top direction line is slightly above the arch.</p>
+    <figure>
+        <img src = "images/DirectionLine3.gif"
+        alt = "Creating a direction line"
+        class = "img-fluid">
+        <figcaption>To control the path, pay<br>attention to where the<br>direction handles fall.
+        </figcaption>
+    </figure>
+    <figure>
+        <img src = "images/DirectionLine4.gif"
+        alt = "Creating a direction line"
+        class = "img-fluid">
+        <figcaption>A good adjustment.</figcaption>
+    </figure>
+    </li>
+    <li><p>Right-click or press &lt;Enter&gt; to finalize the curve.</p>
+    <figure>
+        <img src = "images/DirectionLine5.gif"
+        alt = "Creating a direction line"
+        class = "img-fluid">
+        <figcaption>Result.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/DirectionLine6.gif"
+        alt = "Creating a direction line"
+        class = "img-fluid">
+        <figcaption>Edit &gt; Deselect or press &lt;Esc&gt; to hide<br>the
+        bounding box.
+        </figcaption>
+    </figure>
+    </li>
+    <li><p>If the path you created is not aligned exactly with the template, return to the Edit Nodes tool and select the anchor points one at a time. Then adjust the direction handles until your path follows the
+    template more accurately.</p>
+
+    <p><i><b>Note:</b> Pulling the direction handle longer makes a higher slope, while pulling it shorter makes the slope flatter.</i></p>
+    </li>
+    <li> Save the file by choosing File &gt; Save.</li>
+    <li>What you created is an open path; now you are going to create the second path on this page. If you click with the Pen tool while the original path is still active, the path will connect. To avoid doing this,
+    right-click or press &lt;Enter&gt;.</li>
+
+    <li><p>Click and drag at the left base of path "B," again in the direction of the arch. Click and drag down on the next square point, adjusting the arch with the direction handle before you release the mouse. Don't worry if it is not exact; you can correct this with the Edit Nodes tool (<img src = "images/EditPathsByNodesTool.gif"
+    alt = "Edit paths by nodes tool" width = "26" >) when the path is complete.</p>
+    <figure>
+      <img src = "images/DirectionLine1.gif"
+      alt = "Creating a direction line"
+      class = "img-fluid">
+    <figcaption>Click and drag up to create the upward arch.</figcaption>
+    </figure>
+
+    <p>Continue along the path, alternating between clicking and dragging up and down. Put anchor points only where you see the square boxes. If you make a mistake as you draw, you can undo your work by choosing Edit &gt; Undo or by pressing &lt;Ctrl&gt;-Z. Inkscape, by default, lets you undo a series of actions &ndash; limited only by your computer's memory &ndash; by repeatedly choosing Edit &gt; Undo or pressing &lt;Ctrl&gt;-Z.</p>
+
+    <p><i><b>Tip:</b> You have the ability to undo and redo multiple times in Inkscape. When you use the Edit menu, you will see a description of the change that would happen. Multiple steps can be undone using the Edit &gt; Undo History command. For more details, go to Help &gt; Inkscape Manual &gt; 4. Editing Basics &gt; Undo and Redo.</i></p>
+
+    <figure>
+    <img src = "images/DirectionLine7.gif" alt = "Creating a curved path"
+    class = "img-fluid">
+    <figcaption>Alternate between dragging up and down with the Pen tool.</figcaption>
+    </figure>
+    </li>
+    <li>When the path is complete (and you right-clicked or pressed &lt;Enter&gt; to finalize
+    the path), choose the Nodes tool (<img src = "images/EditPathsByNodesTool.gif"
+    alt = "Edit paths by nodes tool" width = "26" >) and select an anchor point.
+    When the anchor point is selected, the direction handles appear and you can readjust
+    the slope of the path.
+    </li>
+    <li>Practice repeating these paths in the work area.</li>
+    <li>File &gt; Save and close the file.</li>
+</ol>
+</section>
+
+<section>
+<header><h2>Curves and Corner Anchor Points</h2></header>
+<p>When creating curves, the directional handles help to determine the slope of the path. Returning to a corner point requires a little extra effort. In this next portion of the lesson, we will practice converting curve points to corners.</p>
+
+<ol>
+    <li><p>Open the file name <a href = "Tutorial04Image04.svg"><b>Tutorial04Image04</b></a> from the Tutorial04 folder. On this page you can see the path that you will create. Use the top section as a template for the exercise. Create your paths directly on top of those that you see on the page. The work area below is for additional practice on your own.</p>
+    <figure>
+        <img src = "images/Tutorial04Image04.png"
+        alt = "Tutorial 04 Images 04 practice curves and lines"
+        width = "300" class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Use the Zoom In or Out tool in the toolbox and drag a marquee around the top path.</p>
+    <figure>
+        <img src = "images/ResizingMarquee.gif"
+        alt = "Magnifying the top path"
+        class = "img-fluid">
+        <figcaption>You will get a much more accurate path when you are zoomed in.</figcaption>
+    </figure>
+    </li>
+    <li><p>Choose the Pen tool (<img src = "images/PenTool.gif" alt = "Pen tool"
+  class = "center" >), click on the first anchor point and drag up to create the first
+  direction line.</p>
+    <figure>
+        <img src = "images/Cusp0.gif"
+        alt = "Creating the first direction line"
+        class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Then click on the second anchor point and drag down, just as you have been doing in the
+    previous exercises.</p>
+    <figure>
+      <img src = "images/Cusp1.gif"
+      alt = "Click on the second anchor point and drag down"
+      class = "img-fluid">
+    <figcaption>Click on the second anchor point.</figcaption>
+    </figure>
+
+    <figure>
+      <img src = "images/Cusp2.gif"
+      alt = "Drag down to create the first curve"
+      class = "img-fluid">
+    <figcaption>Drag down to create the first curve.</figcaption>
+    </figure>
+    </li>
+    <li><p>Create the second path segment.</p>
+    <figure>
+      <img src = "images/Cusp3.gif"alt = "Creating the second path segment"
+      class = "img-fluid">
+    <figcaption>Click on the third anchor point.</figcaption>
+    </figure>
+    <figure>
+      <img src = "images/Cusp4.gif"
+      alt = "Drag up to create the second curve"
+      class = "img-fluid">
+    <figcaption>Drag up to create the second curve.</figcaption>
+    </figure>
+	</li>
+	<li><p>Make the third curve.</p>
+    <figure>
+      <img src = "images/Cusp5.gif"
+      alt = "Click on the fourth anchor point"
+      class = "img-fluid">
+    <figcaption>Click on the fourth anchor point.</figcaption>
+    </figure>
+    <figure>
+      <img src = "images/Cusp6.gif"
+      alt = "Drag down to create the third curve"
+      class = "img-fluid">
+    <figcaption>Drag down to create the third curve.</figcaption>
+    </figure>
+    </li>
+    <li>
+    <p>Continue as you did in the previous exercise to arrive at the end of the
+    sequence of connected curves.</p>
+    <figure>
+      <img src = "images/Cusp7.gif"
+      alt = "Continue until you come to the end of the path"
+      class = "img-fluid">
+    </figure>
+    </li>
+    <li>
+    <p>Right-click or press &lt;Enter&gt; to finalize the path.</p>
+    <figure>
+      <img src = "images/Cusp8.gif" alt = "Finalize the path"
+      class = "img-fluid">
+    </figure>
+    </li>
+    <li>
+    <p>Press &lt;Esc&gt; to hide the bounding box.</p>
+    <figure>
+      <img src = "images/Cusp9.gif" alt = "Hide the bounding box"
+      class = "img-fluid">
+    </figure>
+    <p>You have now created the first draft of the path for this exercise. Now you will edit the path with the Node tool (<img src = "images/EditPathsByNodesTool.gif" alt = "Edit paths by nodes tool" width = "26" >) to create corner nodes and convert two downward curves into upward curves.</p>
+    </li>
+    <li><p>Click on the Node tool (<img src = "images/EditPathsByNodesTool.gif" alt = "Edit paths by nodes tool" width = "26" >) in the toolbox and then click anywhere on the path you just created.</p>
+    <figure>
+      <img src = "images/Cusp10.gif"
+      alt = "Click on the Node tool, then click on the path"
+      class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Click on the second (downward) curve to select it. Notice that it is the only segment selected
+    of the whole path and that its anchor points are the only ones highlighted.</p>
+    <figure>
+      <img src = "images/Cusp11.gif" alt = "Select the second curve segment"
+      class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>With the second path segment still highlighted, click on the Make Selected Nodes Corner icon (
+    <img src = "images/MakeSelectedNodesCornerIcon.gif" alt = "Make selected nodes corner icon"
+    width = "26">) in the toolbar. Notice how the two highlighted square
+    anchor points to the path segment turn into highlighted diamonds.</p>
+    <figure>
+      <img src = "images/Cusp12.gif"
+      alt = "Click on the Make Selected Nodes Corner icon"
+      class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Now click-drag the left lower direction control up to more-or-less match the position
+    of the upper direction control that is attached to the left-hand path segment. Notice that the
+    active direction control is colored red to let you know that it is the active control.</p>
+    <figure>
+      <img src = "images/Cusp13.gif" alt = "Move left lower direction control"
+      class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Click-drag the right lower direction control up to more-or-less match the position
+    of the upper direction control that is attached to the path segment on the right. See if
+    you can get your curve to match the shape of the one underneath it.</p>
+    <figure>
+      <img src = "images/Cusp14.gif" alt = "Move right lower direction control"
+      class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Now click on the second downward curve with the Nodes tool.</p>
+    <figure>
+      <img src = "images/Cusp15.gif" alt = "Click on second downward curve"
+      class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Click again on the path segment to select it. The path segment's anchor points turn
+    into highlighted squares.</p>
+    <figure>
+      <img src = "images/Cusp16.gif" alt = "Select second downward curve"
+      class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>With the path segment still selected, click on the Make Selected Nodes Corner icon (
+    <img src = "images/MakeSelectedNodesCornerIcon.gif" alt = "Make selected nodes corner icon"
+    width = "26">) in the toolbar.  The path segment's anchor points turn into
+    highlighed diamonds.</p>
+    <figure>
+      <img src = "images/Cusp17.gif"
+      alt = "Click on the Make Selected Nodes Corner icon"
+      class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Click drag the segment's direction controls upward as you did on the first downward
+    curve. See if you can match shapes.</p>
+    <figure>
+      <img src = "images/Cusp18.gif" alt = "Move direction control"
+      class = "img-fluid">
+    </figure>
+    <figure>
+      <img src = "images/Cusp19.gif" alt = "Move direction control"
+      class = "img-fluid">
+    <p><i><b>Note:</b> You can also move anchor points by click-dragging them with the Nodes tool.
+    If an anchor point is off, just click-drag it into position. You might need to readjust segment
+    direction controls because you moved the anchor point. Once you're done with this exercise,
+    experiment in creating different shapes and changing them with the Nodes tool.</i></p>
+    </figure>
+    </li>
+    <li><p>When you have finished fine-tuning the path, press &lt;Esc&gt; once or twice to hide the bounding
+    box.</p>
+    <figure>
+      <img src = "images/Cusp20.gif" alt = "Finished path"
+      class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>File &gt; Close.</p>
+	</li>
+
+    <li>Choose View and click on the Zoom to Fit Page in Window icon (<img src = "images/ZoomToFit.gif" alt = "Zoom to fit icon"
+    width = "26">) in the toolbar. You can also press the F3 key and then <b>5</b> to get the same result.
+    Use the Zoom In or Out tool (<img src = "images/ZoomInOut.gif" alt = "Zoom In or Out tool" width = "26">) to drag a marquee around the second path and enlarge its view.
+    </li>
+    <li><p>With the Pen tool, click on the first anchor point and drag up, then click and drag down on the second anchor point.
+    This motion of creating an arch should be familiar to you by now.</p>
+
+    <figure>
+        <img src = "images/Cusp21.gif"
+        alt = "Starting on the second example path"
+        class = "img-fluid">
+        <figcaption>Clicking on the first anchor point and dragging up.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/Cusp22.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+        <figcaption>Clicking on the second anchor point and dragging down.</figcaption>
+    </figure>
+    </li>
+    <li><p>Click on the third anchor point and drag up.</p>
+    <figure>
+        <img src = "images/Cusp23.gif"
+        alt = "Dragging up on the third anchor point"
+        class = "img-fluid">
+    </figure>
+    <figure>
+        <img src = "images/Cusp24.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Click on the fourth anchor point and drag down.</p>
+    <figure>
+        <img src = "images/Cusp25.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+    </figure>
+    <figure>
+        <img src = "images/Cusp26.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Continue until you get to the end of the path.</p>
+    <figure>
+        <img src = "images/Cusp27.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Right-click or press &lt;Enter&gt; to finalize the path.</p>
+    <figure>
+        <img src = "images/Cusp28.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Press &lt;Esc&gt; to hide the bounding box.</p>
+    <figure>
+        <img src = "images/Cusp29.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Now click on the Edit Nodes tool (<img src = "images/EditPathsByNodesTool.gif"
+    alt = "Edit paths by nodes tool" width = "26" >) in the toolbox and click
+    on the path you just created.</p>
+    <figure>
+        <img src = "images/Cusp30.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Click on the second path segment, that is, on the curve that dips below the straight line segment. The two
+    anchor points that contain the curve become highlighted highlighted squares.</p>
+    <figure>
+        <img src = "images/Cusp31.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+    </figure>
+    </li>
+    <li>
+    <figure><p>Click on the Make Selected Nodes Corner icon (<img src = "images/MakeSelectedNodesCornerIcon.gif" alt = "Make selected nodes corner icon" width = "26">) in the toolbar. The two highlighted square anchor points
+    turn into highlighted diamonds.</p>
+        <img src = "images/Cusp32.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Press &lt;Shift&gt;-L to make the curve a straight line that now connects the two anchor points.
+    (&lt;Shift&gt;-L &mdash; Think <b>L</b>ine!)</p>
+    <figure>
+        <img src = "images/Cusp33.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+        <figcaption>&lt;Shift&gt;-L</figcaption>
+    </figure>
+    </li>
+    <li><p>Now click twice on the second downward curve to select it.</p>
+    <figure>
+        <img src = "images/Cusp34.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+        <figcaption>Before selecting the curve.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/Cusp35.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+        <figcaption>First click with the Node tool.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/Cusp36.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+        <figcaption>Second click with the Node tool.</figcaption>
+    </figure>
+    </li>
+    <li><p>Press &lt;Shift&gt;-L to transform the curve into a straight line.</p>
+    <figure>
+        <img src = "images/Cusp37.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+        <figcaption>&lt;Shift&gt;-L</figcaption>
+    </figure>
+    </li>
+    <li><p>We'll use an alternate method for bringing the middle upward curve down. Put the Node tool
+    on the curve. See how a hand appears near the cursor, signifying that the tool is on top of an
+    object that can be manipulated.</p>
+    <figure>
+        <img src = "images/Cusp38up.gif"
+        alt = "Put Node tool on curve"
+        class = "img-fluid">
+        <figcaption>Node tool with hand on top of curve.</figcaption>
+    </figure>
+    </li>
+    <li><p>Now click-drag the curve downward.</p>
+    <figure>
+        <img src = "images/Cusp38.gif"
+        alt = "Click-drag curve downwards"
+        class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Adjust anchor points and direction controls as you want with the Node tool to fine-adjust the path.
+    Then press &lt;Esc&gt; once ...</p>
+    <figure>
+        <img src = "images/Cusp39.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Press &lt;Esc&gt; twice to hide the bounding box.
+    <figure>
+        <img src = "images/Cusp40.gif"
+        alt = "Dragging down on the second anchor point"
+        class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>Practice repeating these paths in the lower portion of the exercise page. Try out
+    different shapes and see what happens.</p>
+    </li>
+    <li><p>File &gt; Close the file.</p></li>
+</ol>
+</section>
+
+<section>
+<header><h2>Creating the Pear Illustration</h2></header>
+<p>In this next part of the tutorial, you'll create an illustration of a pear pierced by an arrow.
+This procedure will incorporate what you have learned in the previous exercises as well as teach you
+some additional pen techniques.</p>
+
+<ol>
+    <li> Choose File &gt; Open, and open the <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial04/PearParts.svg"><b>PearParts.svg</b></a> file in the Tutorial04 folder.
+    </li>
+    <li><p>Choose View &gt; Zoom &gt; Zoom Out to make the finished artwork smaller and leave it on your screen as you work.
+    (Use &lt;Shift&gt;-scroll and scroll to move the artwork where you want it in the window.) If you don't want
+    to leave the image open, choose File &gt; Close. <i><b>Note:</b> For an illustration of the finished artwork
+    in this tutorial, see the beginning of this tutorial.</i></p>
+
+    <p>Now open the start file to begin the lesson.</p>
+    </li>
+    <li><p>Choose File &gt; Open the <b>PearParts.svg</b> file in the Lesson04 folder.</p>
+    <figure>
+        <img src = "images/PearParts.gif" alt = "Parts of pear artwork"
+        class = "img-fluid" >
+    </figure>
+    </li>
+    <li>Choose File &gt; Save As, name the file <b>Pear.svg</b>, and save it in the Tutorial04 folder.
+    </li>
+</ol>
+</section>
+<section>
+<header><h3>Creating the Arrow</h3></header>
+<p>You'll begin by drawing the straight line for the arrow. The template layer allows you to follow along
+directly over the artwork.</p>
+<ol>
+    <li><p>Click on the Zoom In or Out icon (<img src = "images/ZoomInOut.gif" alt = "Zoom In or Out icon" width = "26" >) in the toolbox and draw a marquee around the arrow to magnify it.</p>
+
+    <figure>
+        <img src = "images/MarqueedArrow.gif"
+        alt = "Marquee drawn around arrow"
+        class = "img-fluid">
+        <figcaption>Marquee drawn around arrow using Zoom In or Out tool.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/MarqueedArrowResult.gif"
+        alt = "Magnified arrow"
+        class = "img-fluid">
+        <figcaption>Result.</figcaption>
+    </figure>
+    </li>
+    <li>Select the Pen tool (<img src = "images/PenTool.gif" alt = "Pen tool"
+  class = "center" width = "26" >) in the toolbox. Then select the Create a Sequence of Straight Line Segments icon
+    (<img src = "images/StraightLinesIcon.gif" alt = "Draw straight lines icon" >)
+    in the Pen tool control bar that appears when you select the Pen tool.
+    </li>
+    <li><p>Click point A at the upper right end of the line to create the starting anchor point — a small open square.</p>
+        <figure>
+            <img src = "images/SmallSquareAtPtA.gif"
+            alt = "Small square at Point A"
+            class = "img-fluid">
+            <figcaption>Setting the initial anchor point at A.</figcaption>
+        </figure>
+    </li>
+    <li><p>Click point B at the right end of the line to create the ending anchor point.</p>
+        <figure>
+            <img src = "images/SmallSquareAtPtB.gif"
+            alt = "Small square at Point B"
+            class = "img-fluid">
+            <figcaption>Setting the end anchor point at B.</figcaption>
+        </figure>
+    </li>
+    <li><p>Press &lt;Enter&gt; or right-click to finalize the line segment.</p>
+        <figure>
+            <img src = "images/FinalizingArrowShaft.gif"
+            alt = "Finalizing arrow shaft"
+            class = "img-fluid">
+            <figcaption>Finalizing the arrow shaft.</figcaption>
+        </figure>
+    </li>
+    <li><p>Press &lt;Esc&gt; to make the bounding box go away.</p>
+        <figure>
+            <img src = "images/NoMoreBoundingBox.gif"
+            alt = "No bounding box"
+            class = "img-fluid">
+            <figcaption>Hiding the bounding box.</figcaption>
+        </figure>
+    </li>
+    <li><p>Now you'll make the straight line thicker by changing its stroke weight.</p>
+    <p>With the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" >)
+    from the toolbox, click the straight line to select it.</p>
+        <figure>
+            <img src = "images/SelectArrowShaft.gif"
+            alt = "Select arrow shaft"
+            class = "img-fluid">
+            <figcaption>Selecting the straight line.</figcaption>
+        </figure>
+    </li>
+    <li><p>Choose Object &gt; Fill and Stroke to display the Fill and Stroke palette.</p>
+        <figure>
+            <img src = "images/FillAndStrokePalette.gif"
+            alt = "Fill and stroke palette"
+            class = "img-fluid">
+            <figcaption>Fill and Stroke palette.</figcaption>
+        </figure>
+        <p><i><b>Note:</b> the Fill and Stroke palette might appear docked to the right side of the work window. This
+        is the default appearance when it is first activated. For further information about dockable dialog windows,
+        Click on Help &gt; Inkscape Manual &gt; Comprehensive Index &gt; D &gt; Dialogs &gt; Docking &gt; Dockable Dialogs.</i></p>
+    </li>
+    <li><p>Click on the Stroke style tab.</p>
+        <figure>
+            <img src = "images/StrokeStyleTab.gif"
+            alt = "Click on the Stroke style tab"
+            class = "img-fluid">
+            <figcaption>Stroke style tab highlighted.</figcaption>
+        </figure>
+    </li>
+    <li><p>In the Fill and Stroke palette, type <b>2</b> in the Width text box, leave the unit of measurement
+        as px (pixels), and press &lt;Enter&gt; to apply the change.</p>
+        <figure>
+            <img src = "images/TwoPixelWidth.gif"
+            alt = "Change stroke weight to two pixels"
+            class = "img-fluid">
+            <figcaption>Two-pixel stroke weight.</figcaption>
+        </figure>
+        <figure>
+            <img src = "images/StrokeWeightChange2px.gif"
+            alt = "Change stroke weight to two pixels"
+            class = "img-fluid">
+            <figcaption>Result.</figcaption>
+        </figure>
+    </li>
+</ol>
+</section>
+
+<section>
+<header><h3>Splitting a Path</h3></header>
+<p>To continue creating the arrow for this illustration, you'll split the path of the straight line using the Insert
+New Nodes into Selected Segments tool and the Break Path at Selected Nodes tool.</p>
+
+<ol>
+    <li><p>With the straight line still selected, click on the Edit Nodes tool
+    (<img src = "images/EditPathsByNodesTool.gif" alt = "Edit paths by nodes tool"
+    width = "26" class = "center">) in the toolbox. The Edit Nodes toolbar appears. Note how the endpoints of
+    the line are two grey diamonds &ndash; the line has not been selected for editing yet.</p>
+        <figure>
+            <img src = "images/LineNotSelectedForEditing.gif"
+            alt = "Line not selected for editing"
+            class = "img-fluid">
+            <figcaption>Grey endpoints &ndash; line not selected for editing.</figcaption>
+        </figure>
+    </li>
+    <li><p>Now click on the straight line with the Edit Nodes tool. The two endpoints change into two blue and
+    yellow diamonds, indicating that the line and its endpoints have been selected for editing.</p>
+        <figure>
+            <img src = "images/LineSelectedForEditing.gif"
+            alt = "Line selected for editing"
+            class = "img-fluid">
+            <figcaption>Blue and yellow diamond-shaped endpoints &ndash;<br>line selected for editing.</figcaption>
+        </figure>
+    </li>
+    <li><p>Click on the Insert New Nodes into Selected Segments tool (<img src = "images/InsertNewNode.gif"
+    alt = "Insert New Nodes into Selected Segments icon" width = "26" class = "center" >) in the toolbar.
+    A new node is inserted in the middle of the line.</p>
+        <figure>
+            <img src = "images/MidpointInserted.gif"
+            alt = "New node inserted"
+            class = "img-fluid">
+            <figcaption>New blue and yellow node inserted in the middle of the line.</figcaption>
+        </figure>
+    </li>
+    <li><p>Click on the midpoint node with the Edit Nodes tool to select it.</p>
+        <figure>
+            <img src = "images/MidpointBeforeSelection.gif"
+            alt = "New node before selection"
+            class = "img-fluid">
+            <figcaption>Midpoint before selection &ndash; note the selected endpoints.</figcaption>
+        </figure>
+        <figure>
+            <img src = "images/MidpointAfterSelection.gif"
+            alt = "New node after selection"
+            class = "img-fluid">
+            <figcaption>Midpoint after selection &ndash; the endpoints have changed to deselected grey.</figcaption>
+        </figure>
+    </li>
+    <li><p>Now click on the Break Path at Selected Nodes tool (<img src = "images/BreakPathAtSelectedNodes.gif"
+    alt = "Break path at selected nodes tool" width = "26" >)in the toolbar.
+    The midpoint node on the straight line turns blue (red when you hover the cursor over it).</p>
+        <figure>
+            <img src = "images/BlueMidpoint.gif" alt = "Blue midpoint"
+            class = "img-fluid">
+            <figcaption>Midpoint selected for splitting line.</figcaption>
+        </figure>
+    </li>
+    <li><p>With the Edit Nodes tool still selected, click-drag the midpoint node either up or down to separate
+    the two halves of the straight line.</p>
+        <figure>
+            <img src = "images/SplitLine.gif" alt = "Two split line halves"
+            class = "img-fluid">
+            <figcaption>Click-dragging the midpoint with the Edit Nodes tool.</figcaption>
+        </figure>
+    </li>
+</ol>
+</section>
+<section>
+<header><h2>Adding Arrowheads</h2></header>
+<p>Inkscape has pre-made arrowheads you can add by applying a stroke style from the Fill and Stroke palette. Click on
+Stroke style, then on the down-arrow on the first Markers selection box.  Some examples are shown below:</p>
+
+<figure>
+    <img src = "images/ListOfArrowheads.gif" alt = "Line arrowheads"
+    class = "img-fluid">
+    <figcaption>A partial list of arrowheads in the Start Markers selection box.<br>
+    Tooltip box message: Start Markers are drawn on the first node of a path or shape.</figcaption>
+</figure>
+<p>When you scroll down to peruse all the arrowhead possibilities, you will find that our particular arrowhead
+is not included in the roster. So, we will create our own.</p>
+
+<ol>
+    <li><p>Click anywhere off the arrow shaft to deselect it.</p></li>
+    <li><p>Click on the Pen tool (<img src = "images/PenTool.gif" alt = "Pen tool" width = "26" >).</p>
+    </li>
+    <li><p>Click on the Create a Sequence of Straight Line Segments tool icon (<img src = "images/StraightLinesIcon.gif"
+    alt = "Create a sequence of straight line segments icon" width = "26" >) in the toolbar
+    if it isn't selected already.</p>
+    </li>
+    <li><p>Click on any corner of the arrowhead, then click on a next corner, and keep on going until
+    you click on the corner you started on to complete the arrowhead.</p>
+        <figure>
+            <img src = "images/ArrowheadCorner1.gif"
+            alt = "Starting the first corner of the arrowhead"
+            class = "img-fluid">
+            <figcaption>Clicking on a first corner with the Pen tool.</figcaption>
+        </figure>
+         <figure>
+            <img src = "images/ArrowheadCorner2.gif"
+            alt = "Second corner of the arrowhead"
+            class = "img-fluid">
+            <figcaption>Clicking on a second corner with the Pen tool.</figcaption>
+        </figure>
+         <figure>
+            <img src = "images/ArrowheadCorner3.gif"
+            alt = "Third corner of the arrowhead"
+            class = "img-fluid">
+            <figcaption>Clicking on a third corner with the Pen tool.</figcaption>
+        </figure>
+         <figure>
+            <img src = "images/ArrowheadCorner4.gif"
+            alt = "Fourth corner of the arrowhead"
+            class = "img-fluid">
+            <figcaption>Clicking on a fourth corner with the Pen tool.</figcaption>
+        </figure>
+         <figure>
+            <img src = "images/ArrowheadCorner5.gif"
+            alt = "Closing the arrowhead shape"
+            class = "img-fluid">
+            <figcaption>Closing the arrowhead shape.</figcaption>
+        </figure>
+        <p>The path turns solid black when you click on the first corner point, signifying that
+        you have closed the path.</p>
+    </li>
+    <li><p>With the arrowhead path still selected, click on Object &gt; Fill and Stroke &gt; Stroke style tab.
+    Change the stroke width to 1.5 pixels.</p>
+    <figure>
+        <img src = "images/Arrowhead1.5px.png"
+        alt = "Change stroke width to 1.5 pixels"
+        class = "img-fluid">
+        <figcaption>Arrowhead stroke width changed from 1 to 1.5 pixels.</figcaption>
+    </figure>
+    <p>Choose the Edit Nodes tool (<img src = "images/EditPathsByNodesTool.gif"
+    alt = "Edit paths by nodes tool" width = "26" >) in the toolbox and adjust
+    the placement of any corners.</p>
+    </li>
+    <li><p>We will now add the tail feathers to the arrow. Select the arrow shaft with either the
+    Select tool or Edit Nodes tool.</p>
+    <figure>
+        <img src = "images/SelectArrowShaft2.gif"
+        alt = "Arrow shaft selected again"
+        class = "img-fluid">
+        <figcaption>Arrow shaft selected with the Select tool.</figcaption>
+    </figure>
+    </li>
+    <li><p>Select Object &gt; Fill and Stroke &gt; Stroke style tab. Click on the down arrow for the End
+    Markers Selection box.</p>
+    <p>Inkscape has pre-made line end markers you can add by applying a stroke style from the Fill and Stroke palette.
+    Click on Stroke style, then on the down-arrow on the third Markers selection box.  Some examples are shown below:</p>
+    <figure>
+        <img src = "images/ListOfLineEndMarkers.gif"
+        alt = "Line end markers"
+        class = "img-fluid">
+        <figcaption>A partial list of line end markers in the End Markers selection box.<br>
+        Tooltip box message: End Markers are drawn on the last node of a path or shape.<br>
+        The cursor points at the second line end marker: a set of feathers.</figcaption>
+    </figure>
+    </li>
+    <li><p>Click on the feather line end marker to select and apply it.</p>
+
+    <figure>
+        <img src = "images/ArrowFeathersResult.gif"
+        alt = "Feathers added onto the end of the arrow shape"
+        class = "img-fluid">
+        <figcaption>Feathers added to the end of the arrow shape.</figcaption>
+    </figure>
+    </li>
+    <li><p>Edit &gt; Deselect to deselect the shape.</p></li>
+    <li><p>File &gt; Save to save your artwork.</p></li>
+</ol>
+</section>
+
+<section>
+<header><h2>Drawing Curves</h2></header>
+<p>In this part of the tutorial, you will review drawing curves by drawing the pear, its stem, and a leaf. You'll examine a single curve and then draw a series of curves together, using the template guidelines to help you.</p>
+
+<h3>Selecting a Curve</h3>
+<ol>
+    <li><p>Choose the Zoom In or Out tool (<img src = "images/ZoomInOut.gif" alt = "Zoom In or Out icon" width = "26" >) in the toolbox.</p>
+    </li>
+    <li><p>With the Zoom In or Out tool still selected, click-drag a marquee around the Curved Line in the upper right
+    corner of the template image.</p>
+    <figure>
+        <img src = "images/SelectedCurve.gif" alt = "Selected curve"
+        class = "img-fluid">
+        <figcaption>Selecting the Curved Line to enlarge it.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/SelectedCurveMagnified.gif"
+        alt = "Magnified curve"
+        class = "img-fluid">
+        <figcaption>Result.</figcaption>
+    </figure>
+    </li>
+    <li><p>Using the Edit Nodes tool (<img src = "images/EditPathsByNodesTool.gif"
+    alt = "Edit paths by nodes tool" width = "26" >), click on the curve once to selected the entire curve. Note the grey deselcted endpoint anchors.</p>
+    <figure>
+        <img src = "images/SelectedCurveDeselectedEndpoints.gif"
+        alt = "Magnified curve with deselected endpoints"
+        class = "img-fluid">
+        <figcaption>First click &ndash; curve shows deselected endpoints.</figcaption>
+    </figure>
+    </li>
+    <li><p>Click on the curve a second time with the Edit Nodes tool. The endpoints are colored blue (red when
+    you put the cursor over them), direction handles appear that extend from the endpoints, and a hand appears
+    near the cursor signaling that you can now edit the curve. The Edit Nodes tool lets you select and edit
+    individual segments in the curved line.</p>
+    <figure>
+        <img src = "images/SelectedCurveDirectionHandles.gif"
+        alt = "Magnified curve with direction handles"
+        class = "img-fluid">
+        <figcaption>Second click &ndash; curve shows selected endpoints and direction handles.</figcaption>
+    </figure>
+    </li>
+</ol>
+<p>By selecting a curve, you also select the paint attributes of the curve, so that the next line you draw will have those same attributes. There will be more on paint attributes in an upcoming tutorial.</p>
+</section>
+
+<section>
+<header><h2>Drawing the Leaf</h2></header>
+<p>Now you'll draw the first curve of the leaf.</p>
+<ol>
+    <li><p>Choose the Zoom In or Out tool (<img src = "images/ZoomInOut.gif" alt = "Zoom In or Out icon" width = "26" >) in the toolbox.</p>
+    </li>
+    <li><p>With the Zoom In or Out tool still selected, click-drag a marquee around the Leaf Step 1 image in the middle right
+    side of the template image.</p>
+    <figure>
+        <img src = "images/MagnifyLeaf.gif"
+        alt = "Selected leaf curve image"
+        class = "img-fluid">
+        <figcaption>Selecting the Leaf Step 1 image to enlarge it.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/MagnifyLeafResult.gif"
+        alt = "Magnified leaf curve"
+        class = "img-fluid">
+        <figcaption>Result.</figcaption>
+    </figure>
+
+    <p>Instead of dragging the Pen tool to draw a curve, you will drag it to set the starting point and the direction of the line&lsquo;s curve. When you release the mouse button, the starting point is created and a direction handle is formed. Then you drag the Pen tool to the end of the first curve and to set the start point and direction of the next curve on the line.</p>
+    </li>
+    <li><p>Select the Pen tool (<img src = "images/PenTool.gif" alt = "Pen tool" width = "26" >) and then select the Create Regular B&eacute;zier path icon
+    (<img src = "images/CreateRegularBezierPathIcon.gif" alt = "Create regular Bezier path icon"
+    width = "26" >) in the Pen tool control bar. Position the Pen tool over point A
+    on the template. Press the left mouse button and drag from point A to the red dot.
+    Then release the mouse button.</p>
+    <figure>
+        <img src = "images/FirstDirectionHandle.gif"
+        alt = "Creating the first direction handle"
+        class = "img-fluid">
+        <figcaption>Result.</figcaption>
+    </figure>
+    <p>Next you'll set the second anchor point and its direction handles.</p>
+    </li>
+    <li><p>Without click-dragging, move the left mouse button to point B and then click-drag to the next red dot.
+    Release the mouse button. Inkscape connects the two anchor points with a curve that follows the direction
+    handles you have created. Notice that if you vary the angle of dragging, you change the amount of curve.</p>
+    <figure>
+        <img src = "images/MakingFirstCurve.gif"
+        alt = "Making the first curve"
+        class = "img-fluid">
+        <figcaption>Moving the cursor without click-dragging.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/MakingFirstCurve2.gif"
+        alt = "Bringing the path to Point B"
+        class = "img-fluid">
+        <figcaption>Moving the mouse to Point B.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/MakingFirstCurve3.gif"
+        alt = "Tracing the second direction handle"
+        class = "img-fluid">
+        <figcaption>Moving the cursor down the direction handle from Point B.</figcaption>
+    </figure>
+    </li>
+    <li><p>Now move the Pen tool without click-dragging from point B to Point C, and then click-drag to the last
+    red dot and release the mouse button.</p>
+    <figure>
+        <img src = "images/MakingSecondCurve.gif"
+        alt = "Bringing the path to Point C"
+        class = "img-fluid">
+        <figcaption>Moving the mouse to Point C without click-dragging.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/MakingSecondCurve2.gif"
+        alt = "Clicking on Point C"
+        class = "img-fluid">
+        <figcaption>Clicking on Point C to set the path at C.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/MakingSecondCurve3.gif"
+        alt = "Click-dragging to set the end slope of the path"
+        class = "img-fluid">
+        <figcaption>Click-dragging to set the final slope of the path.</figcaption>
+    </figure>
+    </li>
+    <li><p>Right-click or press &lt;Enter&gt; to indicate the end of the path. (You must do this to indicate when you have finished drawing a path.)</p>
+    <figure>
+        <img src = "images/FinalizeLeafPath.gif"
+        alt = "Finalizing the leaf path"
+        class = "img-fluid">
+        <figcaption>Finalizing the leaf path.</figcaption>
+    </figure>
+    </li>
+    <li><p>Choose the Select tool or the Edit Nodes tool in the toolbox.
+    Click twice anywhere off the path to deselect it.</p>
+    <figure>
+        <img src = "images/LeafPathDeselected.gif"
+        alt = "Deselecting the leaf path"
+        class = "img-fluid">
+        <figcaption>Deselecting the leaf path.</figcaption>
+    </figure>
+    </li>
+    <li><p>File &gt; Save your artwork.</p>
+    </li>
+</ol>
+</section>
+
+<section>
+<header><h2>Drawing Different Kinds of Curves</h2></header>
+<p>Now you'll finish drawing the leaf by adding to an existing curved segment. Even after ending a path, you can return to the curve and add to it. You start by selecting the path and then using the pencil or pen tool to add new segments.</p>
+<ol>
+    <li><p>If you are not on the Leaf Step 1 image, then move to it and click on it with the Select tool
+    (<img src = "images/SelectionTool.gif" alt = "Selection tool" >).</p>
+    <figure>
+        <img src = "images/SelectingCurveStep1.gif"
+        alt = "Selecting the leaf path"
+        class = "img-fluid">
+        <figcaption>Selecting the leaf path.</figcaption>
+    </figure>
+    </li>
+    <li><p>Now you will make a duplicate of the Leaf Step 1 curve. With the curve still selected, press &lt;Ctrl&gt;-D. You
+    will see the curve flicker for a fraction of a second as the duplicate is created directly on top of the original curve.
+    Click on the curve and click-drag it down to the Leaf Step 2 curve.</p>
+    <figure>
+        <img src = "images/MovingCurve.gif"
+        alt = "Moving the curve"
+        class = "img-fluid">
+        <figcaption>Moving the leaf path.</figcaption>
+    </figure>
+    </li>
+    <li><p>Position the duplicated path on top of the lower curve of Lead Step 2</p>
+    <figure>
+        <img src = "images/PositioningCurve.gif"
+        alt = "Positioning the curve"
+        class = "img-fluid">
+        <figcaption>Positioning the leaf path.</figcaption>
+    </figure>
+    <p>You'll add a corner point to the path. A corner point lets you change the direction of the curve. A smooth point lets you draw a continuous curve.</p>
+    </li>
+    <li><p>With the duplicated path still selected (if you deselected it, then reselect it), choose the Pen tool
+    (<img src = "images/PenTool.gif" alt = "Pen tool" width = "26" >). Click on the square at
+    anchor point A, click-drag the cursor up to the red dot on the direction handle, and then release the mouse
+    button to set the end of the direction handle.</p>
+    <figure>
+        <img src = "images/DirectionHandleFromPointA.gif"
+        alt = "Making a new direction handle"
+        class = "img-fluid">
+        <figcaption>Click-dragging from anchor point A to create a direction handle.</figcaption>
+    </figure>
+    </li>
+    <li><p>Now move the cursor to anchor point B without holding down the left mouse button.</p>
+    <figure>
+        <img src = "images/CreatingUpperCurve.gif"
+        alt = "Moving the mouse without click-dragging"
+        class = "img-fluid">
+        <figcaption>Moving the cursor to anchor point B without click-dragging.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/AtPointB.gif"
+        alt = "Cursor at anchor point B"
+        class = "img-fluid">
+        <figcaption>Moving the cursor to anchor point B without click-dragging.</figcaption>
+    </figure>
+    <p>Except for the arrowhead on the arrow image, all the curves you have drawn have been open paths.
+    Now you'll draw a closed path, in which the final anchor point is drawn on the first anchor point of the path.
+    (Examples of closed paths include ovals and rectangles.)</p>
+    </li>
+    <li><p>Position the pointer over anchor point B on the template, click on point B, and click-drag
+    from this point to the red dot on the second direction handle.</p>
+    <figure>
+        <img src = "images/SecondDirectionHandle.gif"
+        alt = "Click-dragging down the second direction handle"
+        class = "img-fluid">
+        <figcaption>Click-dragging from anchor point B down to the red dot at the end of the direction handle.</figcaption>
+    </figure>
+    <p>Notice the direction handles where you close the path. The direction handles on both sides of a smooth point are aligned along the same angle.</p>
+    </li>
+    <li><p>Right-click or press &lt;Enter&gt; to finalize the curve.</p>
+    <figure>
+        <img src = "images/FinalizingFullLeafPath.gif"
+        alt = "Finalizing the full lead path"
+        class = "img-fluid">
+        <figcaption>Finalizing the full leaf path.</figcaption>
+    </figure>
+    </li>
+    <li><p>Press &lt;Esc&gt; to hide the bounding box</p>
+    <figure>
+        <img src = "images/HideBoundingBox.gif"
+        alt = "Hiding the bounding box"
+        class = "img-fluid">
+        <figcaption>Hide the bounding box.</figcaption>
+    </figure>
+    </li>
+    <li><p>File &gt; Save your artwork.</p>
+    </li>
+</ol>
+</section>
+
+<section>
+<header><h2>Changing a Smooth Curve to a Corner and Vice Versa</h2></header>
+<p>Now you'll create the leaf stem by adjusting a curved path. You'll be converting a smooth point on the curve
+to a corner point and a corner point to a smooth point. Make a simple teardrop path first.</p>
+
+<ol>
+    <li><p>Magnify the image of the stem as you did for the arrow and leaf images using the Zoom In or Out tool
+    (<img src = "images/ZoomInOut.gif" alt = "Zoom In or Out icon" width = "26" >) in the toolbox.</p>
+    <figure>
+        <img src = "images/StemBoundingBox.gif"
+        alt = "Magnifying the leaf image"
+        class = "img-fluid">
+        <figcaption>Drawing a bounding box around the stem image.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/StemMagnified.gif"
+        alt = "The leaf image magnified"
+        class = "img-fluid">
+        <figcaption>Magnified result.</figcaption>
+    </figure>
+    </li>
+    <li><p>Select the Pen tool (<img src = "images/PenTool.gif" alt = "Pen tool" width = "26" >) in the toolbox, click on Point A at the top of the stem image, and
+    click-drag to the left to the red dot. Release the left mouse button to fix the direction handle.</p>
+    <figure>
+        <img src = "images/TopLeftDirectionHandle.gif"
+        alt = "Top left direction handle"
+        class = "img-fluid">
+        <figcaption>Setting the top left direction handle.</figcaption>
+    </figure>
+    </li>
+    <li><p>Move the cursor to Point B at the bottom of the image. Do not click-drag.</p>
+    <figure>
+        <img src = "images/MovingTheCursorToPointB.gif"
+        alt = "Moving the cursor to Point B"
+        class = "img-fluid">
+        <figcaption>Moving the cursor to Point B.</figcaption>
+    </figure>
+    </li>
+    <li><p>Click on Point B and release the mouse button. You will next close the path by moving
+    the cursor with no button pressed back up to Point A.</p>
+    <figure>
+        <img src = "images/HeadingBackToPointA.gif"
+        alt = "Moving the cursor back to Point A"
+        class = "img-fluid">
+        <figcaption>Move the cursor to Point A at the top of the image.</figcaption>
+    </figure>
+    </li>
+    <li><p>Click on Point A but no not release the left mouse button.</p>
+    <figure>
+        <img src = "images/ClickAtPointADoNotRelease.gif"
+        alt = "Clicking on Point A"
+        class = "img-fluid">
+        <figcaption>Clicking on Point A but not releasing the left mouse button.</figcaption>
+    </figure>
+    </li>
+    <li><p>Now click-drag the cursor to the left until you get to the red dot. See how the straight
+    line you created bends to conform to the curvature of the right side of the underlying stem image.</p>.
+    <figure>
+        <img src = "images/ClickDragFromPointA.gif"
+        alt = "Click-dragging from Point A"
+        class = "img-fluid">
+        <figcaption>Click-dragging from Point A to create curvature in the straight line segment.</figcaption>
+    </figure>
+    </li>
+    <li><p>When you reach the red dot, release the mouse button to finalize the path.</p>
+    <figure>
+        <img src = "images/StartingImageFinalized.gif"
+        alt = "Finalizing the starting path"
+        class = "img-fluid">
+        <figcaption>Finalizing the starting path.</figcaption>
+    </figure>
+    </li>
+    <li><p>You will now edit the path so it matches the path image underneath. Select the Edit Nodes tool
+    (<img src = "images/EditPathsByNodesTool.gif"alt = "Edit paths by nodes tool" width = "26" >) in the toolbox and click on any part of the path you just created. Note how nodes
+    and directional handles appear.</p>
+    <figure>
+        <img src = "images/ClickOnPathWithEditNodesTool.gif"
+        alt = "Clicking on the path with the Edit Nodes tool"
+        class = "img-fluid">
+        <figcaption>Clicking on the path with the Edit Nodes tool.</figcaption>
+    </figure>
+    </li>
+    <li><p>Click on the Make Selected Nodes Corner tool (<img src = "images/MakeSelectedNodesCornerIcon.gif"
+    alt = "Make Selected Nodes Corner icon" width = "26" >) in the toolbar.</p>
+    </li>
+    <li><p>Click-drag the circle at the end of the top-left direction handle to its new position on the
+    right side of the stem image and release the mouse button. Note how the left side curve changes as you move the
+    direction handle.</p>
+    <figure>
+        <img src = "images/MovingLeftDirectionHandle.gif"
+        alt = "Moving the top left direction handle"
+        class = "img-fluid">
+        <figcaption>Click-dragging the top-left direction handle to its new location.</figcaption>
+    </figure>
+    </li>
+    <li><p>You will now round out the bottom part of the part. You will create a new direction handle at Point B by
+    pressing &lt;Shift&gt; and &lt;Shift&gt;-dragging the cursor. Click on Point B, press &lt;Shift&gt;, and click-drag
+    the cursor to the left while still pressing the &lt;Shift&gt; key. See how the original curve segment changes its
+    shape as the cursor moves. It should match the curve underneath. If not, you can edit it with the Edit Nodes tool.</p>
+    <figure>
+        <img src = "images/ClickDragToLeftFromB.gif"
+        alt = "Creating a new direction handle from Point B"
+        class = "img-fluid">
+        <figcaption>&lt;Shift&gt;-click-dragging to the left from Point B.</figcaption>
+    </figure>
+    </li>
+    <li><p>Click on Point B again with the Edit Nodes tool. Now create a direction handle to the right by
+    &lt;Shift&gt;-clicking on Point B just as you did before, not releasing the mouse button, but this time
+    click-dragging the cursor to the right until it is over the circle underneath. Release the left mouse
+    button.</p>
+    <figure>
+        <img src = "images/ClickDragToRightFromB.gif"
+        alt = "Creating a new direction handle from Point B"
+        class = "img-fluid">
+        <figcaption>&lt;Shift&gt;-click-dragging to the right from Point B.</figcaption>
+    </figure>
+    </li>
+    <li><p>Press &lt;Esc&gt; twice to deselect the path and eliminate the bounding box. You have finished editing
+    the stem image. Use the Edit Nodes tool to do any fine-tuning.</p>
+    <figure>
+        <img src = "images/FinishedStem.gif" alt = "Finished stem path"
+        class = "img-fluid">
+        <figcaption>Finished stem path.</figcaption>
+    </figure>
+    </li>
+    <li><p>File &gt; Save.</p>
+    </li>
+</ol>
+</section>
+
+<section>
+<header><h2>Drawing the Pear Shape</h2></header>
+<p>Now you'll draw a single, continuous object that consists of smooth points and corner points.
+Each time you want to change the direction of a curve at a specific point, you'll hold down &lt;Shift&gt;
+to create a corner point.</p>
+
+<ol>
+    <li><p>Click on the Zoom In or Out tool (<img src = "images/ZoomInOut.gif" alt = "Zoom In or Out icon" width = "26" >) in the toolbox, then click on the Zoom to Fit Page in Window (5) icon (<img src =
+    "images/ZoomToFit.gif" alt = "Zoom to fit page in window icon" width = "26" >) in the Zoom In or Out
+    toolbar to fit the artboard in the work window (alternatively, you can press the number <b>5</b> using the keyboard
+    shortcut command to do the same thing).</p>
+    <figure>
+        <img src = "images/PearParts.gif" alt = "Parts of pear artwork"
+        class = "img-fluid">
+    </figure>
+    </li>
+    <li><p>With the Zoom In or Out tool still selected, draw a marquee around the pear outline to magnify it.</p>
+    <figure>
+        <img src = "images/MagnifyingPearImage.gif"
+        alt = "Magnifying the pear outline"
+        class = "img-fluid">
+        <figcaption>Drawing a marquee around the pear outline.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/MagnifiedPear.gif" alt = "The pear magnified"
+        class = "img-fluid">
+        <figcaption>Magnified result.</figcaption>
+    </figure>
+
+    <p>First you'll draw the bite marks on the pear by creating corner points and changing the
+    direction of the curve segments.</p>
+    </li>
+    <li><p>Select the Pen tool (<img src = "images/PenTool.gif" alt = "Pen tool" width = "26" >) in the toolbox. Click on point A and click-drag the Pen tool from point A on the
+    template to the red dot to set the starting anchor point and direction handle of the first curve.
+    Release the mouse button.</p>
+    <figure>
+        <img src = "images/PointAToRedDot.gif"
+        alt = "Creating the first directional handle"
+        class = "img-fluid">
+        <figcaption>Creating the first direction handle.</figcaption>
+    </figure>
+    <p>Magnify the image if you find it too small for comfort.</p>
+    </li>
+    <li><p>Now move the cursor without pressing the left mouse button to point B, then click on point B,
+    and click-drag the cursor to the red dot at the end of the direction handle.<p>
+    <figure>
+        <img src = "images/FirstCurve1.gif"
+        alt = "Creating the first curve"
+        class = "img-fluid">
+        <figcaption>Moving the cursor to point B and then click-dragging to the red dot.</figcaption>
+    </figure>
+    </li>
+    <li><p>Release the mouse button and either press &lt;Enter&gt; or right-click to finalize the
+    first curve segment of the path.</p>
+    <figure>
+        <img src = "images/FirstCurve2.gif"
+        alt = "Finalizing the first curve"
+        class = "img-fluid">
+        <figcaption>Finalizing the first curve.</figcaption>
+    </figure>
+    </li>
+    <li><p>Click now on point B and click-drag to the gold dot on the direction handle from point B
+    to create the second direction handle. Then release the mouse button</p>
+    <figure>
+        <img src = "images/FirstCurve3.gif"
+        alt = "Finalizing the first curve"
+        class = "img-fluid">
+        <figcaption>Finalizing the first curve.</figcaption>
+    </figure>
+    </li>
+    <li><p>Now move the cursor without pressing the left mouse button to point C.<p>
+    <figure>
+        <img src = "images/FirstCurve4.gif"
+        alt = "Moving the cursor to point C"
+        class = "img-fluid">
+        <figcaption>Moving to point C.</figcaption>
+    </figure>
+    </li>
+    <li><p>Click on point C and then click-drag the mouse to the red dot at the end
+    of the direction handle from point C. Release the mouse button.<p>
+    <figure>
+        <img src = "images/FirstCurve5.gif"
+        alt = "From point C to the end of the direction handle"
+        class = "img-fluid">
+        <figcaption>From point C to the end of the direction handle.</figcaption>
+    </figure>
+    </li>
+    <li><p>Finalize the second curve by either right-clicking or pressing &lt;Enter&gt;.<p>
+    <figure>
+        <img src = "images/FirstCurve6.gif"
+        alt = "Finalizing the second curve"
+        class = "img-fluid">
+        <figcaption>Finalizing the second curve.</figcaption>
+    </figure>
+    </li>
+    <li><p>Continue drawing to point D by first moving from point C to point D, clicking on point D,
+click-dragging to the red dot on the direction handle, then releasing the mouse button. Right-click
+or press &lt;Enter&gt; to finalize the curve. You have now created the three bites that are taken out
+of the pear drawing.</p>
+    <figure>
+        <img src = "images/ThirdCurve.gif"
+        alt = "Creating the third curve"
+        class = "img-fluid">
+        <figcaption>Third curve.</figcaption>
+    </figure>
+    <p>Next, you'll complete your drawing of the pear by creating smooth points.</p>
+    </li>
+    <li><p>Drag each of the points from E through I to the red dots on their direction handles, and then
+    click on anchor point K to close the pear shape. Notice that when you click the pointer over anchor point K,
+    the path turns solid black indicating that you have created a closed path, that is, the starting point
+    and the ending point are the same point.</p>
+    <figure>
+        <img src = "images/ClosedPearPath.gif"
+        alt = "Closing the pear path"
+        class = "img-fluid">
+        <figcaption>Completed outline of the pear shape.</figcaption>
+    </figure>
+    </li>
+    <li><p>Press &lt;Esc&gt; to deselect the pear path, then choose File &gt; Save to save your artwork.</p>
+    <figure>
+        <img src = "images/FinalizedPearOutline.gif"
+        alt = "Finalized pear outline"
+        class = "img-fluid">
+        <figcaption>Finalized pear shape.</figcaption>
+    </figure>
+    </li>
+</ol>
+</section>
+
+<section>
+<header><h2>Editing Curves</h2></header>
+<p>To adjust the curves you've drawn, you can drag either the curve's anchor points or its direction
+handles. You can also edit a curve by moving the line.</p>
+<ol>
+	<li><p>Select the Edit Nodes tool (<img src = "images/EditPathsByNodesTool.gif"
+    alt = "Edit paths by nodes tool" width = "26" >) and choose the Make Selected Nodes
+	Smooth icon (<img src = "images/MakeSelectedNodesSmoothIcon.gif" alt = "Make Selected Nodes Smooth Icon"
+	width = "26" >) in the toolbar. Click the outline of the pear. If nodes and in
+	direction handles don't appear on the second click, then click on a different place on the path.</p>
+	<p>Clicking with the Edit Nodes tool displays the curve's direction handles and lets you adjust
+	the shape of individual curved segments. Clicking with the Select tool selects the entire path.</p>
+    <figure>
+        <img src = "images/PearClickEditNodesTool.gif"
+        alt = "Clicking on the pear outline with the Edit Nodes tool"
+        class = "img-fluid">
+        <figcaption>Clicking on the pear outline with the Edit Nodes tool.</figcaption>
+    </figure>
+	</li>
+	<li><p>Click the anchor point G at the top right of the pear to select it, and adjust the
+	segment by dragging the top direction handle as shown in the illustration below.</p>
+    <figure>
+        <img src = "images/PointGAdjust.gif"
+        alt = "Adjusting the segment at point G"
+        class = "img-fluid">
+        <figcaption>Adjusting the segment at point G.</figcaption>
+    </figure>
+	</li>
+	<li><p>In the color palette at the bottom of the work window, click the Color: None box to set
+	the color fill of the pear shape to None. Note the color status of the pear object fill
+	and stroke in the status bar below the color palette.</p>
+    <figure>
+        <img src = "images/FillNone.gif"
+        alt = "Setting the color fill to None"
+        class = "img-fluid">
+        <figcaption>Setting the color fill of the pear shape to None.</figcaption>
+    </figure>
+	</li>
+	<li><p>Now select the Pen tool (<img src = "images/PenTool.gif" alt = "Pen tool" width = "26" >) and drag to draw the small curve on the pear where the arrow pierces it.
+	(Use the dashed line on the template as a guide.)</p>
+	<p><i><b>Note:</b> If you can't see the dashed, curved line on the template, make sure that the Color: None box is set to None in the color palette and that the Stroke is set to black (&lt;Shift&gt;-click the black box in the color
+	palette to set the stroke to black). The status bar below the palette will inform you.</i></p>
+	</li>
+	<li><p>Choose File &lt; Save.</p></li>
+</ol>
+</section>
+
+<aside>
+<header><h4><i>Tips for Drawing Curves</i></h4></header>
+<p><i>Keep the following guidelines in mind to help you draw any kind of curve quickly and easily:</i></p>
+<ul>
+	<li><p><i>Always drag the first direction point in the direction of the bump of the curve, and drag
+	the second direction point in the opposite direction to create a single curve. Dragging both
+	direction points in the same direction creates an S curve.</i></p>
+	</li>
+	<li><p><i>When drawing a series of continuous curves, draw one curve at a time, placing anchor points
+	at the beginning and end of each curve, not at the tip of the curve.</i></p>
+	</li>
+	<li><p><i>Use as few anchor points as possible, placing them as far apart as possible.</i></p>
+	</li>
+</ul>
+<figure>
+	<img src = "images/SimpleSmoothCurve.gif" alt = "Simple smooth curve"
+  class = "img-fluid">
+	<figcaption>Drag in opposite direction to create a smooth curve.</figcaption>
+</figure>
+<figure>
+	<img src = "images/SimpleSCurve.gif" alt = "Simple S curve"
+  class = "img-fluid">
+	<figcaption>Drag in same direction to create an S curve.</figcaption>
+</figure>
+<figure>
+	<img src = "images/Less2MoreEfficientCurves.gif"
+  alt = "Less to more efficient curves"
+  class = "img-fluid">
+	<figcaption>Less to more efficient curves.</figcaption>
+</figure>
+</aside>
+<p>Tip: For information on adding, deleting, and moving anchor points on a path, see Help &gt; Inkscape
+Manual. Go to 7. Paths in the Table of Contents.</p>
+
+<section>
+<header><h2>Finishing the Pear Illustration</h2></header>
+<p>To complete the illustration, you'll make some minor modifications and assemble and paint all
+the objects. Then position parts of the arrow to create the illusion of the pear being pierced.</p>
+
+<h3>Assembling the Parts</h3>
+<ol>
+    <li><p>We will do our assembly work outside of the artboard. Select the leaf path in the lower right
+    hand corner of the template with the Select tool (<img src = "images/SelectionTool.gif"
+    alt = "Selection tool" >). Press &lt;Ctrl&gt;-d to duplicate the path
+    (You might see the screen flicker for a fraction of a second as Inkscape duplicates the path).</p>
+<figure>
+	<img src = "images/SelectLeaf1.gif" alt = "Select the leaf shape"
+  class = "img-fluid">
+	<figcaption>Select the leaf shape.</figcaption>
+</figure>
+<figure>
+	<img src = "images/SelectLeaf2.gif" alt = "Leaf shape selected"
+  class = "img-fluid">
+	<figcaption>Leaf shape selected.</figcaption>
+</figure>
+    </li>
+    <li><p>Drag the duplicate of the leaf to a convenient place outside the artboard so you can work
+    on it without distraction from the underlying template.</p>
+    <figure>
+        <img src = "images/MoveLeaf.gif" alt = "Moving the duplicated leaf"
+        class = "img-fluid">
+        <figcaption>Moving the duplicated leaf shape.</figcaption>
+    </figure>
+    </li>
+    <li><p>With the leaf path still selected (or if you deselected it, then reselect it), choose Object &gt; Transform...
+    The Transform Object dialog box appears. Click on the <b>Scale</b> tab, type in <b>50</b> in the Width or Height text box, set
+    the unit of measurement to <b>%</b> (percent), and check the <b>Scale proportionately</b> checkbox. Click the <b>Apply</b> button.</p>
+    <figure>
+        <img src = "images/TransformDialogBox.gif"
+        alt = "Transform dialog box"
+        class = "img-fluid">
+        <figcaption>The Transform Object dialog box, preparing to rescale the size of the leaf shape.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/LeafScaleResult.gif"
+        alt = "Duplicated leaf rescaled"
+        class = "img-fluid">
+        <figcaption>The duplicate leaf rescaled.</figcaption>
+    </figure>
+    </li>
+    <li><p>With the leaf still selected (reselect it if you deselected it), click on the <b>Rotate</b> tab in the Transform
+    Object dialog box, set the angle to <b>15&deg;</b>, and then click <b>Apply</b>.</p>
+    <figure>
+        <img src = "images/LeafRotate15Degrees.gif"
+        alt = "Duplicated leaf rotated fifteen degrees"
+        class = "img-fluid">
+        <figcaption>The duplicate leaf rotated 15&deg; anti-clockwise.</figcaption>
+    </figure>
+    </li>
+    <li><p>Now select and duplicate the stem path, and move the duplicate stem to your work area by the leaf.</p>
+    <figure>
+        <img src = "images/MoveStem.gif" alt = "Moving the stem"
+        class = "img-fluid">
+        <figcaption>Moving the stem.</figcaption>
+    </figure>
+    </li>
+    <li><p>With the stem path still selected (or if you deselected it, then reselect it), choose Object &gt; Transform...
+    (ignore this step if the dialog box is still visible). Click on the <b>Scale</b> tab, check to see whether <b>50%</b>
+    is still the chosen size transform amount in the Width or Height text box and that the <b>Scale proportionately</b>
+    checkbox is still checked (These settings do persist into a next project). Click the <b>Apply</b> button.</p>
+    <figure>
+        <img src = "images/RescaleStem.gif" alt = "Rescaling the stem"
+        class = "img-fluid">
+        <figcaption>Rescaling the stem.</figcaption>
+    </figure>
+    </li>
+    <li><p>You will now rotate the stem by 45&deg;. With the leaf still selected (reselect it if you deselected it), click on the <b>Rotate</b> tab in the Transform Object dialog box, set the angle to <b>45&deg;</b>, and then click <b>Apply</b>.</p>
+    <figure>
+        <img src = "images/RotateStem45Degrees.gif" alt = "Rotating the stem"
+        class = "img-fluid">
+        <figcaption>Rotating the stem.</figcaption>
+    </figure>
+    </li>
+    <li><p>Select the pear path and move it to the neighborhood of the stem and leaf. Move the stem and the leaf
+    to the top of the pear.</p>
+    <figure>
+        <img src = "images/AssemblingPear1.gif" alt = "Assembling the pear"
+        class = "img-fluid">
+        <figcaption>Assembling the pear.</figcaption>
+    </figure>
+    </li>
+    <li><p>Move the parts of the arrow to ontop of the pear shape. Be aware that the arrow shaft and arrowhead are
+    two separate objects. You can move them separately, group them before you move them (see Tutorial 02, Grouping
+    Objects to review), or use a marquee with the Select tool to enclose both shaft and arrowhead to move them as
+    one item.</p>
+    <p>If sections of the arrow disappear, then they are underneath the pear. Press the &lt;Page Up&gt; key to
+    position them on top of the pear (you might have to press &lt;Page Up&gt; more than once).</p>
+    <figure>
+        <img src = "images/MoveArrow2Pear.gif" alt = "Moving the arrow"
+        class = "img-fluid">
+        <figcaption>Moving the arrow.</figcaption>
+    </figure>
+    </li>
+    <li><p>With the arrow still selected (reselect both shaft and head if you deselected the arrow shape), move it
+    so it lies on top of the pear. You will work with the arrow shaft and arrowhead separately.
+    If you grouped the arrow shaft and arrowhead together, ungroup them now by selecting them with the Select tool
+    (<img src = "images/SelectionTool.gif" alt = "Selection tool" >) and pressing
+    &lt;Shift&gt;&ndash;&lt;Ctrl&gt;&ndash;g.</p>
+    </li>
+    <li><p>Select the arrow shaft with the Select tool and position the arrow shaft (both shaft pieces will move
+    as if they are still one piece), so the top of the lower half touches the dent inside the pear shape.</p>
+    <figure>
+        <img src = "images/MoveArrowShaft1.gif"
+        alt = "Moving the arrow shaft"
+        class = "img-fluid">
+        <figcaption>Moving the arrow shaft.</figcaption>
+    </figure>
+    </li>
+    <li><p>Select the Edit Nodes tool (<img src = "images/EditPathsByNodesTool.gif" alt = "Edit paths by nodes tool" width = "26" >), click on the end anchor of the lower half of the shaft and pull it out
+    in the direction of the shaft.</p>
+    <figure>
+        <img src = "images/ExtendingTheArrowShaft.gif"
+        alt = "Extending the arrow shaft"
+        class = "img-fluid">
+        <figcaption>Extending the arrow shaft.</figcaption>
+    </figure>
+    </li>
+    <li><p>With the Select tool, select and move the arrowhead out of the line of direction of the arrow
+    shaft. You will extend the shaft out further from the path of the pear shape.</p>
+    <figure>
+        <img src = "images/ExtendingTheArrowShaft2.gif"
+        alt = "Extending the arrow shaft"
+        class = "img-fluid">
+        <figcaption>Extending the arrow shaft away from the pear path.</figcaption>
+    </figure>
+    </li>
+
+    <li><p>With the Edit Nodes tool, click on the end anchor of the upper half of the shaft and move it up
+    in the direction of the shaft so that it touches the path of the pear shape, creating the impression
+    that the line segment is coming out from in back of the pear.</p>
+    <figure>
+        <img src = "images/ExtendingTheArrowShaft3.gif"
+        alt = "Extending the arrow shaft"
+        class = "img-fluid">
+        <figcaption>Extending the arrow shaft.</figcaption>
+    </figure>
+    </li>
+    <li><p>Select the arrowhead with the Select tool and move it so it fits just right at the head of the
+    arrow shaft.</p>
+    <figure>
+        <img src = "images/MovingTheArrowHead.gif"
+        alt = "Moving the arrowhead"
+        class = "img-fluid">
+        <figcaption>Moving the arrow head.</figcaption>
+    </figure>
+    </li>
+    <li><p>Deselect the figure.</p>
+    <figure>
+        <img src = "images/FinishedPearOutline.gif"
+        alt = "Finished pear outline"
+        class = "img-fluid">
+        <figcaption>Finished pear shape.</figcaption>
+    </figure>
+    </li>
+</ol>
+</section>
+
+<section>
+<header><h3>Painting the Artwork</h3></header>
+<p>Now paint the objects as you like. You will use the <b>Style Indicator</b>, which is an area
+in the lower left corner of the window containing the Fill Box, Stroke Box, Stroke thickness, and
+Opacity. In the color illustration at the beginning of this tutorial, the stroke on the leaf, the stem,
+and the pear have been removed, and the fills were created with custom-made gradients. The arrow
+is given a dark blue color. Details were drawn on the leaf, the stem, and the round part of the
+pear using the paintbrush tool and the Pen tool. We also stroked the curve where the arrow pierces the pear.</p>
+<ol>
+    <li><p>Move the cursor to the Color palette. With the mouse wheel, roll the palette right or left until
+    you see your color of choice. Click on the color box, click-drag it down and drop it in the <b>Fill</b> box of
+    the <b>Style Indicator</b>. Your object is filled with that color. Alternatively, you can select the object
+    you want to color-fill and just click on the box containing the color you want. For example:</p>
+    <figure>
+        <img src = "images/DragColorIntoFillBox.gif"
+        alt = "Drag your color of choice into the Fill Box"
+        class = "img-fluid">
+        <figcaption>Dragging your color of choice into the Fill box of the Style Indicator.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/ColorFilledArrowhead.gif"
+        alt = "Arrowhead filled with dark blue"
+        class = "img-fluid">
+        <figcaption>Arrowhead filled with dark blue.</figcaption>
+    </figure>
+    </li>
+    <li><p>Now drag your color of choice down and drop it on the <b>Stroke</b> box of the Style Indicator to
+    change the stroke color of a selected object. Because you applied dark blue to your object in the
+    previous step, the Fill box is dark blue. The Fill and Stroke boxes can be very handy in showing you
+    the color status of a selected object and manipulating its color.</p>
+        <figure>
+        <img src = "images/DragColorIntoStrokeBox.gif"
+        alt = "Drag your color of choice into the Stroke Box"
+        class = "img-fluid">
+        <figcaption>Dragging your color of choice into the Stroke box of the Style Indicator.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/StrokeColorChanged.gif"
+        alt = "Arrowhead given dark blue stroke"
+        class = "img-fluid">
+        <figcaption>Arrowhead given a dark blue stroke.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/StrokeColorBoxDarkBlue.gif"
+        alt = "Stroke color box is now dark blue"
+        class = "img-fluid">
+        <figcaption>Stroke color box is now dark blue.</figcaption>
+    </figure>
+    <p>The <b>1.5</b> next to the Stroke color box indicates the thickness of the stroke in pixels.
+    The <b>O</b> next to the <b>100</b> stands for the <b>opacity</b> (the opposite of transparency) of
+    the selected object. The selected object is currently 100% opaque. Using the Opacity box allows you
+    to set the degree of transparency from totally transparent (0%) to totally opaque (100%).</p>
+    <p><b>Note:</b> The None color box (<img src = "images/NoneColorBox.gif" alt = "None color box"
+    class = "center">) is a buggy feature. It works well if you want to delete a fill color. However,
+    if you want to delete a stroke, you need to &lt;Shift&gt;-click on the None box. I recommend that
+    you memorize this technique. It can come in very handy when you are manipulating both shape and
+    color of an object.</p>
+    </li>
+    <li><p>Choose File &gt; Save to save your work, then File &gt; Close to close the file.</p>
+    </li>
+</ol>
+</section>
+
+<p>You've completed this tutorial on drawing straight lines and curves. For additional practice with the
+Pen tool, try tracing over images with it. As you practice more with the Pen tool, you'll become more
+adept at drawing the kinds of curves and shapes you want.</p>
+
+<aside>
+<p><i><b>Tip:</b> Because this tutorial does not cover all the Inkscape tools and techniques possible, please
+spend time with the Inkscape Manual to find out what else is available to you as your expertise grows.
+With respect to this particular tutorial, go to Help &gt; Inkscape Manual and select <b>10. Attributes</b>
+in the Table of Contents. Experiment with the tools and techniques the <b>Fill and Stroke Paint</b>
+and <b>Stroke Style</b> sections present.</i></p>
+</aside>
+
+<section>
+<header><h2>Exploring on Your Own</h2></header>
+<p>Now that you've used the Pen tool to draw a pear with precise B&eacute;zier curves, try drawing the pear
+using the Pencil tool to create a hand-drawn look. You can edit lines that you draw using the Pencil tool and
+Edit Nodes tool to change their shape, and you can use the Pencil tool Tool Controls bar, Path Simplify command,
+and Erase Existing Paths tool to edit the drawing further.</p>
+<ol>
+    <li><p>Open the <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial04/PearParts.svg"><b>PearParts.svg</b></a> file again and save it as <b>Pear2.svg</b>.
+    </li>
+    <li><p>Select the Pencil tool (<img src = "images/PencilTool.gif" alt = "Pencil tool" width = "26">)
+    in the toolbox, and draw the pear on one continuous path without releasing the mouse button. To close the path,
+    click-drag the Pencil tool cursor to the starting point, which is a small open square. The starting square will
+    get a red fill when the cursor hovers above it, signaling that you can now close the path. Release the left mouse
+    button. The path turns into a solid black path inside a bounding box.</p>
+
+    <p>Anchor points are set down as you draw with the Pencil tool, and you can adjust them once the path is complete.
+    The number of anchor points is determined by the length and complexity of the path and by the tolerance value
+    set in the Inkscape Pencil tool Tool Controls bar. In the figure below, the smoothness tolerance is set to <b>10</b>.
+    The Inkscape default value for the smoothness tolerance is <b>4</b>. The higher the number, the smoother the curve;
+    the lower the number, the more irregular the curve.</p>
+    <figure>
+        <img src = "images/PencilToolControlBar.gif"
+        alt = "Pencil tool control bar"
+        class = "img-fluid">
+        <figcaption>Pencil tool control bar. Smoothness tolerance is set to <b>10</b>.</figcaption>
+    </figure>
+    </li>
+    <li><p>Use the Pencil tool (<img src = "images/PencilTool.gif" alt = "Pencil tool" width = "26">) redraw the shape of the pear with different tolerance settings. Note how finely the pear path
+    is defined with many anchor points at smoothness setting <b>10</b>, compared a redrawing done with
+    a smoothness setting <b>20</b>.</p>
+    <p>An alternative to smoothing a rough-drawn path is the Simplify Path command. Use Path &gt; Simplify or
+    press &lt;Ctrl&gt;-L. One application of the Simplify Path command to the left-most drawing reduces the
+    number of anchor points significantly, as you can see below.</p>
+    <figure>
+        <img src = "images/PencilToolSettings.gif"
+        alt = "Pencil tool settings"
+        class = "img-fluid">
+        <figcaption>Pencil tool results from different tolerance settings and
+        one application of the Simplify command (&lt;Ctrl&gt;-L).<br>
+        Plain paths are shown in the top row, corresponding paths with nodes are shown in the bottom row.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/SimplifyPathAppliedTwice.gif"
+        alt = "Simplify path command applied twice"
+        class = "img-fluid">
+        <figcaption>Simplify Path command applied twice on an open path.</figcaption>
+    </figure>
+
+    <p>Depending on where you begin to redraw a path and in which direction you drag, you might get unexpected results.
+    For example, you might unintentionally change a closed path to an open path, change on open path to a closed path,
+    or lose a portion of a shape.</p>
+    </li>
+    <li><p>Use the Simplify Path command (Path &gt; Simplify or &lt;Ctrl&gt;-L) to round out the shape of a curved
+    segment (deleting anchor points if necessary).</p>
+    <p>The number of anchor points is determined by the length and complexity of the new path, as well as by the
+    smoothness tolerance values set in the Pencil tool Control bar (see 2. above).</p>
+    </li>
+</ol>
+
+<aside>
+<header><h3>Smoothing the Path with the Simplify Path command (Path &gt; Simplify or &lt;Ctrl&gt;-L)</h3></header>
+<p>The Simplify Path command lets you smooth out an existing stroke or path.
+The Simplify Path command retains the original shape of the path as much as possible.</p>
+<h4>To use the Simplify Path command:</h4>
+<ol>
+    <li>If the path you wish to smooth is not selected, select it with the Select tool.</li>
+    <li>Do one of the following:
+        <ul>
+            <li>Choose Path &gt; Simplify.</li>
+            <li>Press &lt;Ctrl&gt;-L (or &lt;Ctrl&gt;-l), the command is case-insensitive).</li>
+        </ul>
+    </li>
+    <li><p>Continue choosing Path &gt; Simplify or pressing &lt;Ctrl&gt;-L (or &lt;Ctrl&gt;-l)
+    until the stroke or path has the desired smoothness.</p>
+    <figure>
+        <img src = "images/SimplifyPathAppliedThrice.gif"
+        alt = "Simplify path command applied three times"
+        class = "img-fluid">
+        <figcaption>Simplify Path command applied three times on an open path.<br>
+        Note how the number of anchor points steadily decreases with each application.</figcaption>
+    </figure>
+    </li>
+</ol>
+</aside>
+
+<ol start = "5">
+    <li>Use the Delete Segment between Two Non-Endpoint Nodes tool
+    (<img src = "images/DeleteSegmentBetween2NonEndpointNodes.gif" alt = "Delete segment between two non-endpoint nodes icon" width = "26">) in the Edit Nodes toolbar to delete segments on the path of the pear,
+    then redraw them using the Pencil tool (<img src = "images/PencilTool.gif" alt = "Pencil tool"
+    width = "26">).
+    </li>
+</ol>
+
+<aside>
+<header><h4>Erasing the Path with the Delete Segment between Two Non-Endpoint Nodes tool
+(<img src = "images/DeleteSegmentBetween2NonEndpointNodes.gif" alt = "Delete segment between two non-endpoint nodes icon" width = "26">)</h4></header>
+<p>The Delete Segment between Two Non-Endpoint Nodes tool (Delete Segment tool, for short) lets you remove
+a portion of an existing path or stroke. You can use the Delete Segment tool on paths (including brushed paths),
+but not on text or meshes.</p>
+    <figure>
+        <img src = "images/DeletePathSegment.gif"
+        alt = "Deleting a path segment"
+        class = "img-fluid">
+        <figcaption>Using the Edit Nodes tool to delete part of a path.</figcaption>
+    </figure>
+<h4>To Use the Delete Segment between Two Non-Endpoint Nodes Tool:</h4>
+<ol>
+    <li><p>Using the Edit Nodes tool, select the entire path that you want to modify.</p>
+    </li>
+    <li><p>Then, still using the Edit Nodes tool, select the segment of path that you
+    want to delete. Make sure that one of the two endpoints of the path segment are highlighted.
+    Reselect, otherwise.</p>
+    </li>
+    <li><p>Click on the Delete Segment tool (<img src = "images/DeleteSegmentBetween2NonEndpointNodes.gif"
+    alt = "Delete segment between two non-endpoint nodes icon" width = "26">) in the
+    Edit Nodes toolbar to delete the path segment.</p>
+    </li>
+    <li><p>Press &lt;Esc&gt; to deselect the path.</p>
+    </li>
+</ol>
+</aside>
+</section>
+
+<aside>
+<p><i><b>Tip 1:</b> You can find more information on the Pencil tool in the Inkscape Manual. Visit section
+<b>7. Paths &gt; Creating Paths, The Pencil Tool</b>.
+</i></p>
+<p><i><b>Tip 2:</b> To learn more about the Edit Nodes tool, see the Inkscape Manual, visit section <b> 7. Paths &gt;
+Editing Paths &gt; Using the Node Tool-Tool Controls.</b></i></p>
+</aside>
+
+<hr>
+
+<section>
+<header><h2>Review Questions</h2></header>
+<ol>
+    <li><p>Describe how to draw straight vertical, horizontal, or diagonal lines using the Pen tool.</p>
+    </li>
+    <li><p>How do you draw a curved line using the Pen tool?</p>
+    </li>
+    <li><p>How do you draw a corner point on a curved line?</p>
+    </li>
+    <li><p>How do you change a smooth point on a curve to a corner point?</p>
+    </li>
+    <li><p>Which tool would you use edit a segment on a curved line?</p>
+    </li>
+</ol>
+
+<header><h2>Review answers</h2></header>
+<ol>
+    <li><p>To draw a straight line, you click twice with the Pen tool &mdash; the first click sets the starting
+    anchor point, and the second click sets the ending anchor point of the line. To constrain the line vertically,
+    horizontally, or along a 45° diagonal, hold down &lt;Ctrl&gt; as you click with the Pen tool.</p>
+    </li>
+    <li><p>To draw a curved line using the Pen tool, you hold down the left mouse button and click-drag
+    to create the starting anchor point and set the direction of the curve, and then you click to end the curve.</p>
+    </li>
+    <li><p>To draw a corner point on a curved line, click on the ending point of your first curve. Click-drag
+    the direction handle on the endpoint of the curve to fine-tune the direction of the path. Either right-click or
+    press &lt;Enter&gt; to finalize the curve segment. Then click on the endpoint and click-drag the cursor in
+    the direction the next curve segment will take. Move the cursor to the next endpoint without click-dragging to
+    draw the next curve.</p>
+    </li>
+    <li><p><b>Use the Edit paths by nodes</b> tool (<img src = "images/EditPathsByNodesTool.gif"
+    alt = "Edit paths by nodes tool" width = "26" >) to select the anchor point,
+    and then click on the Make Selected Nodes Corner icon <img src = "images/MakeSelectedNodesCornerIcon.gif"
+    alt = "Make selected nodes corner icon" width = "26">) in the toolbar. &lt;Shift&gt;-drag
+    a direction handle from the node to change the direction of one of the curves. If both curves have different
+    starting angles, &lt;Shift&gt;-drag the mouse to create a direction handle for each side of the cusp.</p>
+    </li>
+    <li><p>To edit a segment on a curved line, select the <b>Edit paths by nodes</b> tool
+    (<img src = "images/EditPathsByNodesTool.gif" alt = "Edit paths by nodes tool" width = "26" >) and drag the segment to move it, or drag a direction handle on an anchor point
+    to adjust the length and shape of the segment.</p>
+    </li>
+</ol>
+</section>
+<!-- Creative Commons ShareAlike 4.0 International License information -->
+<footer>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" >
+  <img src = "images/CreativeCommonsLicenseLogo88x31.png"
+  alt = "Creative Commons ShareAlike License" class = "img-fluid">&nbsp;This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</footer>
+		</div>
+	</div>
+</div>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

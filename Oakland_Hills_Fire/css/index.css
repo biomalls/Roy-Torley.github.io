@@ -1,0 +1,79 @@
+body {
+    background: #333 url( "../images/Noisey80percentBlkUniform4percent.jpg" ) fixed;
+		font-family: 'Source Serif Pro', serif;
+}
+
+#left-border {
+    background-image: url("../images/woodborder.png");
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 74px;
+    height: 100%;
+    box-shadow: 0 0 8px #222;
+}
+
+h1, h2 {
+	text-align: center;
+	color: #151515;
+	text-shadow: 0 2px 3px #686868;
+	font-size: 260%;
+}
+
+h2 {
+  font-size: 200%;
+}
+
+div#list {
+    margin-top: 2%;
+    margin-left: 40%;
+    font-size: 16pt;
+}
+
+div.bar {
+    height: 4px;
+    background-color: #151515;
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 2px 3px #555;
+}
+
+li {
+    padding: 4px;
+    color: gold;
+    list-style-type: square;
+}
+
+li a:link, li a:visited {
+    color: gold;
+}
+
+li a:hover {
+    color: lightyellow;
+}
+
+li a:active {
+    color: red;
+}
+
+a#back, button#back {
+	z-index: 1;
+	position: absolute;
+	top: 12rem;
+	left: 12rem;
+	color: black;
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	font-weight: bold;
+	padding: 0.25em 0.6em;
+	border: 1px solid black;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: 1px 1px 1px #333;
+	text-decoration: none;
+	outline: none;
+}

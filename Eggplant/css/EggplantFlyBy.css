@@ -1,0 +1,43 @@
+h1 {
+	font-family: 'Source Serif Pro', serif;
+}
+
+button {
+	z-index: 1;
+	position: relative;
+	top: 0;
+	left: 10%;
+	color: black;
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	font-weight: bold;
+	padding: 0.25em 0.6em;
+	border: 1px solid black;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: 1px 1px 1px #333;
+	text-decoration: none;
+	outline: none;
+}
+
+@media screen and (min-width: 590px) {
+	.spacing {
+		position: relative;
+		top: -70px;
+	}
+}
+
+@media screen and (max-width: 590px) {
+	.spacing {
+		position: relative;
+		top: 0;
+	}
+}
+
+video {
+	transform: scale( 0.7 );
+}

@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang = "en-us">
+<head>
+  <meta charset = "utf-8" >
+  <title>Cool JavaScript example</title>
+  <meta name = "author" content = "Roy Torley" >
+  <link rel = "stylesheet" href = "css/CoolJavaScript.css" />
+  <style>
+    #top {
+      position: absolute;
+      top: 1.5rem;
+      left: 1.5rem;
+    }
+
+    #bottom {
+      position: absolute;
+      left: 0.5rem;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <a href = "https://roy-torley.github.io/" id = "top" >Home</a>
+  <h1>This is a really cool JavaScript example!</h1>
+</header>
+
+<nav>
+  <a href = "#video" >See movie</a>
+</nav>
+
+<section id = "code">
+<header class = "second-level" ><h4>HTML</h4></header>
+
+<div id = "html" >
+<pre>
+&lt;!doctype html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Cool JavaScript example&lt;/title&gt;
+  &lt;meta charset = "utf-8" &gt;
+  &lt;link rel = "stylesheet" href = "css/CoolJavaScript.css" /&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+&lt;header id = "top"&gt;
+  &lt;h1&gt;This is a really cool JavaScript example!&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;section&gt;
+  &lt;video src = "video/cometAnim.mp4" width = "320" height = "250" autoplay controls &gt;
+  &lt;/video&gt;
+
+  &lt;hr&gt;
+
+  &lt;h2&gt;Famous Presidential Quotes&lt;/h2&gt;
+
+  &lt;form&gt;
+    &lt;input type = "button" value = "Lincoln"
+        onClick = "saySomething( 'Four score and seven years ago ...' )" &gt;
+    &lt;input type = "button" value = "Kennedy"
+        onClick = "saySomething( 'Ask not what your country can do for you ...' )" &gt;
+    &lt;input type = "button" value = "Nixon"
+        onClick = "saySomething( 'I am not a crook!' )" &gt;
+  &lt;/form&gt;
+
+&lt;/section&gt;
+
+&lt;hr&gt;
+
+&lt;a href = "#top" &gt;Back to top&lt;/a&gt;
+
+&lt;footer&gt;
+I hope you had a good visit!
+&lt;/footer&gt;
+
+&lt;script&gt;
+  &lt;!-- Hide script from old browsers
+
+  function saySomething( message ) {
+    alert( message )
+  }
+
+  // Ending hiding script from older browsers --&gt;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;
+</pre>
+</div>
+
+<header class = "second-level" ><h4>CSS</h4></header>
+<div id = "css">
+<pre>
+body {
+  background-color: lightgreen;
+}
+
+header {
+  text-align: center;
+}
+
+nav {
+  width: 10%;
+  height: 32em;
+  float: left;
+  font-size: 150%;
+}
+
+footer {
+  text-align: center;
+  font-weight: bold;
+  font-size: 400%;
+}
+
+a {
+  font-size: 150%;
+}
+</pre>
+</div>
+
+<header class = "second-level" ><h4>JavaScript</h4></header>
+<div id = "css">
+<pre>
+&lt;script&gt;
+  &lt;!-- Hide script from old browsers
+
+  function saySomething( message ) {
+    alert( message )
+  }
+
+  // Ending hiding script from older browsers --&gt;
+&lt;/script&gt;
+</pre>
+</div>
+</section>
+<div id = "clear" ></div>
+
+<section id = "result" >
+  <div id = "video" ></div>
+  <video src = "video/cometAnim.mp4" poster = "images/cometAnim.jpg"
+    width = "320" height = "250" autoplay controls >
+  </video>
+ <hr />
+ <h2>Famous Presidential Quotes
+ </h2>
+
+<form>
+  <input type = "button" value = "Lincoln" onClick = "saySomething( 'Four score and seven years ago ...' )" >
+  <input type = "button" value = "Kennedy" onClick = "saySomething( 'Ask not what your country can do for you ...' )" >
+  <input type = "button" value = "Nixon" onClick = "saySomething( 'I am not a crook!' )" >
+</form>
+
+
+</section>
+<hr />
+<a href = "#top" >Back to top</a><br>
+<a href = "https://roy-torley.github.io/" id = "bottom" >Home</a>
+<footer>
+I hope you had a good visit!
+</footer>
+<script>
+  <!-- Hide script from old browsers
+
+  function saySomething( message ) {
+    alert( message )
+  }
+
+  // Ending hiding script from older browsers -->
+</script>
+</body>
+</html>

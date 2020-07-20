@@ -1,0 +1,568 @@
+<!doctype html>
+
+<html lang = "en-us" >
+<head>
+  <meta charset = "utf-8" >
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+  <title>Inkscape Tutorial 2 &ndash; Selection Basics</title>
+  <meta name = "author" content = "Roy F. Torley" >
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet" crossorigin="anonymous">
+</head>
+
+<body>
+<div class = "container">
+	<div class = "row">
+		<div class = "col-md-10 offset-md-1">
+<header>
+  <h1>Tutorial 2 &ndash; Selection Basics</h1>
+  <figure>
+    <img src = "images/DeBesteFriten.png" alt = "Sample art work"
+    width = "300" height = "285" class = "img-fluid">
+  </figure>
+  <p>Choosing the correct selection method to make changes to objects is an essential skill
+  to develop. In this tutorial, you will learn how to correctly locate and select objects using
+  the Selection tools, as well as protect objects by hiding and locking. Later, you will build
+  on these methods by integrating layers.</p>
+</header>
+
+<hr>
+
+<div>
+<p>In this tutorial on the work area, you will learn how to:</p>
+
+<ul>
+  <li>differentiate when to use the Selection, Direct Selection, or Group Selection tools.</li>
+  <li>group and ungroup items.</li>
+  <li>clone items with the Select tool.</li>
+  <li>lock and hide items for organizational purposes.</li>
+</ul>
+</div>
+
+<header>
+  <h2>Prepping for this tutorial</h2>
+<p>You might have heard the saying, "You have to select it, to affect it."
+When changing colors, sizes, adding effects or any number of attributes,
+you must first select the object to which you are applying the changes.
+Consider this tutorial a primer in the fundamentals of the Selection tools.
+More advanced selection techniques using layers are discussed in Tutorial 7,
+&ldquo;Working with Layers.&rdquo;</p>
+
+</header>
+
+<div>
+<ol>
+  <li>Start Inkscape.</li>
+
+  <li>Click on File &gt; Open and open the <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial02/Tutorial02Image01.svg"><b>Tutorial02Image01.svg</b></a> file in the Tutorial02 folder.
+    <figure>
+      <img src = "images/YellowStars.png" alt = "Nine yellow stars"
+      class = "img-fluid">
+    </figure>
+  </li>
+</ol>
+</div>
+
+<section>
+<header>
+  <h2>Using the Select Tool</h2>
+</header>
+<ol start = "3">
+  <li><p>Choose the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool"
+  width = "26" >). Position the mouse over the different star shapes without clicking.
+  Note the crossed arrow icon that appears as you pass over objects, indicating that there is an object
+  that can be selected under the pointer.</p>
+    <figure>
+      <img src = "images/YellowStarSelectTool.gif" alt = "Yellow star with Select tool"
+      class = "img-fluid">
+      <figcaption>Select tool with crossed arrow icon.</figcaption>
+    </figure>
+<p>Click on the yellow star in the upper left corner. A bounding box with eight handles appears.</p>
+    <figure>
+      <img src = "images/YellowStarRubberbandBox.gif" alt = "Yellow star with bounding box"
+      class = "img-fluid">
+      <figcaption>The bounding box</figcaption>
+    </figure>
+<p>The bounding box is used for transformations such as resizing and rotating; it also indicates
+that this item is selected and ready to be edited. This could mean changing the size, color,
+position, or any number of other things.</p>
+  </li>
+  <li>Using the Select Tool, click on the star to the right and notice that the first star
+  is now deselected and only the second star is selected.
+    <figure>
+      <img src = "images/SecondStarSelected.gif" alt = "Second yellow star selected"
+      class = "img-fluid">
+      <figcaption>Second star selected.</figcaption>
+    </figure>
+  </li>
+
+  <li>
+  <p>Add another star to the selection by holding down the &lt;Shift&gt; key and clicking on
+  the first star. Both stars are now selected.</p>
+  <figure>
+      <img src = "images/TwoStarsSelected.gif" alt = "Two stars selected"
+      class = "img-fluid">
+      <figcaption>Add other items to a selection by holding down the &lt;Shift&gt; key.</figcaption>
+    </figure>
+  </li>
+  <li>Reposition the stars by clicking in the center of either selected star and dragging.
+  Since both are selected, they travel together.
+  </li>
+</ol>
+
+<aside>Note: When you select an item without a fill, you must click on the stroke (border).
+</aside>
+<br>
+<ol start = "7" >
+  <li>Deselect the stars by clicking on the canvas where there are no objects. Alternatively,
+press &lt;Esc&gt; (the Escape key).
+  </li>
+  <li>Revert by choosing File > Revert. An alert box will appear warning you that you
+will lose any changes made to your document - are you sure you want to reload the document...?
+Click on OK. File <b>YellowStars.svg</b> is reloaded and the stars appear in their original
+positions.</li>
+</ol>
+</section>
+
+<section>
+<header>
+  <h2>Marquee Select</h2>
+</header>
+<p>Some selections may be easier to make by creating a marquee around the objects that you want to select.</p>
+<ol>
+  <li>With the same file, <b>YellowStars.svg</b>, open, switch to the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26" >). Instead of &lt;Shift&gt;+clicking to select
+the first two stars, position the mouse above the upper left star and then click and drag downward and
+to the right to create a marquee that completely encloses the two stars.
+  <figure>
+    <img src = "images/MarqueedStars1.gif"
+    alt = "Two stars with a marquee drawn around them"
+    class = "img-fluid">
+    <figcaption>Marquee drawn around two stars.</figcaption>
+  </figure>
+  <figure>
+    <img src = "images/MarqueedStars2.gif" alt = "Two stars selected"
+    class = "img-fluid">
+    <figcaption>The two stars are now selected.</figcaption>
+  </figure>
+  </li>
+</ol>
+</section>
+
+<section>
+<header>
+  <h2>Grouping Objects</h2>
+</header>
+<p>You can combine several objects into a group so that they are treated as a single unit.
+This way, you can move or transform a number of objects without affecting their attributes
+or positions relative to each other.</p>
+
+<ol>
+  <li>With the same file, <b>YellowStars.svg</b>, open, switch to the Select tool
+(<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26" >). Click outside the
+top left of the first star and drag a marquee that encompasses each star on the first row to
+select all three.
+  </li>
+  <li>Choose Object &gt; Group, then press &lt;Esc&gt;.</li>
+  <li>With the Select tool, click on the first star. Notice that since it is grouped with
+  the other two stars, all three become selected.
+  <figure>
+    <img src = "images/AllThreeStarsGrouped.gif"
+    alt = "Grouped stars with rubberband box"
+    class = "img-fluid">
+    <figcaption>Click one, all in the group become selected.</figcaption>
+  </figure>
+  </li>
+</ol>
+</section>
+
+<section>
+<header>
+  <h2>Adding to a Group</h2>
+</header>
+<p>Groups can also be nested; that is, they can be grouped within other objects or
+groups to form larger groups.</p>
+
+<ol>
+  <li><p>With the top group of three stars still selected, &lt;Shift&gt;+click on the first star
+  in the second row.</p>
+  <figure>
+    <img src = "images/AddingToTheGroup1.gif"
+    alt = "Adding a star to a group of three"
+    class = "img-fluid">
+  </figure>
+  <p>With this added to the selection, choose Object &gt; Group.</p>
+  <figure>
+    <img src = "images/AddingToTheGroup2.gif"
+    alt = "Adding a star to a group of three"
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li>&lt;Shift&gt;+click on the middle star in the second row and also choose Object &gt;
+Group.
+  </li>
+  <li>Press &lt;Esc&gt; when finished.</li>
+  <li>Now, click on any of the five grouped stars. See how the top and middle rows of stars
+are enclosed in the bounding box.</li>
+  <li>Click anywhere outside the box to deselect the group, and then click on the third star
+in the second row. Only that star is enclosed in the rubberband box. It has not been included in
+the group yet.
+  </li>
+  <li>&lt;Shift&gt;+click on one of the grouped stars to include the group to the "group of one."
+The bounding box encloses the two top rows of stars and includes a smaller box highlighting
+the one "special star."
+  <figure>
+    <img src = "images/AddingToTheGroup3.gif"
+    alt = "Adding a star to a group of three"
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li>Choose Object &gt; Group.</li>
+  <li>Click outside the box and then click on the third star in the second row. The box now
+encloses the top two rows of stars, indicating that the last star you included is now part
+of the group.
+  </li>
+</ol>
+
+<p>You have created groups within groups. This is a common technique used when designing artwork,
+but can be confusing when editing existing files where grouping has been used.</p>
+
+<ol start = "4" >
+  <li>Choose the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool"
+	width = "26">) and click on any one of the grouped stars. They all become selected.
+  </li>
+  <li>Click off the stars to a blank area on the artboard to deselect them.</li>
+  <li>Ungroup items by choosing Object &gt; Ungroup. Note that you will have to repeat this
+  action for each of the groups created. In other words, to get these back to individual stars,
+  we have to choose Object &gt; Ungroup four times.
+  </li>
+</ol>
+
+<aside><p>Note: Read Tutorial 7, "Working with Layers." If you have a complex setup of nested groups
+and want to ungroup just one item, you can locate and select that item much more easily
+using layers, and you don't have to ungroup.</p>
+</aside>
+
+<ol start = "7" >
+  <li>File > Close without saving.</li>
+</ol>
+</section>
+
+<section>
+<header>
+  <h2>The Edit Path by Nodes Tool</h2>
+</header>
+<p>There are instances when you want to select and manipulate specific line segments and nodes
+without affecting other paths and nodes in an object. You can with the Edit Path by Nodes Tool.
+In this part of the tutorial, you will select certain points on the stars in the top row of stars used
+in the last example, and manipulate them.  Before you start, you need to know that regular geometric
+shapes, such as the stars, are described internally by scalable vector equations that need only the
+positions of one inner and one outer point (node) to fully determine the shape of the star.</p>
+  <figure>
+    <img src = "images/StarAnatomy.gif" alt = "Anatomy of a star showing nodes"
+    class = "img-fluid">
+  </figure>
+<p>To manipulate individual paths and nodes on a star, or other type of regular polygon for that
+matter, you need to strip the star or polygon of its original equations so that it is
+represented internally as a series of individual paths and nodes. The original describing equations
+are eliminated, so there is no previous computer knowledge of what the shape was. With this new
+internal representation, you can now change the position of individual nodes.</p>
+
+<ol>
+  <li>Click on File &gt; Open and open the <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial02/Tutorial02Image01.svg"><b>Tutorial02Image01.svg</b></a> file in the Tutorial02
+folder.
+  </li>
+  <li>Marquee select the three stars in the top row.
+  <figure>
+    <img src = "images/Top3StarsSelected.gif" alt = "Selecting the top 3 stars"
+    class = "img-fluid">
+    <figcaption>Selecting the top 3 stars</figcaption>
+  </figure>
+  <figure>
+    <img src = "images/Top3StarsSelected2.gif" alt = "Top 3 stars selected"
+    class = "img-fluid">
+    <figcaption>Top 3 stars selected</figcaption>
+  </figure>
+  </li>
+  <li><p>With the three stars still selected, choose Path &gt; Object to path.</p></li>
+  <li><p>Click on the Edit Nodes tool (<img src = "images/EditPathsTool.gif" alt = "Edit Path by Nodes tool"
+  width = "26" >).</p>
+  <p>The selected stars are now shown as paths and nodes.</p>
+  <figure>
+    <img src = "images/StarPathsAndNodes.gif"
+    alt = "The top stars are now paths and nodes."
+    class = "img-fluid">
+    <figcaption>The top 3 stars appearing as paths and nodes</figcaption>
+  </figure>
+  </li>
+  <li>Click on the top point of the third selected star and drag it to the right.
+  <figure>
+    <img src = "images/DraggingPointToTheRight.gif"
+    alt = "Dragging a single star point to the right"
+    class = "img-fluid">
+  </figure>
+  <p>Note how the selected node turns red, indicating that it is active. When you release
+the left mouse button and move the cursor off the node, it turns blue to indicate that it
+is still active and ready to be moved.</p>
+  </li>
+  <li>Choose Edit &gt; Undo: Move nodes to undo your latest action of repositioning the star point.</li>
+  <li>Click on the white background to deselect the stars.</li>
+  <li>Now click on the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool"
+	width = "26" >) and reselect the top three stars.
+  </li>
+  <li>Click on the Edit Nodes tool (<img src = "images/EditPathsTool.gif" alt = "Edit Path by Nodes tool"
+  width = "26" >). Note how the stars now show nodes at all inner and outer points.
+  </li>
+  <li>Using the Edit Paths tool, drag a marquee around the top points of the three selected stars.
+  <figure>
+    <img src = "images/GroupSelectingWithEditPathsTool.gif"
+    alt = "Group selecting with the Edit Paths tool"
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li>Release the left mouse button. The selected points are now colored blue, indicating that they
+are now active.
+  <figure>
+    <img src = "images/TopPointsSelected.gif"
+    alt = "Top points of stars selected"
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li>Drag the top point of the right-most star to a new location. See how all the selected top
+points move in parallel with the one node you are moving.
+  <figure>
+    <img src = "images/GroupMove.gif"
+    alt = "Group moving nodes"
+    class = "img-fluid">
+  </figure>
+  <p>Experiment by clicking (and &lt;Shift&gt;-clicking ) on different nodes and moving them around.</p>
+  </li>
+</ol>
+<p>This grouping technique is handy when you need to move one or more parts of one or more items
+the same distance in the same direction. You can also select more than one node by &lt;Shift&gt;-clicking
+on the nodes with the Edit Paths tool.  When you use this technique,</p>
+  <ol>
+    <li>select your items with the Select tool,</li>
+    <li>choose Path &gt; Object to path,</li>
+    <li>click on the Edit paths by nodes tool,</li>
+    <li>use the Edit paths tool to select the nodes you want to manipulate, and</li>
+    <li>move the nodes as you need.</li>
+  </ol>
+<p>If you don't like the positioning, you can always choose Edit &gt; Undo: your latest action. A quick
+alternative to using the Edit menu is to press &lt;Ctrl&gt;-z, the shortcut key, to undo your
+last action. (Press &lt;Ctrl&gt;-z multiple times to undo multiple actions.)</p>
+  </section>
+
+<section>
+<header>
+  <h2>Applying Selection Techniques</h2>
+</header>
+<p>In this next part of the tutorial, you will use some of the techniques discussed as well as several others.</p>
+
+<ol>
+  <li>Choose File &gt; Open, and open the <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial02/Doggie_pieces.svg"><b>Doggie_pieces.svg</b></a> file in the Tutorial02 folder.</li>
+  <li>Make sure that the entire canvas is visible by pressing the <b>4</b> key (the shortcut
+  key for the View &gt; Zoom &gt; Drawing command). On the right you see the completed project,
+  on the left are the objects needed to create the finished dog.
+  <figure>
+    <img src = "images/Doggie_pieces.gif" alt = "Pieces of a cartoon dog"
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li> Start this lesson by hiding the Command bar, Tools Control bar, Toolbox, and color palette;
+  you won't need them for this part of the tutorial. Hold down &lt;Shift&gt;+&lt;Alt&gt;+p
+  to hide the palette, or hide the Commands bar, Tools Control bar, Toolbox, and color palette
+  individually using the View &gt; Show/Hide submenu.
+  </li>
+  <li>With Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26" >),
+	select the brownish-red circle. To avoid grabbing a bounding box handle and resizing
+  the circle, click and drag the center of the circle to slide it to its new location as the nose of the dog.
+  </li>
+  <li><p>Using the Select tool, drag both ears, the tuft of hair, and the mouth into position.</p>
+  <figure>
+    <img src = "images/DoggieHalfwayThere.gif"
+    alt = "Doggie cartoon halfway constructed"
+    class = "img-fluid">
+    <figcaption>Use the Select tool to move parts into place.</figcaption>
+  </figure>
+</li>
+</ol>
+
+<aside><b>Note</b>: Be careful with the mouth. It contains two objects, so use the Select tool,
+&lt;Shift&gt;+click to select the top and bottom objects and move them together.
+</aside>
+<br>
+<ol start = "6">
+  <li>Select the dog's head (light brown shape), choose Object &gt; Object Properties, and click the
+Lock checkbox to keep the head in position. Click outside the bounding box to turn it off.
+You will not be able to select the dog's head until you choose Object &gt; Unlock All.
+Leave it locked for now.
+  </li>
+</ol>
+
+<p>You are using the solid arrow, or Select tool (<img src = "images/SelectionTool.gif"
+alt = "Selection tool" width = "26" >), to activate an entire object and move it.
+Each object that you select is made up of several anchor points. To activate these anchor points individually,
+switch to the <b>Edit paths by nodes</b> tool (<img src = "images/EditPathsByNodesTool.gif"
+alt = "Edit paths by nodes tool" width = "26" >).</p>
+
+<ol start = "7" >
+  <li><p>Click on the anchor point in the first peak, or tuft, of hair. When the individual point
+is selected, it appears as a solid red diamond (active), whereas the other anchor points are gray
+diamonds (inactive). When you move the Edit path tool off the active node, the node's color changes to blue,
+indicating that it's still selected but not currently active. Click and drag the individual anchor
+point to change its position.</p>
+  <figure>
+    <img src = "images/EditByDragging.gif"
+    alt = "Pulling out a tuft of doggie hair"
+    class = "img-fluid">
+    <figcaption>Using the <b>Edit paths by nodes</b> tool,<br>
+		click and drag individual anchor points.</figcaption>
+  </figure>
+  </li>
+  <li><p>Individually select other anchor points in the hair shape and position them in different
+  directions. You are giving a ruffled look to the dog's hair.</p>
+  <figure>
+    <img src = "images/PulledDoggieHairs.gif"
+    alt = "Doggie hairs pulled individually"
+    class = "img-fluid">
+    <figcaption>Moving individual anchor points.</figcaption>
+  </figure>
+  </li>
+  <li><p>Choose the Select tool. The eye is made of several parts. Use either the rubberband box
+  selection technique or the &lt;Shift&gt; key to select all three parts of the eye. Choose
+  Object &gt; Group. Drag the eye into a position on the face to create a left eye.</p>
+  </li>
+  <li><p>While still pressing the left mouse button (don't release it yet), press the space bar once.
+The eye is copied and can now be dragged to a new location. Drag the selected eye to the right to clone
+the left eye and position it as the right eye. Release the mouse button. The dog now has two eyes.</p>
+  </li>
+</ol>
+<br>
+<aside><b>Note</b>: If you also hold down the &lt;Ctrl&gt; key when cloning, the newly cloned object
+  is constrained and snaps to a straight, 90&deg;, or 180&deg; angle. Also, if you need to create a multitude
+  of similar objects, you can first click on the original object to select it but do not release the mouse
+  button. Drag the mouse along and tap on the space bar to create copies of the original object. You can
+  adjust their position later.
+</aside>
+<br>
+<ol start = "11">
+  <li>File &gt; Save and close the file.</li>
+</ol>
+</section>
+
+<aside>
+<header>
+  <h2>Hiding Selections</h2>
+</header>
+<p>As you create more complicated artwork, existing objects may get in the way and make it
+difficult to make selections. A good technique when designing in Inkscape is to Hide selected artwork,
+which can be done by selecting an object with the Select tool, choosing Object &gt;
+Object Properties, and clicking on the Hide checkbox in the Object Properties dialog.
+A hidden object can not be moved or selected; it is essentially as though that object no
+longer exists on the canvas. Bring all hidden objects back at the same time by choosing
+Object &gt; Unhide All.</p>
+</aside>
+<section>
+<header>
+  <h2>Advanced Selection Techniques</h2>
+</header>
+<p>When working on complex artwork, selections may become more difficult to control.
+In this tutorial, we combine some of the tutorials already covered with some additional
+features that will make selecting the correct items easier.</p>
+
+<ol>
+  <li><p>File &gt; Open the file named <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial02/AlleenMaarDeBesteFriten.svg"><b>AlleenMaarDeBesteFriten.svg</b></a> in the Tutorial02 folder. Have both the File and Stroke dialog panel open.
+  If it isn't visible, choose Window &gt; Fill and Stroke.</p>
+  <figure>
+    <img src = "images/AlleenMaarDeFriten.gif" alt = "Just the French fries"
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li><p>Note that the large words, <b>DE BESTE FRITEN</b>, cover and make it difficult to select
+  items underneath. Using the Select tool (<img src = "images/SelectionTool.gif"
+  alt = "Selection tool" width = "26" >), select the words, <b>DE BESTE FRITEN</b>,
+  choose Object &gt; Object Properties, and click on the Hide checkbox in the Object Properties dialog.
+  The words will come back in the exact same location when we choose Object &gt; Unhide All at the
+  end of the tutorial.</p>
+  </li>
+  <li><p>Changing the fill of all the yellow stars to white could be time-consuming, but
+  using the Edit Same feature reduces the trouble. Select any one yellow star and
+  then choose Edit &gt; Same &gt; Fill and Stroke. All the other stars become selected.
+  Make sure that the fill box is forward in the toolbar and select white from the
+  color palette at the bottom of the screen. The stars all change to white.</p>
+  <figure>
+    <img src = "images/WhiteStars.gif" alt = "Yellow stars changed to white"
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li><p>Select one of the shapes creating the French fries and then choose Edit &gt; Same &gt; Stroke Color.
+  The french fry shape had a black-colored stroke so all strokes that are black are now activated.
+  Using Window > Stroke palette, type 5 into the textbox to increase the weight to 5 pt.</p>
+  </li>
+  <li><p>Click in an empty area to deselect the artwork.</p></li>
+  <li><p>Choose Object &gt; Unhide All to bring back the words <b>DE BESTE FRITEN</b>.</p>
+  <figure>
+    <img src = "images/Friten5ptBordersWhiteStars.gif" alt = "Finished project"
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li><p>Save and close the file.</p></li>
+</ol>
+</section>
+
+<section>
+<header>
+  <h2>Exploring on Your Own</h2>
+</header>
+<p>Experiment with shapes by creating a shape object, circle, star, rectangle, or whatever.
+Clone it several times. Apply different colors and strokes to the shapes and reselect them
+using the Select Same menu item. Try cloning multiple items at the same time.</p>
+</section>
+
+<hr>
+
+<section>
+<header>
+  <h2>Review Quiz</h2>
+</header>
+
+<ol>
+  <li>Why might an object that has no fill not become selected when you click on it?</li>
+  <li>How do you edit the shape of an object?</li>
+  <li>If something is blocking your view of a selection what can you do?</li>
+</ol>
+</section>
+
+<section>
+<header>
+  <h2>Review Answers</h2>
+</header>
+
+<ol>
+  <li>Items that have no fill must be selected by clicking on the stroke. </li>
+  <li>Using the Edit paths by nodes tool, you can select one or more individual
+anchor points and make changes to the shape of an object. </li>
+  <li>If something is blocking your access to a selection, you can choose Object &gt; Object
+Properties, and click on the Hide checkbox in the Object Properties dialog. The object is
+not deleted, just hidden in the same position until you choose Object &gt; Unhide All.</li>
+</ol>
+</section>
+
+<!-- Creative Commons ShareAlike 4.0 International License information -->
+<footer>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" >
+  <img src = "images/CreativeCommonsLicenseLogo88x31.png"
+  alt = "Creative Commons ShareAlike License"
+  class = "img-fluid">&nbsp;This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</footer>
+
+		</div>
+	</div>
+</div>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,1064 @@
+<!doctype html>
+
+<html lang = "en-us" >
+<head>
+  <meta charset = "utf-8" >
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+  <title>Inkscape Tutorial 3 &ndash; Basic Shapes</title>
+  <meta name = "author" content = "Roy F. Torley" >
+	<link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet" crossorigin="anonymous">
+</head>
+
+<body>
+<div class = "container">
+	<div class = "row">
+		<div class = "col-md-10 offset-md-1">
+<header>
+  <h1>Tutorial 3 &ndash; Creating Basic Shapes</h1>
+  <figure>
+    <img src = "images/FinishedProduct.gif"
+    alt = "Logo image file for Tutorial 3" width = "197" height = "234"
+    class = "img-fluid">
+  </figure>
+  <p>Many objects in the Inkscape program can be created by starting with basic shapes and then
+  editing them to create new shapes. In this tutorial, you will use some basic shapes to create a logo.</p>
+</header>
+
+<hr>
+
+<section>
+<h2>In this tutorial on the work area, you will learn how to:</h2>
+
+<ul>
+  <li>use tools and commands to create basic shapes.</li>
+  <li>copy and combine objects to create new shapes.</li>
+  <li>use rulers, grids, and guides as drawing aids.</li>
+  <li>paint objects.</li>
+  <li>scale objects using the bounding box.</li>
+</ul>
+</section>
+
+<section>
+<header>
+  <h2>Prepping for this tutorial</h2>
+</header>
+
+<ol>
+  <li>Start Inkscape.</li>
+
+  <li><p>Click on File &gt; Open and open the
+  <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial03/Tutorial03Image01.svg"><b>Tutorial03Image01.svg</b></a> file in the Tutorial03 folder.</p>
+    <figure>
+      <img src = "images/FinishedProduct.gif"
+      alt = "Logo image file for Tutorial 3"
+      class = "img-fluid">
+    </figure>
+  </li>
+  <li><p>If you like, choose View &gt; Zoom Out to make the finished artwork smaller, adjust the window size,
+  and leave it on your screen as you work. Move the artwork where you want it in the window using the &lt;Shift&gt;+
+  arrow keys. If you don't want to leave the image open, choose File &gt; Close.</p>
+  </li>
+</ol>
+
+<p>Now create the start file to begin the lesson.</p>
+
+<ol start = "4" >
+  <li><p>Choose File &gt; New to open a new, untitled document.</p></li>
+  <li><p>Choose File &gt; Save As..., name the file <b>Logo</b>, and select the Tutorial03 folder
+	in the Save In menu. Leave the default file format as <b>Inkscape SVG (*.svg)</b>. Inkscape
+	will automatically append the filename with <b>.svg</b> as it saves.</p>
+    </li>
+</ol>
+</section>
+
+<section>
+<header>
+  <h2>Setting up the Document</h2>
+</header>
+<p>You'll begin this tutorial by</p>
+  <ol>
+    <li><p>closing the color palette and Command toolbar that you won't use,</p></li>
+    <li><p>displaying a grid to use as a guideline for drawing,</p></li>
+    <li><p>setting the ruler units to inches,</p></li>
+    <li><p>opening the Snap Controls bar to adjust the positioning of objects.</p></li>
+    <li><p>Close the color palette by pressing &lt;Shift&gt;+&lt;Alt&gt;+p or choosing View &gt; Show/Hide &gt; Palette.
+To close the Commands toolbar, choose View &gt; Show/Hide &lt; Commands Bar. For now, you won't need to use it.</p>
+  </li>
+  <li><p>Choose View &gt; Page Grid to display a grid that's useful for measuring, drawing, and aligning shapes.
+  The grid won't print with the artwork.</p></li>
+  <li><p>If the rulers are not visible along the top and left side of the window, choose View &gt; Show/Hide &gt; Rulers to
+  display them. The ruler units are set by default to pixels.</p>
+  </li>
+</ol>
+
+<p>You can change ruler units for the current document. The ruler unit of measure applies to measuring objects,
+moving and transforming objects, setting grid and guide spacing, and creating ellipses and rectangles.
+(It does not affect the units in the Character, Paragraph, and Stroke palettes.)
+</p>
+
+<ol>
+  <li><p>Choose File &gt; Document Properties to change the ruler units for only this document.
+In the Document Properties dialog box, click on the Grids tab, for Grid units choose inches in
+the drop-down selection box (in).</p>
+  <figure>
+    <img src = "images/DocumentPropertiesDialog.gif"
+    alt = "Document Properties dialog box, selecting units"
+    class = "img-fluid">
+    <figcaption>Choose <b>in</b> (inches) from the Grid units drop-down menu.</figcaption>
+  </figure>
+  </li>
+  <li><p>We will now change the grid spacing so that squares measure 1/8 inch on each side. With the Document Properties dialog
+still active, change the Spacing-X and Spacing-Y measurements to 0.125 (Press &lt;Enter&gt; after each entry). The grid
+spacing now shows squares that measure 1/8 inch on each side.</p>
+  <figure>
+    <img src = "images/ChangingGridSpacing.png"
+    alt = "Changing the grid spacing"
+    class = "img-fluid">
+    <figcaption>Changing the grid spacing.</figcaption>
+  </figure>
+  </li>
+  <li><p>We will make the major grid lines a darker blue than they are currently. Click on the Major Grid Line Color bar.
+The Major Grid Line Color dialog appears. Enter the numbers from the figure below to create major grid lines that are
+colored navy blue:</p>
+  <figure>
+    <img src = "images/MajorGridLineColor.gif"
+    alt = "Major Grid Line Color dialog"
+    class = "img-fluid">
+    <figcaption>Major Grid Line Color dialog. The numbers produce a navy blue color.</figcaption>
+  </figure>
+  </li>
+  <li><p>Close the Major Grid Line Color and Document Properties dialogs when done.</p></li>
+  <li><p>Choose View &gt; Show/Hide &gt; Snap Controls Bar to display the Snap Controls bar.</p>
+  <figure>
+    <img src = "images/SnapBar.png" alt = "Snap Control"
+    class = "img-fluid">
+    <figcaption>Snap Controls bar.</figcaption>
+  </figure>
+  </li>
+</ol>
+</section>
+
+<section>
+<header>
+  <h2>Using Basic Shape Tools</h2>
+</header>
+<p>In this tutorial, you'll create a simple logo using the basic shape tools. The shape tools include the:</p>
+<ul>
+  <li>Create rectangles and squares tool (<img src = "images/CreateSquaresTool.gif" alt = "Create Squares tool"
+        width = "26" >),</li>
+  <li>Create circles, ellipses, and arcs tool (<img src = "images/CreateCirclesTool.gif" alt = "Create Circles tool" width = "26" >), and</li>
+  <li>Create stars and polygons tool (<img src = "images/CreateStarsTool.gif" alt = "Create Stars tool" width = "26" >).</li>
+</ul>
+</section>
+
+<section>
+<header>
+  <h2>Drawing the Pencil Shape</h2>
+</header>
+<p>In Inkscape, you control the thickness and color of lines that you draw by setting stroke attributes.
+A stroke is the paint characteristics of a line or the outline of an object. A fill is the paint
+characteristics of the inside of an object. The default settings will let you see the objects you
+draw with a white fill and a black outline.</p>
+
+<ol>
+  <li><p>Select the Zoom tool (<img src = "images/ZoomInOut.gif" alt = "Zoom tool" width = "26" >)
+  in the toolbox, and click in the middle of the window once or twice until you are zoomed in to about 150%.
+  (Notice that 150%, more or less, is displayed in the bottom left corner of the window.)</p>
+  </li>
+  <li><p>Choose View &gt; Guides to turn them on. <b>Guides</b> automatically snap the edges of objects
+	to nearby objects or their intersect points as you move them.</p>
+  </li>
+</ol>
+
+<aside>
+  <header>
+    <h2>How Guides Work</h2>
+  </header>
+  <p>When <b>Guides</b> are turned on and you move the cursor over your artwork, the cursor looks for objects,
+  page boundaries, and intersections of construction guides to snap to that are within the tolerance range set
+  in File &gt; Document Properties &gt; Snap tab.</p>
+
+  <p>You can use <b>Guides</b> in the following ways when you create, move, and transform objects.</p>
+
+  <ul>
+    <li>When you create an object with the pen or shape tools, use the <b>Guides</b> to position the new object's
+    anchor points relative to the other object.
+    </li>
+    <li>When you move an object, use the <b>Guides</b> to align to the point on the object that you have selected.
+    You can align to the anchor point at the corner of a selected object near the bounding box. To do so, select
+    the object just inside the bounding box handle. If the tolerance is 5 pixels or greater, you can snap to the
+    corner point from 5 pixels away.
+    </li>
+    <li>When you transform an object, <b>Guides</b> appear to assist the transformation.
+    </li>
+  </ul>
+  <b>Note</b>: When Snap to Grid is turned on, you cannot use <b>Guides</b> (even if the menu command is selected).
+  </aside>
+
+<ol start = "3">
+  <li>Select the Create Rectangles and Squares tool (<img src = "images/CreateSquaresTool.gif" alt = "Create Squares tool" width = "26" >),
+  and drag it to draw a rectangle that's 0.75 inches wide and 1 inch tall. (Use the rulers and the grid as guides.)
+  This will be the body of the pencil.
+  </li>
+</ol>
+
+<aside><p>When you release the left mouse button, the rectangle is automatically selected and eight sizing handles appear on its bounding box. To move the rectangle, you will need to put the cursor on the edge of the rectangle and then drag it to its new location. Trying to move it by dragging on its interior will have no effect unless it has a color fill.</p>
+</aside>
+
+<ol start = "4">
+  <li><p>Note the rectangle's height and width in the Tool Controls bar: <img src = "images/HeightWidthInfo.png" alt = "Height and width info" class = "img-fluid"></p>
+  </li>
+  <li><p>If the rectangle's dimensions are not correct, as seen in the figure above, it's easy to change them.
+  Click on the rectangle's edge if it isn't still selected. Then, click in the <b>W</b> (width) box and change
+  the measurement to <b>.75</b>. Do the same with the <b>H</b> (height) box, changing the measurement to <b>1</b>.
+  The rectangle's dimensions will update accordingly.</p>
+  <p>You'll draw another rectangle centered inside the first one to represent the two vertical lines on the pencil.</p>
+  </li>
+  <li><p>With the Rectangle tool still selected, position the pointer over the center point of the rectangle, hold
+  down the &lt;Shift&gt; key, and drag out from the center point to draw a rectangle that's centered inside it.
+  Release the mouse button when the rectangle is the same height as the first rectangle (1 inch). If the unit of
+  measurement is not in inches (in), click in that box and choose <b>in</b> from the drop-down menu. In the width
+  (W) box, change the measurement to 0.42 so the inner rectangle won't appear unnecessarily broad.</p>
+  </li>
+</ol>
+
+<p>Holding down &lt;Shift&gt; as you drag the Rectangle tool draws the rectangle from its center point rather
+than from its top left corner.</p>
+
+<ol start = "7">
+    <li>
+  <figure>
+    <img src = "images/DrawRectangle1.png" alt = "Drawing a rectangle"
+    class = "img-fluid">
+    <figcaption>Drag to draw first rectangle</figcaption>
+  </figure>
+  <figure>
+    <img src = "images/DrawRectangle2.png" alt = "Drawing a rectangle"
+    class = "img-fluid">
+    <figcaption>&lt;Shift&gt;-drag to draw second rectangle</figcaption>
+  </figure>
+  <p>Now you'll create a rounded rectangle for the eraser using the <b>Edit paths by nodes</b> tool.</p>
+  </li>
+  <li><p>Choose the Rectangle tool and create a 0.75 in &times; 0.75 in square using the grid lines to snap the
+figure into a good position. Leave the square selected.</p>
+  </li>
+  <li><p>Choose the <b>Edit paths by nodes</b> tool (<img src = "images/EditPathsByNodesTool.gif"
+  alt = "Edit paths by nodes tool" width = "26" >).</p>
+  </li>
+  <li><p>Left click on the circular handle on the upper right corner of the square and drag it down by one grid square. Release the
+  mouse button. All four corners of the square are now rounded.</p>
+  <figure>
+  <img src = "images/RoundSquareCorners.png" alt = "Rounded square corners"
+  class = "img-fluid">
+  <figcaption>Drag the circular handle down one grid square length to round all four square corners.</figcaption>
+  </figure>
+  <p>You will now snap the eraser shape to the top of the pencil body.</p>
+  </li>
+  <li><p>Choose View &gt; Show/Hide &gt; Snap Controls Bar to display the Snap Controls bar above the window.</p>
+  </li>
+  <li><p>Click the Selection tool if it is not already selected.</p></li>
+  <li><p>Click on the edge of the rounded square to select it.</p></li>
+  <li><p>Click on the Enable snapping button at the far left of the Snap Controls bar (<img src = "images/EnableSnappingButton.gif"
+alt = "Enable snapping button" width = "26" >) to activate the snapping function.</p>
+  </li>
+  <li><p>Click on the Snap bounding boxes button which is the next button to the right of the Enable snapping button. It looks identical to the Enable snapping button but has a different tool tip description.</p>
+  </li>
+  <li><p>Click on the Snap midpoints of bounding box edges button (<img src = "images/SnapMidpointsOfBoundingBoxEdges.gif"
+alt = "Snap midpoints of bounding box edges button" width = "26" >).</p>
+  </li>
+  <li><p>Drag the rounded square shape until it is close to the top of the pencil body and release the left mouse button. The eraser immediately shifts into place squarely on the top of the pencil body. If you under- or overshoot, just drag the erase into place and see the pulling action of the snapping function.</p>
+  <figure>
+  <img src = "images/SnappingEraserToPencilBody.gif"
+  alt = "Snapping the eraser to the pencil body"
+  class = "img-fluid">
+  <figcaption>Result</figcaption>
+  </figure>
+  <p>Next you'll create two shapes to represent the metal bands connecting the eraser to the pencil.</p>
+  </li>
+  <li><p>To prevent automatic snapping to a grid line that will misalign your objects, click on the Snap to
+  grids button (<img src = "images/SnapToGrids.gif" alt = "Snap to grids button" width = "26" >)
+  to turn the feature off. Keep the other snapping features on because they will help in aligning objects properly.</p>
+  </li>
+  <li><p>To make the first band, create a rounded box 1 square high and 8 squares long. Note that the corners are
+  already rounded because the rounding function carries over into your next created rectangle or square.</p>
+  <figure>
+    <img src = "images/FirstBand.gif" alt = "Create first band"
+    class = "img-fluid">
+    <figcaption>Create the first band.</figcaption>
+  </figure>
+  </li>
+  <li><p>Now move the band to the top of the pencil body using the Selection tool. Becausing the snapping function is still active, the band will snap into position.</p>
+  <figure>
+    <img src = "images/FirstBandMoved.gif" alt = "Move first band"
+    class = "img-fluid">
+    <figcaption>Reposition the first band.</figcaption>
+  </figure>
+  </li>
+  <li><p>Resize the length of the band to 0.85 inches by clicking in the width (W) bar and typing in .85 &lt;Enter&gt;. The band automatically resizes.</p>
+  <figure>
+    <img src = "images/BandResized.gif" alt = "The band is resized."
+    class = "img-fluid">
+    <figcaption>Resizing the band.</figcaption>
+  </figure>
+  </li>
+  <li><p>Now move the band with the Selection tool so that it snaps into its properly centered
+  position on top of the pencil body.</p>
+  <figure>
+    <img src = "images/BandResizedAndMoved.gif"
+    alt = "The band is resized and moved."
+    class = "img-fluid">
+    <figcaption>Moving the resized band.</figcaption>
+  </figure>
+  </li>
+  <li><p>Copy the band by selecting it (if it's been deselected) and then pressing &lt;Ctrl&gt;-D (D or d
+for <strong>d</strong>uplicate). A copy of the band now sits directly on top of the original. Drag the
+copy of the band up until it snaps into place above the first band.</p>
+  <figure>
+    <img src = "images/CopyOfBand.gif" alt = "Copying and moving the band."
+    class = "img-fluid">
+    <figcaption>Copying the band.</figcaption>
+  </figure>
+  </li>
+</ol>
+<p>Now you'll draw two triangles to represent the pencil tip and its lead using Outline view.</p>
+<ol start = "23" >
+  <li><p>Choose View &gt; Display mode &gt; Outline to switch from Normal view to Outline view.</p>
+  <figure>
+    <img src = "images/PencilInOutlineView.gif"
+    alt = "Pencil body in Outline view."
+    class = "img-fluid">
+    <figcaption>Pencil body in Outline view.</figcaption>
+  </figure>
+  </li>
+  <li><p>Select the Polygon tool (<img src = "images/PolygonTool.gif" alt = "Polygon tool" width = "26" >).</p>
+  </li>
+  <li><p>In the Corners box, change the number of corners to <b>3</b>: <img src = "images/NumberOfCorners3.gif"
+alt = "Setting the number of corners to 3" ></p>
+  </li>
+  <li><p>Position the pointer over the center point of the two rectangles.</p></li>
+  <li><p>&lt;Shift&gt;-drag to begin drawing a triangle, but don't release the mouse button. Move the mouse in an arc to rotate one side of the triangle to the top.</p>
+  <figure>
+    <img src = "images/DrawingTriangle1.png" alt = "Drawing a triangle."
+    class = "img-fluid">
+    <figcaption>Drawing a triangle.</figcaption>
+  </figure>
+<p>While still pressing the left mouse button, drag the triangle down to position it just below
+the pencil body. Release the mouse button when the triangle is positioned. The triangle will
+snap into place.</p>
+  <figure>
+    <img src = "images/DrawingTriangle2.png" alt = "Moving the triangle."
+    class = "img-fluid">
+    <figcaption>Moving the triangle.</figcaption>
+  </figure>
+</li>
+</ol>
+<p>Now you'll create the second triangle for the pencil's lead tip.</p>
+
+<ol start = "28" >
+  <li><p>With the triangle still selected (select it if it isn't), left-click on the edge and, with the left mouse
+button still pressed, tap the spacebar once and then drag the copy of the triangle off to the left or right for
+resizing.</p>
+  <figure>
+    <img src = "images/MovingTheTriangle.png" alt = "Moving the triangle."
+    class = "img-fluid">
+    <figcaption>Moving the triangle.</figcaption>
+  </figure>
+</li>
+<li><p>&lt;Ctrl&gt;-click on the triangle and shrink it down so that its edges are about one square edge in length.</p>
+  <figure>
+    <img src = "images/ResizingTriangle.gif" alt = "Resizing the triangle."
+    class = "img-fluid">
+    <figcaption>Reducing the size of the second triangle.</figcaption>
+  </figure>
+</li>
+<li><p>The pencil lead tip looks a little too small. We'll make it a little larger. If the pencil lead triangle isn't selected, then select it so we can edit its size.</p>
+</li>
+<li><p>Now click on the open lock icon in the Tool Controls bar (<img src = "images/OpenLock.gif" alt = "Open Lock icon" width = "26" >), located between the width (W) bar and height (H) bar, to toggle it
+closed (<img src = "images/ClosedLock.gif" alt = "Closed Lock icon" width = "26" >).
+When the lock is closed, you can change the size of a selected object without changing one or another dimension
+individually (in other words, you maintain the aspect ratio).</p>
+</li>
+<li><p>Change the height (H) to 0.2 in the the Height box and press &lt;Enter&gt;.</p>
+</li>
+<li><p>Move the reduced triangle so that it fits exactly into the tip of the larger triangle at the bottom of the
+pencil body. The Snap function will snap the smaller triangle into place.</p>
+  <figure>
+    <img src = "images/PencilLeadResized.gif" alt = "Pencil lead resized."
+    class = "img-fluid">
+    <figcaption>Positioning the second triangle.</figcaption>
+  </figure>
+</li>
+</ol>
+<p>Next you will use the line Segment tool to quickly draw a horizontal line segment near the top of the pencil.</p>
+
+<ol start = "34" >
+  <li><p>Select the line Segment tool (<img src = "images/LineTool.gif" alt = "Line tool" width = "26" >),
+   and position the pointer over the left side of the pencil near the top. Click where you want the line to begin and release the mouse button. Press the &lt;Ctrl&gt; button and move the mouse without pressing the left mouse button to drag to where you want the line to end. As you move the mouse, keeping holding down &lt;Ctrl&gt;
+  to constrain the line horizontally. When you reach the other side, click with the left mouse button to set the
+  end of the line segment.</p>
+  <figure>
+    <img src = "images/DrawingWithTheLineTool.gif"
+    alt = "Drawing with the Line tool."
+    class = "img-fluid">
+    <figcaption>Drawing with the Line tool.</figcaption>
+  </figure>
+  </li>
+  <li><p>Choose File > Save to save your work.</p>
+  </li>
+</ol>
+</section>
+
+<section>
+<header>
+  <h2>Drawing the Piece of Stationery</h2>
+</header>
+<p>You can draw the diamond-shaped piece of stationery for the logo in a couple of ways. One way is to draw four-sided polygons
+(using the same methods you used to draw the triangle for the pencil tip). Another way is to draw using the Rectangle tool,
+and the Select and Transform tool.</p>
+
+<ol>
+  <li><p>Select the Rectangle tool (<img src = "images/RectangleTool.gif" alt = "Rectangle tool"
+width = "26" >) in the toolbox, and position the pointer over the center point of the pencil body.
+Hold down &lt;Ctrl&gt; and drag the tool to draw a square of any size from the center of the pencil.</p>
+<p>Holding down the &lt;Ctrl&gt; key while dragging the Rectangle tool constrains the rectangle to a square.
+  Holding down &lt;Shift&gt; draws the rectangle from its center point rather than from the top left corner. Holding down both the &lt;Ctrl&gt; and &lt;Shift&gt; keys allows you to draw a square from its
+	center point out.</p>
+<p>How you'll use the <b>W</b> (width) and <b>H</b> (height) text boxes to enter precise dimensions for the square.</p>
+  </li>
+  <li><p>Type 2.25 in the <b>W</b> text box and 2.25 in the <b>H</b> text box. Press &lt;Enter&gt; to apply the changes.</p>
+    <figure>
+    <img src = "images/CtrlDraggingTheSquare.png"
+    alt = "Control dragging to make a square"
+    class = "img-fluid">
+    <figcaption>&lt;Ctrl&gt;-drag to make a square of any size from pencil's center.</figcaption>
+    </figure>
+    <figure>
+    <img src = "images/NewWH.gif" alt = "New width and height dimensions"
+    class = "img-fluid">
+    <figcaption>Set new width and height.</figcaption>
+    </figure>
+    <figure>
+      <img src = "images/ResultSquare.gif" alt = "Resulting square"
+      class = "img-fluid">
+      <figcaption>Result.</figcaption>
+    </figure>
+  </li>
+  <li><p>Choose File &gt; Save to save your work.</p>
+  </li>
+  </ol>
+</section>
+
+<section>
+<header>
+  <h2>Drawing with the Rectangular Grid Tool</h2>
+</header>
+<p>With the grid tool, you can create different types grids. You can generate rectangular (Cartesian) grids, concentric circles for polar grids, respectively, of a specified size with a specified number of dividers.</p>
+<p>Now you'll add a grid to the stationery. Unlike the view grid, this grid can print.</p>
+<ol>
+  <li><p>To make this next part of the lesson easier to visualize, choose View &gt; Page Grid to turn off the grid display.</p>
+  </li>
+  <li><p>Choose Entensions &gt; Render &gt; Grids &gt; Cartesian Grid... The Cartesian Grid dialog appears. Enter the numbers in the
+figure below to design the grid. Click on <b>Apply</b></p>
+  <figure>
+    <img src = "images/CartesianGridDialog.gif" alt = "Cartesian Grid dialog"
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li><p>Inkscape chugs along for a while (45 seconds on my computer) and produces the 5 &times; 5 grid below.</p>
+  <figure>
+    <img src = "images/5x5Grid.gif" alt = "Five by five grid"
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li><p>Click on the Snapping centers of bounding boxes button (<img src = "images/SnappingCenters.gif"
+alt = "Snap centers of bounding boxes button" width = "26" >) to activate this snapping feature.</p>
+  </li>
+  <li><p>Click on the Selection tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26" >).</p>
+  </li>
+  <li><p>Select the grid and resize it using the <b>W</b> (width) and <b>H</b> (height) text boxes. Move the grid
+  into the larger stationery square so that their centers coincide. You will see a notification appear for a
+  fraction of a second indicating that you are close. Release the left mouse button so that the grid can snap
+  into place at the center of the larger square.</p>
+  <figure>
+    <img src = "images/SnappedToCenter.gif"
+    alt = "Second square snapped into place."
+    class = "img-fluid">
+    <figcaption>Grid positioned over larger stationery square.</figcaption>
+  </figure>
+  </li>
+  <li><p>If the grid is not selected, then select it with the Selection tool. Then &lt;Shift&gt;-click the edge of
+the larger square to include it as a selected object.</p>
+  </li>
+  <li><p>Click again on the edge of the larger square so its rotating handles will appear.</p>
+  <figure>
+    <img src = "images/RotationHandles.gif" alt = "Rotating handles on square"
+    class = "img-fluid">
+    <figcaption>Click on the square's edge a second time to change the position handles to rotation handles.</figcaption>
+  </figure>
+  </li>
+  <li><p>Press the &lt;Ctrl&gt; key and drag-rotate the square 45&deg; so that one of the corners now points up.</p>
+  <figure>
+    <img src = "images/45DegreeRotation.gif" alt = "Square rotated 45 degrees"
+    class = "img-fluid">
+    <figcaption>Click on the square's edge a second time to change the position handles to rotation handles.</figcaption>
+  </figure>
+  </li>
+  <li><p>With the grid and square still selected, drag them over so that the top corner of the larger square just touches
+  the metal bands securing the eraser to the pencil. The squares will snap into place.</p>
+    <figure>
+      <img src = "images/PreppingToMoveStationery.gif"
+      alt = "Preparing to move the stationery"
+      class = "img-fluid">
+    </figure>
+  </li>
+  <li><p>Choose Object &gt; Lower to Bottom to move the grid and square stationery behind the pencil.</p>
+  <figure>
+    <img src = "images/StationeryMovedBehindPencil.gif"
+    alt = "Stationery moved behind pencil."
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li><p>Press &lt;Esc&gt; to deselect the stationery.</p>
+  </li>
+  <li><p>Choose File &gt; Save to save your work.</p>
+  </li>
+  </ol>
+</section>
+
+<section>
+<header>
+  <h2>Decorating the Stationery Border</h2>
+</header>
+<p>You'll decorate the border of the piece of stationery with a circle, a spiral, and some star shapes,
+using different methods to create the shapes.</p>
+<ol>
+  <li><p>Press &lt;Alt&gt;-z to highlight the magnification text box in the lower right-hand corner of the window:
+(<img src = "images/AltZ.gif" alt = "Magnification text box" >)</p>
+  </li>
+  <li><p>Type <b>200</b> to increase the magnification and press &lt;Enter&gt;.</p>
+  </li>
+  <li><p>Select the Ellipse tool (<img src = "images/CreateCirclesTool.gif" alt = "Ellipse tool" width = "26" >), and position the pointer in the left corner of the stationery border.
+        Hold down &lt;Shift&gt;+&lt;Ctrl&gt; and drag the tool to draw a small circle.</p>
+
+  <p>Holding down &lt;Ctrl&gt; as you drag the Ellipse tool constrains the shape to a circle;
+  holding &lt;Shift&gt; draws it from its center point. Holding down &lt;Shift&gt;+&lt;Ctrl&gt; allows you to
+  draw a circle from its center out.</p>
+  <figure>
+    <img src = "images/CreateCircle.gif" alt = "Creating a circle"
+    class = "img-fluid">
+    <figcaption>Press &lt;Shift&gt;+&lt;Ctrl&gt; and drag to create a circle.</figcaption>
+  </figure>
+  </li>
+  <li><p>Now select the Spiral tool (<img src = "images/SpiralTool.gif" alt = "Spiral tool" width = "26" >) and position it in the bottom left side of the stationery about midway between the two corners.
+Drag the tool to draw a small spiral, release the mouse, and then use the arrow keys to adjust the spiral's position.</p>
+  <figure>
+    <img src = "images/DrawSpiral.gif" alt = "Drawing a spiral"
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li><p>Let's improve on the spiral a bit. We'll add more turns and alter its radius of curvature. Enter the numbers
+below into the Spiral tool bar text boxes.</p>
+  <figure>
+    <img src = "images/SpiralNumbers.gif"
+    alt = "Numbers to configure the spiral."
+    class = "img-fluid">
+  </figure>
+</li>
+<li><p>The spiral changes accordingly. Rotate the spiral using bounding box rotational handles, change the
+size as you desire, and/or flip it horizontally or vertically as you desire.</p>
+  <figure>
+    <img src = "images/ChangedSpiral.gif" alt = "Modified spiral"
+    class = "img-fluid">
+  </figure>
+</li>
+</ol>
+
+<aside>
+<header><h2>Drawing Spirals</h2></header>
+<p>The Spiral tool creates a spiral-shaped object of a given radius and number of winds; that is, the number of turns that
+the spiral completes from start to finish.</p>
+<figure>
+  <img src = "images/Spirals.png" alt = "Examples of spirals"
+  class = "img-fluid">
+</figure>
+<p><b>To draw a spiral by specifying dimensions:</b></p>
+<ol>
+  <li>Select the Spiral tool, and click where you want to place the center of the spiral.
+  </li>
+  <li>In the Turns text box, enter the number of turns from the center to the outermost point in the spiral.
+  </li>
+  <li>In the Divergence text box, enter how much you want the spacing between turns to increase or decrease:
+    <figure>
+      <img src = "images/Turns3Divergence1.gif"
+      alt = "Increased divergence in a spiral"
+      class = "img-fluid">
+      <figcaption>Turns = 3.000<br>Divergence = 1.000<br>Inner Radius = 0.000</figcaption>
+    </figure>
+    <figure>
+      <img src = "images/Turns3Divergence2.gif"
+      alt = "Increased divergence in a spiral"
+      class = "img-fluid">
+      <figcaption>Turns = 3.000<br>Divergence = 2.000<br>Inner Radius = 0.000</figcaption>
+    </figure>
+    <figure>
+      <img src = "images/Turns3Divergence0.5.gif"
+      alt = "Decreased divergence in a spiral"
+      class = "img-fluid">
+      <figcaption>Turns = 3.000<br>Divergence of 0.500<br>Inner Radius = 0.000</figcaption>
+    </figure>
+    <figure>
+      <img src = "images/Turns3Divergence0.5InnerRadius0.2.gif"
+      alt = "Decreased divergence in a spiral"
+      class = "img-fluid">
+      <figcaption>Turns = 3.000<br>Divergence of 0.500<br>Inner Radius = 0.200</figcaption>
+    </figure>
+  </li>
+  <li>To change the direction of turn, choose Object &gt; Flip Horizontal or Object &gt; Flip Vertical. You can
+change where the spiral starts or ends by clicking twice on the spiral to display the rotation handles and
+rotating the spiral the desired amount.
+  </li>
+</ol>
+</aside>
+
+  <p>Now you'll draw some stars using different methods.</p>
+
+<ol start = "7">
+  <li><p>Select the Polygon tool (<img src = "images/PolygonTool.gif" alt = "Star-polygon tool" width = "26" >). The Polygon-Star tool bar appears. Change the default number of <b>3</b> in the Corners text box to <b>5</b> so you can draw a five-pointed star. Position the pointer in the bottom corner of the stationery. Put the Polygon tool where you want the center of the star to be and drag the tool to draw the first star shape. Keeping the left mouse button pressed, rotate the star until you like what you see.</p>
+    <figure>
+      <img src = "images/Drawing5PointedStar.gif"
+      alt = "Drawing a five-pointed star"
+      class = "img-fluid">
+      <figcaption>Drawing a 5-pointed star.</figcaption>
+    </figure>
+  </li>
+  <li><p>In the Corners text box, type in <b>4</b> and press &lt;Enter&gt; to set the new number of corners.</p>
+  </li>
+  <li><p>Now position the Polygon tool in the bottom right side of the stationery (midway between the two corners) where
+the center of a new star should go. Press the left mouse button and drag to create a new 4-pointed star. Rotate it by
+rotate-dragging the mouse with the left button still pressed. Release the mouse button when the star is oriented in a
+pleasing way.</p>
+  <figure>
+    <img src = "images/Drawing4PointedStar.gif"
+    alt = "Drawing a four-pointed star"
+    class = "img-fluid">
+    <figcaption>Drawing a 4-pointed star.</figcaption>
+  </figure>
+</li>
+<li><p>To draw the last star, position the Polygon tool in the right-hand corner and drag to create a second four-pointed
+star. With that last star still selected, increase the number of corners in the Corner text box to <b>8</b>. See how the
+newly created star changes as you increase the number of corners. You can fine-rotate the star, resize it, and
+reposition it as you see fit.</p>
+  <figure>
+    <img src = "images/Drawing8PointedStar.gif"
+    alt = "Drawing an eight-pointed star"
+    class = "img-fluid">
+    <figcaption>Drawing an 8-pointed star.</figcaption>
+  </figure>
+</li>
+<li><p>Click in an unoccupied area of the window to deselect the 8-pointed star. Choose File &gt; Save to save your work.</p>
+</li>
+</ol>
+</section>
+
+<section>
+<header>
+  <h2>Painting the Logo</h2>
+</header>
+<p>In Inkscape, you can paint both the fill and the stroke of shapes with colors, patterns, or gradients.
+You can even apply various brushes to the path of the shapes. For this logo, you will apply basic black and white fills and
+strokes. You will also troubleshoot an Inkscape limitation.</p>
+
+<ol>
+  <li><p>Open the Color Palette by choosing View &gt; Show/Hide &gt; Palette.</p></li>
+  <li><p>Select the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26" >)
+  in the toolbox, and then click the eraser shape to select it.</p>
+   <figure>
+    <img src = "images/ClickOnEraserShape.gif"
+    alt = "Click on the eraser shape."
+    class = "img-fluid">
+    <figcaption>Select the eraser shape.</figcaption>
+  </figure>
+  <figure>
+    <img src = "images/ClickOnBlackSwatch.gif"
+    alt = "Click on the black swatch."
+    class = "img-fluid">
+    <figcaption>Click on the black swatch.</figcaption>
+  </figure>
+  </li>
+  <li><p>Now click on the black swatch in the Color palette to create a black fill in the eraser.</p>
+   <figure>
+    <img src = "images/EraserBlackFill.gif"
+    alt = "Giving the eraser shape a black fill."
+    class = "img-fluid">
+    <figcaption>Result.</figcaption>
+  </figure>
+  <p>Next you'll paint the grid with a white fill and the stroke with a 50% screen of black.</p>
+  </li>
+  <li><p>Select the grid with the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool"
+  width = "26" >).</p>
+   <figure>
+    <img src = "images/SelectGrid.gif" alt = "Select grid."
+    class = "img-fluid">
+    <figcaption>Select the grid.</figcaption>
+  </figure>
+  </li>
+  <li><p>Change the opacity (transparency) of the grid to 39% by clicking in the <b>O</b> (opacity) text box and typing in <b>39</b>.
+The grid turns a shade of dark gray.</p>
+   <figure>
+    <img src = "images/OpacityTextBox.gif" alt = "Changing color opacity."
+    class = "img-fluid">
+    <figcaption>Changing the grid from 100% black to 39% black.</figcaption>
+  </figure>
+  <figure>
+    <img src = "images/GrayGrid.gif" alt = "Gray grid."
+    class = "img-fluid">
+    <figcaption>Result.</figcaption>
+  </figure>
+  <p>Next you'll paint the area between the outer square of the stationery and the grid black.</p>
+  </li>
+  <li><p>Select the outer square and click on the black swatch.</p>
+    <figure>
+    <img src = "images/BlackOuterSquare.gif" alt = "Black outer square."
+    class = "img-fluid">
+    <figcaption>Black outer square.</figcaption>
+  </figure>
+  <p>If you don't get the same result as you see above, good. Time to do some troubleshooting.</p>
+  </li>
+  <li><p>Choose View &gt; Display mode &gt; Outline.</p></li>
+  <li><p>Click on one of the stationery decorations (circle, spiral, or star) and &lt;Shift&gt;-click to include
+  the other decorations in a group.</p>
+    <figure>
+      <img src = "images/ShiftClickingDecorations.gif"
+      alt = "Shift-clicking stationery decorations."
+      class = "img-fluid">
+      <figcaption>&lt;Shift&gt;-clicking stationery decorations into a group.</figcaption>
+    </figure>
+  </li>
+  <li><p>Click on the black swatch in the Color palette to make sure all the decorations have black strokes. Then,
+&lt;Shift&gt;-click the white swatch in the Color palette to give them white fills.</p>
+  </li>
+  <li><p>Choose View &gt; Display mode &gt; Normal to switch back to normal view.</p>
+    <figure>
+      <img src = "images/VisibleDecorations.gif"
+      alt = "Stationery decorations are now visible."
+      class = "img-fluid">
+      <figcaption>Stationery decorations are now visible.</figcaption>
+    </figure>
+  </li>
+  <li><p>You will change how the spiral looks. Select the spiral with Select tool
+(<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26" >).</p>
+  </li>
+  <li><p>Click on the black swatch. The spiral disappears. It's still there, however. Now, &lt;Shift&gt;-click
+on the white swatch. The spiral reappears.</p>
+  <figure>
+    <img src = "images/ReappearingSpiral.gif" alt = "Modified spiral"
+    class = "img-fluid">
+    <figcaption>The spiral modified.</figcaption>
+  </figure>
+  </li>
+  <li><p>Click outside the figure to deselect it.</p>
+  <p>The grid is invisible in all the black. You will now make it visible.</p>
+  </li>
+  <li><p>Choose View &gt; Display mode &gt; Outline. You can now see the outline of the grid.</p>
+  <figure>
+    <img src = "images/OutlineOfGrid.gif" alt = "Outline of grid is visible."
+    class = "img-fluid">
+    <figcaption>The grid is visible in Outline view.</figcaption>
+  </figure>
+  </li>
+  <li><p>Click on the edge of the grid with the Selection tool to select it. Then, click the left mouse
+button and keep it pressed. Tap once on the spacebar to create a copy of the grid. You will see the grid become a
+little darker gray. Do not move the copy of the grid.</p>
+  </li>
+  <li><p>Release the left mouse button, leaving the copy of the grid selected. Now click on the white swatch in
+the Color palette to give the grid a white fill.</p>
+  </li>
+  <li><p>Choose View &gt; Display mode &gt; Normal to return to normal view mode.</p>
+  <figure>
+    <img src = "images/WhiteGrid.gif" alt = "The grid is painted white."
+    class = "img-fluid">
+    <figcaption>The grid is made completely white.</figcaption>
+  </figure>
+  </li>
+  <li><p>Now choose Object &gt; Lower. The grid lines appear. Click outside the figure to deselect it.</p>
+  <figure>
+    <img src = "images/VisibleGrid.gif" alt = "The grid is now visible."
+    class = "img-fluid">
+    <figcaption>The grid is now visible.</figcaption>
+  </figure>
+  </li>
+  <li><p>You will now fill in the pencil lead. Click on the pencil lead with the Selection tool.</p>
+  <figure>
+    <img src = "images/SelectPencilLead.gif" alt = "Select the pencil lead."
+    class = "img-fluid">
+    <figcaption>Select the pencil lead.</figcaption>
+  </figure>
+  </li>
+  <li><p>Click on the black swatch in the Color palette.</p>
+  <figure>
+    <img src = "images/BlackPencilLead.gif"
+    alt = "The pencil lead now has a black fill."
+    class = "img-fluid">
+    <figcaption>Pencil lead with black fill.</figcaption>
+  </figure>
+  <p>You will now give the body of the pencil a black fill with white edges.</p>
+  </li>
+  <li><p>Click on the inner rectangle of the pencil body with the Selection tool to select it.</p>
+  <figure>
+    <img src = "images/SelectInnerRectangle.gif"
+    alt = "Select the inner rectangle of the pencil body."
+    class = "img-fluid">
+    <figcaption>Select the inner rectangle of the pencil body.</figcaption>
+  </figure>
+  </li>
+  <li><p>With the inner rectangle still selected, click on the black swatch in the Color palette and &lt;Shift&gt;-click
+on the white swatch in the Color palette.</p>
+  <figure>
+    <img src = "images/ChangeInnerRectangle.gif"
+    alt = "The inner rectangle modified."
+    class = "img-fluid">
+    <figcaption>The inner rectangle modified.</figcaption>
+  </figure>
+  </li>
+  <li><p>Do the same thing with the outer rectangle that makes up the pencil body, that is, select the outer rectangle,
+click on the black swatch in the Color palette, and then &lt;Shift&gt;-click on the white swatch in the Color palette.</p>
+  <figure>
+    <img src = "images/ChangeOuterRectangle.gif"
+    alt = "The outer rectangle modified."
+    class = "img-fluid">
+    <figcaption>The outer rectangle modified.</figcaption>
+  </figure>
+  <p>We forgot to redo the line that crosses the pencil body just under the bands that hold the eraser. You'll use
+Outline view to locate it and change its color from black to white.</p>
+  </li>
+  <li><p>Choose View &gt; Display mode &gt; Outline. You can now see the cross line.</p>
+  <figure>
+    <img src = "images/CrossLineInOutlineView.png"
+    alt = "Cross line in Outline view."
+    class = "img-fluid">
+    <figcaption>The outer rectangle<br>modified.</figcaption>
+  </figure>
+  </li>
+  <li><p>While still in Outline view, select the cross line, then &lt;Shift&gt;-click on the white swatch
+in the Color palette.</p>
+  </li>
+  <li><p>Choose View &gt; Display mode &gt; Normal to switch back to normal view.</p>
+  <figure>
+    <img src = "images/WhiteCrossLine.gif"
+    alt = "White selected cross line in normal view."
+    class = "img-fluid">
+    <figcaption>White cross line, still selected, in normal view.</figcaption>
+  </figure>
+  </li>
+  <li><p>Press the &lt;Esc&gt; to deselect the cross line.</p>
+  </li>
+  <li><p>You will now add a curvy line below the pencil's tip. Click on the Draw freehand lines tool in the
+  toolbox (<img src = "images/PencilTool.gif"   alt = "Draw freehand lines tool" width = "26" >).</p>
+  </li>
+  <li><p>Click underneath the tip of the pencil lead to set the beginning of the curve. Without pressing
+the left mouse button, bring the cursor about 2 squares' length straight down. Then click to set the end
+of the line.</p>
+  <figure>
+    <img src = "images/SettingTheBeginningAndEndOfTheLine.gif"
+    alt = "Defining the ends of the line."
+    class = "img-fluid">
+    <figcaption>Setting the starting point and ending point of the line.</figcaption>
+  </figure>
+</li>
+<li><p>With the line still selected, choose Object &gt; Fill and Stroke.</p>
+</li>
+<li><p>In the Fill and Stroke dialog, click on the drop arrow to the Units of Measurement drop-down box,
+and click on pt (points).</p>
+  <figure>
+    <img src = "images/SelectPoints.gif" alt = "Select points."
+    class = "img-fluid">
+    <figcaption>Select points for the unit of measurement of the line.</figcaption>
+  </figure>
+</li>
+<li><p>Change the width to 3 in the Width text box (3 points). The line becomes thicker.</p>
+  <figure>
+    <img src = "images/ThickerLine.gif" alt = "Line three points thick."
+    class = "img-fluid">
+    <figcaption>Result.</figcaption>
+  </figure>
+</li>
+<li><p>With the line still selected, click on the Edit paths by nodes tool in the toolbox (<img src = "images/EditPathsByNodesTool.gif" alt = "Edit paths by nodes tool" width = "26" >).</p>
+</li>
+<li><p>Press both the &lt;Ctrl&gt; and &lt;Alt&gt; keys and while still pressing, click on the midpoint of the line to set a new node.</p>
+  <figure>
+    <img src = "images/NewNodeCreated.gif"
+    alt = "New node in the middle of the line."
+    class = "img-fluid">
+    <figcaption>New node.</figcaption>
+  </figure>
+<p>Note: the new node is colored red when the Edit paths by nodes cursor hovers over it. When the cursor is taken off, it
+changes to yellow to indicate that it is still a selected node.</p>
+</li>
+<li><p>Position the cursor in the middle of the upper half of the line, press the left mouse button and keep it pressed. Drag
+the upper half of the line to one side to make it a curve.</p>
+  <figure>
+    <img src = "images/MakingACurve1.gif" alt = "Making a curve."
+    class = "img-fluid">
+    <figcaption>Making a curve.</figcaption>
+  </figure>
+</li>
+<li><p>Position the cursor in the middle of the lower half of the line, press the left mouse button and keep it pressed. Drag
+the upper half of the line to the opposite of the first curve.</p>
+  <figure>
+    <img src = "images/MakingACurve2.gif" alt = "Making a curve."
+    class = "img-fluid">
+    <figcaption>Making a curve.</figcaption>
+  </figure>
+</li>
+<li><p>Adjust the shape of the curve using the control handles. To use a control handle, position the Edit by paths by nodes cursor
+on one of the handles, click on it and move it without releasing the left mouse button. You can fine-tune the shape of the curve
+this way.</p>
+  <figure>
+    <img src = "images/AdjustingTheCurveShape.gif"
+    alt = "Adjusting the shape of a curve."
+    class = "img-fluid">
+    <figcaption>Adjusting a curve's shape.</figcaption>
+  </figure>
+</li>
+</ol>
+</section>
+
+<section>
+<header>
+  <h2>Copying and Scaling Shapes</h2>
+</header>
+<p>A final step in creating logos is to scale the artwork to a 1-inch square and make sure that the resized logo still
+presents a clear image. You'll use the bounding box feature in Inkscape to make a scaled copy of the logo.</p>
+<ol>
+  <li><p>Double-click in the Zoom text box in the lower right-hand corner of the window to highlight its contents and
+type in <b>100</b> to zoom out to 100% magnification.</p>
+  </li>
+  <li><p>Choose View > Page Grid to redisplay the grid.</p>
+  </li>
+  <li><p>Choose Edit &gt; Preferences &gt; Behavior &gt; Transforms. Select the <b>Scale stroke width</b> and <b>Scale rounded
+corners in rectangles</b> options. Leave the other settings as they are.</p>
+  </li>
+</ol>
+  <aside>The Scale stroke width and Scale rounded corners in rectangles effects scale stroke weights and effects automatically.
+You can also choose these commands from the Select and Transform toolbar which appears when the Select and Transform tool is
+active (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26" >).
+<figure>
+  <img src = "images/SelectionTransformToolbar.gif"
+  alt = "Selection and Transform tool bar"
+  class = "img-fluid">
+  <figcaption>Selection and Transform tool bar.</figcaption>
+</figure>
+  </aside>
+<ol start = "4">
+  <li><p>Choose Edit &gt; Select All to select all the objects in the logo, and then click the Select tool
+  (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26" >) in the toolbox.</p>
+  </li>
+  <li><p>Move the Selection tool cursor into the artwork until the cursor changes into an arrow with an accompanying cross
+  arrow (<img src = "images/ArrowCrossArrow.gif" alt = "Selection arrow with cross arrow cursor" >).</p>
+  </li>
+  <li><p>Press the left mouse button and tap the spacebar once to make a copy of the artwork. Then drag the artwork copy to below the original and line up the left corner point on the logo with a grid line to make it easier to measure as you scale the copy.</p>
+  </li>
+  <li><p>Using the Selection tool, select the bottom right corner point of the bounding box, hold down &lt;Ctrl&gt;, and drag the corner up and to the left to scale down the logo. Release the mouse button when the logo is about an inch wide.</p>
+  <p>Holding down &lt;Ctrl&gt; as you drag the corner of the bounding box scales the objects proportionately.
+  </p>
+  <figure>
+    <img src = "images/SizingTheLogo.gif" alt = "Resizing the logo"
+    class = "img-fluid">
+    <figcaption>&lt;Ctrl&gt;-drag to scale the artwork proportionately.</figcaption>
+  </figure>
+  <figure>
+    <img src = "images/LookingGood.gif" alt = "Done"
+    class = "img-fluid">
+    <figcaption>Result.</figcaption>
+  </figure>
+  </li>
+  <li><p>You can use various zoom options to zoom in on the smaller logo and check its clarity. Using the Selection tool, select the 1-inch-sized logo, then press the number <b>3</b> (<i>Zoom to fit selection
+	in window</i> shortcut key).</p>
+  <figure>
+    <img src = "images/LogoMagnified.gif" alt = "Logo magnified"
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li><p>The spiral decoration needs to have a thicker stroke. Select the spiral with the Selection tool.</p>
+  </li>
+  <li><p>Choose Object &gt; Fill and Stroke. If the <b>Stroke style</b> tab isn't selected, then click on it.</p>
+  </li>
+  <li><p>Choose <b>px</b> (pixels) from the Unit of Measurement drop-down menu. Change the width in the <b>W</b> text box to <b>.9</b>. Press &lt;Enter&gt; to set the new stroke measurement.</p>
+  <figure>
+    <img src = "images/Stroke.9px.gif" alt = "Setting the new stroke thickness"
+    class = "img-fluid">
+  </figure>
+  <figure>
+    <img src = "images/ThickerSpiral.gif" alt = "Thicker spiral"
+    class = "img-fluid">
+  </figure>
+  </li>
+  <li>Here is your finished product. Choose File &gt; Save. Choose File &gt; Close to close the file.
+  <figure>
+    <img src = "images/FinishedProduct.gif" alt = "Finished logo"
+    class = "img-fluid">
+  </figure>
+  </li>
+</ol>
+<p>You've now completed the basic shapes lesson and created the logo artwork.</p>
+</section>
+
+<hr>
+
+<section>
+<header>
+  <h2>Review Quiz</h2>
+</header>
+
+<ol>
+  <li>What are the basic shape tools?</li>
+  <li>How do you draw a square?</li>
+  <li>How do you select the color fill of an object?</li>
+  <li>How do you select the stroke color of an object?</li>
+  <li>What is the difference between a view grid and a grid drawn with the grid extension tool?</li>
+  <li>How do you rescale an object so that it scales up or down proportionately?</li>
+</ol>
+</section>
+<section>
+<header>
+  <h2>Review Answers</h2>
+</header>
+
+<ol>
+  <li>The basic shape tools are the rectangle/square tool, ellipse/circle tool, polygon/star tool, and the
+spiral tool.
+  </li>
+  <li>Select the Rectangle/Square tool, press &lt;Ctrl&gt;, and drag to create the square.
+  </li>
+  <li>Select your object and, while the object is still selected, click on the desired color in the Color palette.
+The interior of the object is colored with that particular color. The stroke color is not affected.
+  </li>
+  <li>Select your object and, while the object is still selected, &lt;Shift&gt;-click on the desired color
+in the Color palette. The exterior boundary of the object is colored with that particular color. The fill color
+is not affected.
+  </li>
+  <li>The view grid acts as a guiding tool that you can use for precision placement of an object, including snapping. The view grid does not print with the artwork. A grid made with the grid extension tool does print.
+  </li>
+  <li>To rescale an object proportionately, press &lt;Ctrl&gt; and click-drag with the mouse to resize.
+  </li>
+</ol>
+</section>
+
+<!-- Creative Commons ShareAlike 4.0 International License information -->
+<footer>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" >
+  <img src = "images/CreativeCommonsLicenseLogo88x31.png"
+  alt = "Creative Commons ShareAlike License"
+  class = "img-fluid">&nbsp;This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</footer>
+		</div>
+	</div>
+</div>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

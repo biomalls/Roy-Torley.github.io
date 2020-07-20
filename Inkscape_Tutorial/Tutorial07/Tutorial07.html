@@ -1,0 +1,1352 @@
+<!doctype html>
+
+<html lang = "en-us" >
+<head>
+  <meta charset = "utf-8" >
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+  <title>Inkscape Tutorial 7 &ndash; Transforming Objects</title>
+  <meta name = "author" content = "Roy F. Torley" >
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet" crossorigin="anonymous">
+</head>
+
+<body>
+<div class = "container">
+	<div class = "row">
+		<div class = "col-md-10 offset-md-1">
+<header>
+  <h1>Tutorial 7 &ndash; Transforming Objects</h1>
+  <figure style = "float: left;">
+    <img src = "images/Composite.png"
+    alt = "Finished practice image file for Tutorial 8" width = "500"
+    class = "img-fluid">
+  </figure>
+<p>You can modify objects in many ways as you create your artwork &ndash; including quickly and precisely controlling their size, shape, and orientation. In this lesson, you'll explore the various transform tools, commands, and palettes as you create three pieces of artwork.</p>
+</header>
+<div style = "clear: left;"></div>
+<hr>
+
+<section>
+<header>
+<h4>In this tutorial, you'll learn how to do the following: </h4>
+  <ul>
+    <li>Select, scale, move, rotate, and shear individual objects and objects in a group.</li>
+    <li>Rotate objects using default rotation centers and centers that you have moved.</li>
+    <li>Use the <b>Transform</b> palette to modify the shape of an object with precision.</li>
+    <li>Work with snap guides and snap objects to guide lines.</li>
+  </ul>
+</header>
+  <h2>Getting Started</h2>
+
+<p>In this lesson, you'll transform parts of a logo to use in three pieces of artwork to create a letterhead design,
+an envelope, and a business card template.</p>
+<ol>
+    <li>Start Inkscape.<br><br>
+    </li>
+    <li>Choose File &gt; Open, and open the <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial07/Composite.svg"><b>Composite.svg</b></a> file in the Lesson07 folder.<br><br>
+    This file contains a composite of the three pieces of finished artwork. The Citrus Bath &amp; Soap logo
+    in the top left corner of the letterhead is the basis for all the modified objects. The logo has been
+    resized for the letterhead, envelope, and business card.<br><br>
+
+    <aside><b>Note:</b> You can also view the individual pieces of finished artwork by opening the files
+    <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial07/Tutorial07EndLetterhd.svg"><b>Tutorial07EndLetterhd.svg</b></a>, <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial07/Tutorial07Envelope.svg"><b>Tutorial07Envelope.svg</b></a>, and <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial07/Tutorial07EndBusCard.svg"><b>Tutorial07EndBusCard.svg</b></a> in the Lesson07 folder.
+		</aside>
+		<br>
+    </li>
+    <li>If you like, use the Zoom tool (<img src = "images/ZoomInOut.gif" alt = "Zoom In/Out tool" width = "26">) to reduce the view of the finished artwork, adjust the window size, and leave it on your screen
+    as you work. (Use the mouse wheel with and without pressing the &lt;Shift&gt; key to move the artwork where
+    you want it in the window.) If you don't want to leave the image open, choose File &gt; Close.<br><br>
+
+    To begin working, you'll open an existing file set up for the letterhead artwork.<br><br>
+    </li>
+    <li>Choose File &gt; Open, and open the <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial07/Tutorial07StartLetterhd.svg"><b>Tutorial08StartLetterhd.svg</b></a> file
+    in the Tutorial07 folder. This start file has been saved with the rulers showing
+    in inches, custom swatches added to the Swatches palette, and blue guidelines for
+    scaling the logo and objects on the letterhead.<br>
+        <figure>
+            <img src = "images/Tutorial07StartingImage.gif"
+            alt = "Starting image for Tutorial 07"
+            class = "img-fluid">
+        </figure>
+    </li>
+    <li>Choose File &gt; Save As, name the file <b>Letterhead.svg</b>, select the Tutorial07 folder,
+    and click on <b>Save</b>.
+    </li>
+</ol>
+</section>
+
+<section>
+<header><h2>Scaling Objects</h2></header>
+<p>You scale objects by enlarging or reducing them horizontally (along the x axis) and vertically
+(along the y axis) relative to a fixed point of origin that you designate. If you don't designate
+an origin, the objects are scaled from their center points. You'll use three methods to scale the
+logo and two objects copied from the logo.</p>
+
+<p>First you'll use the Transform palette to scale down the logo by entering new dimensions and
+designating the point of origin from which the logo will scale.</p>
+
+<ol>
+    <li>Using the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26">) in the toolbox, click the logo to select the group of objects (type, background, lemon, orange slice, lime slice) that make up the logo.<br><br>
+    </li>
+    <li>Choose Object &gt; Transform to display the Transform palette. The Transform palette appears
+    docked on the right side of the screen.<br><br>
+    The Transform palette contains options for moving, scaling, rotating, skewing, and distorting an object
+    by manipulating the handles of its bounding box. You can move an object relative to a point of origin
+    of your choosing or absolute position on the artboard, scale an object keeping or not keeping aspect
+    ration, and distort an object by editing its matrix or creating a new matrix. For more information than
+    what is presented in this tutorial, choose Help &gt; Inkscape Manual &gt; Positioning and Transforming
+    &gt; Transformations.<br>
+    <figure>
+        <img src = "images/TransformPalette.gif" alt = "Transform palette"
+        class = "img-fluid">
+        <figcaption>Transform palette.</figcaption>
+    </figure>
+    </li>
+    <li>Click on the <b>Scale</b> tab. Set the unit of measurement to points (<b>pt</b>) if it is
+    not set to points already. Set the width to <b>83.75</b> points and the height to <b>8.5</b> points.
+    Click on the <b>Apply</b> button. The logo is now resized to your measurements.<br>
+    <figure>
+        <img src = "images/LogoScaledDown.gif" alt = "Resized logo"
+        class = "img-fluid">
+        <figcaption>Logo scaled down.</figcaption>
+    </figure>
+    </li>
+    <li>You will now move the logo to the upper left-hand corner of the page.<br><br>
+    If the Snap Controls Bar is not visible, choose View &gt; Show/Hide &gt; Snap Controls Bar. A check mark
+    will appear to the left of the Snap Controls Bar option when you click on the option and the bar will
+    appear.<br><br>
+    </li>
+    <li>If the <b>Enable snapping (%)</b> icon (<img src = "images/EnableSnappingIcon.gif"
+    alt = "Enable snapping icon" >) isn't highlighted, click on it to activate it.
+    Then, click on the <b>Snap guides</b> icon (<img src = "images/SnapGuidesIcon.gif" alt = "Snap Guides icon"
+    width = "26">) to activate its functioning.<br><br>
+
+    <aside><b>Note:</b> The <b>Enable snapping</b> feature acts as a master switch that allows activating all other
+    snapping features under it, including the <b>Snap guides</b> function. If the particular snapping
+    feature you want to use is not highlighted, check to see whether the <b>Enable snapping (%)</b> icon
+    is highlighted. If it's off, turn it on, then turn your option on.
+		</aside>
+		<br>
+    </li>
+    <li>Click on the logo with the Select tool (<img src = "images/SelectionTool.gif"
+    alt = "Selection tool" width = "26">) and drag the logo to the upper left-hand
+    corner of the artboard where it fits into the small square defined by four guide lines.<br>
+    <figure>
+        <img src = "images/LogoMoved.gif" alt = "Logo now moved"
+        class = "img-fluid">
+        <figcaption>Logo moved to upper left-hand corner.</figcaption>
+    </figure>
+    The upper part of the page should appear similar to the figure below.<br>
+    <figure>
+        <img src = "images/UpperPartOfPage.gif" alt = "Upper part of page"
+        class = "img-fluid">
+        <figcaption>Upper part of page showing ruler.</figcaption>
+    </figure>
+    Next you'll copy the background object in the logo and scale the new object by dragging
+    its bounding box to fit the background of the letterhead.<br><br>
+    </li>
+    <li>With the logo still selected, choose Object &gt; Ungroup to ungroup the larger
+    group in the logo. See how the smaller subgroups remain grouped.<br><br>
+    </li>
+    <li>If desired, use the Zoom tool (<img src = "images/ZoomInOut.gif"
+    alt = "Zoom In/Out tool" width = "26">) to zoom in on the logo.<br><br>
+    </li>
+    <li>Using the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool"
+    width = "26">), click away from the logo to deselect it, and then
+    click below the word Bath to select the light-blue background object in the logo.
+    Press &lt;Ctrl&gt;-D to duplicate the background image. All the objects in the logo
+    become darkened a little bit because there is now a copy of the background color, which is
+    actually a gradient, on top of all the objects. Now drag the copy the background to the
+    bottom left corner of the page, aligning it with the snap guides. You can press the arrow keys
+    to nudge it into place.<br>
+    <figure>
+        <img src = "images/BackgroundMoved.gif"
+        alt = "Move the background object."
+        class = "img-fluid">
+        <figcaption>Move the background object.</figcaption>
+    </figure>
+    Next, you'll make this background object the background for the page.<br><br>
+    </li>
+    <li>Drag the top right corner of the new object's bounding box up to the top right side
+    of the blue letterhead guide, to just below the return address.<br>
+    <figure style = "float: left;">
+        <img src = "images/EnlargingBackground.gif"
+        alt = "Enlarging the background object."
+        class = "img-fluid">
+        <figcaption>Scaling the background object to the page.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/BackgroundResized.gif"
+        alt = "Rescale the background object."
+        class = "img-fluid">
+        <figcaption>Background object scaled to the page.</figcaption>
+    </figure>
+    <div style = "clear: left;"></div>
+    </li>
+    <li>With the background object still selected, choose Object &gt; Object Properties, and click on the
+<b>Lock</b> checkbox in the <b>Object Properties</b> palette to lock the object. Click away from the
+background object to deselect it.  Locking the background object makes it easier to select other
+objects you'll add to the artwork.<br><br>
+You can also lock all artwork above the selected object &ndash; for example, if you want to edit
+an object in the background that has objects on top of it — or all objects on other layers.
+In addition, you can use the <b>Layers</b> palette to lock objects. Once objects are locked, they
+cannot be selected or edited. You can quickly lock multiple objects, groups of objects,
+and sublayers by locking the parent layer.<br><br>
+The lemon in the logo is comprised of two objects grouped together. Now you'll copy and move the lemon and place it at the bottom of the letterhead.<br><br>
+    </li>
+    <li>
+Click on the collection of citrus fruits in the lower part of the logo and choose Object &lt; Ungroup to separate them into three distinct objects. Select the lemon in the logo, press &lt;Ctrl&gt;-D to copy it, and move the new lemon to the bottom right corner of the letterhead guide.<br>
+    <figure>
+        <img src = "images/MovingLemon.gif"
+        alt = "Move copy of lemon to lower right corner of page"
+        class = "img-fluid">
+        <figcaption>Move the copy of the lemon to the lower right corner of the page.</figcaption>
+    </figure>
+    You'll use the Scale tool to resize the new lemon.<br><br>
+    </li>
+    <li>Select the copy of the lemon if it isn't selected already.<br><br>
+    </li>
+    <li>Click on the <b>Scale</b> tab in the <b>Transform</b> palette, set the unit of measurement to
+    percent (<b>%</b>), set the width to 300 (300 percent), and click on the <b>Scale proportionally</b>
+    checkbox to maintain the aspect ratio of width to height.<br><br>
+    </li>
+    <li>Click the <b>Apply</b> button.<br><br>
+    <figure>
+        <img src = "images/Lemon300Percent.gif"
+        alt = "Lemon image magnified by 300 percent"
+        class = "img-fluid">
+        <figcaption>Magnify the image of the lemon 300 percent.</figcaption>
+    </figure>
+    </li>
+    <li>Move the lemon so it clears the side and bottom of the page by about half an inch.<br>
+    <figure>
+        <img src = "images/LemonNewPlacement.gif"
+        alt = "Lemon new placement"
+        class = "img-fluid">
+        <figcaption>Relocating the lemon image.</figcaption>
+    </figure>
+    </li>
+</ol>
+</section>
+
+<section>
+<header><h2>Rotating Objects</h2></header>
+<p>Objects are rotated by turning them around a designed point of rotation. You can rotate objects
+by clicking on them twice, first to display their bounding boxes and handles to allow resizing, and
+second to display handles to allow rotation and shearing. When the center of rotation appears after
+the second click, you can rotate the object about that point. You can also drag that center of rotation
+to any other location you want where it will still act as a center about which your object will
+rotate.</p>
+
+<p>You can rotate objects using the Transform palette to set a point of origin and a rotation angle. You can also rotate objects using the Rotate palette to set its rotation angle. In the examples below, the middle figure
+shows a lemon object rotated about its default center of rotation. In the third example, the center of
+rotation has been dragged outside the lemon and a rotation of 30 degrees applied using the <b>Rotate</b>
+palette in the <b>Transform</b> palette.</p>
+    <figure style = "float: left;">
+        <img src = "images/RotateLemonEx1.gif"
+        alt = "Rotate an object"
+        class = "img-fluid">
+        <figcaption>Original lemon object<br>showing rotation<br>and shear handles.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/RotateLemonEx2.gif"
+        alt = "Rotate an object"
+        class = "img-fluid">
+        <figcaption>Original lemon object<br>rotated about default<br>center of rotation.</figcaption>
+    </figure>
+    <figure style = "float: left; margin: 0;">
+        <img src = "images/RotateLemonEx3.gif"
+        alt = "Rotate an object"
+        class = "img-fluid">
+        <figcaption>Original lemon object<br>rotated about external<br>
+        center of rotation.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/RotatePalette.gif"
+        alt = "Rotate palette" width = "230"
+        class = "img-fluid">
+        <figcaption>Rotate palette, 30&deg;, clockwise<br>direction icon selected.</figcaption>
+    </figure>
+    <div style = "clear: left;"></div>
+
+<p>You'll rotate the lemon 30° anticlockwise around its center point using the <b>Rotate</b> palette.</p>
+
+<ol>
+    <li>With the lemon selected, click on the <b>Rotate</b> tab to bring up the <b>Rotate</b> palette.<br><br>
+    </li>
+    <li>Type <b>30</b> in the <b>Angle:</b> text field, select the <b>Rotate anticlockwise</b> icon,
+    and click on the <b>Apply</b> button.<br>
+    <figure>
+        <img src = "images/RotateLemon30Degrees.gif"
+        alt = "Rotate lemon 30 degrees"
+        class = "img-fluid">
+        <figcaption>Rotate lemon 30&deg; anticlockwiseclockwise.</figcaption>
+    </figure>
+    </li>
+    <li>Click away from the lemon object to deselect it. Your page will appear similar
+    to the figure below.<br>
+    <figure>
+        <img src = "images/FullPage1.gif"
+        alt = "Full page so far"
+        class = "img-fluid">
+        <figcaption>Full page image so far.</figcaption>
+    </figure>
+    </li>
+    <li>Choose File &gt; Save.
+    </li>
+</ol>
+<p>Now you'll create a flower. You will first create the sepals by distorting the edges of a star. You
+will then create the petals by rotating copies of an ellipse, converting them into paths, and then
+merging them into one object using the <b>Union</b> option for paths.</p>
+
+<ol>
+    <li>Select the Star tool (<img src = "images/StarTool.gif" alt = "Star and polygon tool" >)
+    in the toolbox, type <b>5</b> into the <b>Corners</b> text box to make a five-pointed star, leave the
+    other settings at their default values, and position the pointer in the artwork next to the lemon.
+    Drag the tool to draw a five-pointed star that's about the same size as the lemon.<br>
+    <figure>
+        <img src = "images/MakeStar.gif"
+        alt = "Make a five-pointed star"
+        class = "img-fluid">
+        <figcaption>Make a five-pointed star.</figcaption>
+    </figure>
+    The star is painted with the paint attributes of the last selected object (in this case,
+    the lemon).<br><br>
+    </li>
+    <li>With the star still selected, click on the Lime Green swatch in the Color palette. Leave the
+    stroke set to <b>None</b>.<br>
+    <figure>
+        <img src = "images/LimeGreenStar.gif"
+        alt = "Change star color to lime green"
+        class = "img-fluid">
+        <figcaption>Change the star's fill color to lime green.</figcaption>
+    </figure>
+    Now you'll distort the star by converting it from an object into a series of paths that you
+    can manipulate individually.<br><br>
+    </li>
+    <li>Choose Path &gt; Object to path.<br><br>
+    </li>
+    <li>Select the <b>Edit nodes</b> tool (<img src = "images/EditPathsByNodesTool.gif"
+    alt = "Edit paths by nodes tool" >). Note how the star shape changes to
+    show individual paths and nodes.<br>
+    <figure>
+        <img src = "images/StarAsPaths.gif"
+        alt = "Star converted to paths"
+        class = "img-fluid">
+        <figcaption>Star converted into a series of nodes and paths.</figcaption>
+    </figure>
+    </li>
+    <li>Select each side of the star and drag the middle to the right a little bit to produce
+    a twirl effect. When you're done, choose Edit &gt; Deselect to deselect the distorted star.
+    You have created the flower sepals, which are the backmost part of the flower.<br>
+    <figure style = "float: left;">
+        <img src = "images/CurvedStarSides.gif"
+        alt = "Curving the star sides" width = "350"
+        class = "img-fluid">
+        <figcaption>Curving the sides of the star with the <b>Edit nodes</b> tool.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/DistortedStarResult.gif"
+        alt = "Result of distorting star object"
+        width = "344"
+        class = "img-fluid">
+        <figcaption>Result of distorting star object.</figcaption>
+    </figure>
+    <div style = "clear: left;"></div>
+    Now you'll make the flower petals. You'll create a white ellipse, move its center of rotation to
+    one end, and use a combination of &lt;Ctrl&gt;-D to duplicate the ellipse and the <b>Rotate</b>
+    palette to create the remaining four petals to create a five-petaled flower. You'll then
+    convert the five ellipses into paths and then use the path <b>Union</b> option to merge them
+    into one object.<br><br>
+    </li>
+    <li>Make an ellipse and color it white.<br><br>
+    </li>
+    <li>With the ellipse still selected, choose Path &gt; Object to Path. Click on the ellipse again
+    to bring up the rotate and shear handles. The center of rotation should (of course) appear in
+    the center of ellipse. Drag the center of rotation to one end of the ellipse.<br>
+    <figure style = "float: left;">
+        <img src = "images/MakeWhiteEllipsePath.gif"
+        alt = "Convert ellipse into a path"
+        class = "img-fluid">
+        <figcaption>Change color of ellipse from lime green to white.<br>
+        Then convert it into a path.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/RotationCenterAtEnd.gif"
+        alt = "Move the center of rotation to an end of the ellipse."
+        class = "img-fluid">
+        <figcaption>Drag the center of rotation of the ellipse to one end.</figcaption>
+    </figure>
+    <div style = "clear: left;"></div>
+    </li>
+    <li>With the ellipse still selected, bring up the <b>Rotate</b> palette in the <b>Transform</b>
+    palette. Type <b>72</b> in the <b>Angle:</b> text field (An angle of 72&deg; represents
+    one-fifth of a full 360&deg; rotation). It doesn't matter which direction of
+    rotation you choose.<br><br>
+    </li>
+    <li>Press &lt;Ctrl&gt;-D to make a copy of the ellipse and click the <b>Apply</b> button in
+    the <b>Rotate</b> palette. The copy of the petal is now rotated 72 degrees about its end.<br>
+    <figure>
+        <img src = "images/SecondPetal.gif" alt = "Second petal created"
+        class = "img-fluid">
+        <figcaption>Second flower petal created.</figcaption>
+    </figure>
+    </li>
+    <li>With the second petal still selected, press &lt;Ctrl&gt;-D to make a copy of that petal and
+    click on the <b>Apply</b> button in the <b>Rotate</b> palette to rotate the newly copied petal.
+    Repeat these steps two more times to create the remaining two petals.<br>
+    <figure>
+        <img src = "images/FivePetals.gif" alt = "Five petals created"
+        class = "img-fluid">
+        <figcaption>Five petals created.</figcaption>
+    </figure>
+    </li>
+    <li>Now shift-click all the unselected petals, or marquee-select them to group them. Choose
+    Path &gt; Union to merge all the individual ellipse paths into one path.<br>
+    <figure>
+        <img src = "images/FivePetalsUnion.gif"
+        alt = "Five petals made into one object"
+        class = "img-fluid">
+        <figcaption>Five petals merged into one object.</figcaption>
+    </figure>
+    </li>
+    <li>Move, magnify, and rotate the flower petal object on top of the lime-green sepal object.
+    Enlarge the petal object so it is approximately the same size as the sepal object and rotate
+    it so the petals are situated between the sepals.<br>
+    <figure>
+        <img src = "images/PetalsAndSepals.gif"
+        alt = "Petals on top of sepals"
+        class = "img-fluid">
+        <figcaption>The petal object on top of the sepal object.</figcaption>
+    </figure>
+    </li>
+    <li>Now you'll complete the body of the flower by adding an orange center. Using the <b>Circle</b>
+    tool in the toolbox, create an ellipse about the same size and shape as a single petal. Move to the
+    center of the flower.<br>
+    <figure>
+        <img src = "images/CompletingTheFlower.gif"
+        alt = "Completing the flower"
+        class = "img-fluid">
+        <figcaption>Completing the flower</figcaption>
+    </figure>
+    </li>
+</ol>
+</section>
+
+<section>
+<header><h2>Shearing Objects</h2></header>
+<p>You will now shear the flower. Shearing an object slants, or skews, the sides of the object
+along the axis you specify, keeping opposite sides parallel and making the object nonsymmetrical.</p>
+
+<ol>
+    <li>Marquee select the whole flower and choose Object &gt; Group to group them into one object.
+    </li>
+    <li>Click on the <b>Skew</b> tab in the <b>Transform</b> palette. Enter <b>-10</b> in the
+    <b>Horizontal:</b> text field, leave the <b>Vertical:</b> text field at <b>0</b>, and select
+    <b>&deg;</b> (degrees) in the unit of measurement field. Click on the <b>Apply</b> button.
+    The flower now appears to have been turned a little to the left and up.<br>
+    <figure>
+        <img src = "images/FlowerSheared.gif"
+        alt = "Shearing the flower"
+        class = "img-fluid">
+        <figcaption>Shearing the flower object.</figcaption>
+    </figure>
+    </li>
+    <li>The flower is about the same size as the lemon. You'll rescale it so it's smaller. Click on the
+    <b>Scale</b> tab, enter <b>0.75</b> in both the <b>Width</b> and <b>Height</b> text fields. Choose
+    <b>in</b> (inches) for the unit of measurement. Click on the <b>Apply</b> button. The flower now
+    has a more reasonable size compared to the lemon.<br>
+    <figure>
+        <img src = "images/FlowerRescaled.gif"
+        alt = "Rescaling the flower"
+        class = "img-fluid">
+        <figcaption>Rescaling the flower object.</figcaption>
+    </figure>
+    </li>
+    <li>Using the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool"
+    width = "26">), drag the flower next to the lemon in the bottom right
+    corner of the page. Then group the flower and lemon, and move them as a unit closer to
+    the lower right corner of the letterhead.<br>
+    <figure style = "float: left;">
+        <img src = "images/FlowerLemonGrouped.gif"
+        alt = "Flower and lemon objects grouped"
+        class = "img-fluid">
+        <figcaption>Group the flower and lemon objects.<br>
+        Then convert it into a path.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/FlowerLemonMoved.gif"
+        alt = "Flower and lemon group moved"
+        class = "img-fluid">
+        <figcaption>Move the flower and lemon objects.</figcaption>
+    </figure>
+    <div style = "clear: left;"></div>
+    </li>
+    <li>Choose Edit &gt; Deselect to deselect the artwork, and then choose File &gt; Save.
+    </li>
+</ol>
+<p>You've completed the letterhead artwork. Keep the file open so that you can use its artwork later in the lesson.</p>
+</section>
+
+<section>
+<header><h2>Positioning Objects Precisely</h2></header>
+<p>You can use guide lines with snapping capabilities and the Transform palette to move objects to exact
+coordinates on the x and y axes of the page and to control the position of objects in relation to a trim edge.</p>
+
+<p>For this portion of the tutorial, you will create a new <b>svg</b> file that will contain artwork for
+an envelope. This artwork will be a modified version of the letterhead logo you just finished.</p>
+
+<ol>
+    <li>Choose File &gt; New.<br><br>
+    A new Inkscape window appears with a blank artboard.<br><br>
+    </li>
+    <li>Choose File &gt; Save As...<br><br>
+    Using the dialog window, navigate to the Tutorial07 folder and save the file as <b>envelope.svg</b>.
+    <br><br>
+    </li>
+    <li>Choose File &gt; Document Properties.<br><br>
+    </li>
+    <li>Select <b>Page Size:</b> US #10 Envelope 4.1 &times; 9.5 in. and uncheck the checkbox for
+    <b>Border:</b> Show border shadow. The artboard drop shadow might be a distraction whereas
+    a simple border might define your working area more clearly in this case.<br>
+    <figure>
+        <img src = "images/DocumentPropertiesFull.png"
+        alt = "Full length Document Properties dialog box"
+        width = "400" class = "img-fluid">
+        <figcaption>Document Properties dialog box.</figcaption>
+    </figure>
+    </li>
+    <li>X out of the Document Properties palette.<br><br>
+    </li>
+    <li>Click on the <b>Zoom to fit page in window (5)</b> icon in the Commands Bar.<br><br>
+    </li>
+    <li>Choose Extensions &gt; Render &gt; Layout &gt; Printing marks... Click on the <b>Marks</b> tab
+    if that tab isn't already active. Check the <b>Crop Marks</b> checkbox if it isn't already checked
+    and deselect any other checkboxes. Crop marks appear automatically at the corners of the envelope-shaped
+    artboard.<br>
+    <figure>
+        <img src = "images/EnvelopeWithCropMarks.gif"
+        alt = "Envelope with crop marks"
+        class = "img-fluid">
+        <figcaption>Envelope with crop marks.</figcaption>
+    </figure>
+    </li>
+    <li>Now you will make three guide lines to help in positioning the logo and address label on the
+    envelope. To create the top guide line, click on the ruler at the top of the work window, left-click
+    to create the guide line and drag it down until it is one quarter of an inch down from the top
+    edge of the envelope. The line should be aligned at the 4&frac18;-inch mark on the left vertical ruler.
+    The line turns blue when you release the left mouse button.<br>
+    <figure>
+        <img src = "images/MakeTopGuideLine.gif"
+        alt = "Make the top guide line." width = "600"
+        class = "img-fluid">
+        <figcaption>Make the top guide line.</figcaption>
+    </figure>
+    </li>
+    <li>Do the same thing to create a guide line for the bottom part of the envelope. Click on the ruler
+    at the top of the work window again and drag the new guide line down until it is &frac14; of an inch
+    from the bottom edge of the envelope. It will be aligned with the &frac14;-inch mark on the vertical
+    ruler at the left side of the work window.
+    <figure>
+        <img src = "images/MakeRemainingGuideLines.png"
+        alt = "Make the remaining guide lines." width = "600"
+        class = "img-fluid">
+        <figcaption>Make the remaining guide lines.</figcaption>
+    </figure>
+    We don't need to make a guide line for the right end of the envelope. We will not be putting any
+    artwork there. The envelope artboard is ready to receive artwork from the letterhead file.<br><br>
+    For more information on rulers, see Help &gt; Inkscape Manual. In the table of contents, choose
+    <b>1. Quick Start</b> &gt; <b>The Anatomy of the Inkscape Window</b>. For more on guide lines, see
+    <b>5. Positioning and Transforming</b> &gt; <b>Snapping</b> &gt; <b>Guides</b>.<br><br>
+    </li>
+    <li>Bring the letterhead artwork file that you were working on earlier. You can use the &lt;Alt&gt;-&lt;tab&gt;
+    key combination to switch to the other active Inkscape window.<br><br>
+    </li>
+    <li>Using the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26">), draw a marquee around the logo so that all the objects in it are selected.<br><br>
+    </li>
+    <li>Choose Edit &gt; Copy to copy the logo to the Clipboard.<br><br>
+    </li>
+    <li>Press &lt;Alt&gt;-&lt;tab&gt; again so you can switch back to the envelope Inkscape window.<br><br>
+    </li>
+    <li>Choose Edit &gt; Paste. You'll move the pasted logo to within &frac14;-inch of the top left corner of the evelope by specifying the x and y coordinates in relation to the ruler origin. The ruler origin is the point where 0 appears on each ruler. The ruler origin in this file begins at the lower left corner of the envelope, and the ruler units are in inches.
+    <br><br>
+    </li>
+    <li>If the Snapping Toolbar isn't visible, then choose View &gt; Show/Hide &gt; Snap Controls Bar. Click on the
+    <b>Enable snapping (%)</b> icon (<img src = "images/EnableSnappingIcon.gif"
+    alt = "Enable snapping icon" width = "26" >) and the <b>Snap guides</b> icon (<img src = "images/SnapGuidesIcon.gif" alt = "Snap guides icon" width = "26" >) to make them active.<br><br>
+    </li>
+    <li>Drag the logo artwork to the upper left corner of the envelope where the guide lines intersect. A tooltip
+    window appears when the upper left corner of the logo image is very close to the guide line intersection, signaling
+    you of the image's proximity and that snapping to the corner will take place.<br>
+    <figure>
+        <img src = "images/MovingLogo.gif"
+        alt = "Moving the logo to the upper left corner of the envelope."
+        class = "img-fluid">
+        <figcaption>Moving the logo image to the upper left corner of the envelope.</figcaption>
+    </figure>
+    </li>
+    <li>Release the mouse key and the logo image snaps into place.<br><br>
+    </li>
+    <li>Now go back to the letterhead artwork using &lt;Alt&gt;-&lt;Tab&gt;, marquee select the top two lines of the
+    address and copy the block to the Clipboard using Edit &gt; Copy.<br>
+    <figure>
+        <img src = "images/SelectAddress.gif"
+        alt = "Select address" class = "img-fluid">
+        <figcaption>Select the address (top two lines only).</figcaption>
+    </figure>
+    </li>
+    <li>
+    Return to the envelope artwork (&lt;Alt&gt;-&lt;Tab&gt;) again and use
+    Edit &gt; Paste to paste the address onto the artboard.<br><br>
+    </li>
+    <li>Choose Object &gt; Transform.<br><br>
+    </li>
+    <li>Select <b>in</b> for unit of measurement if it isn't selected already, set both the <b>Horizontal</b>
+    and <b>Vertical</b> placement to <b>0.25</b> so the lower left corner of the address block will be placed
+    where the left-hand and bottom guide lines intersection. Uncheck the <b>Relative move</b> checkbox. You
+    will move the lower left corner of the logo block to the absolute coordinates x = 0.25 inches,
+    y = 0.25 inches, as you will see when you check where the guide lines intersect the left and top rulers.<br>
+    <figure>
+        <img src = "images/MoveAddress.gif"
+        alt = "Positioning the address block"
+        class = "img-fluid">
+        <figcaption>Positioning the address block using the <b>Transform</b> function.</figcaption>
+    </figure>
+    </li>
+    <li>The two lines of address text need to be aligned. You will use the <b>Align and Distribute</b> function to
+    left-justify them.<br><br>
+    </li>
+    <li>With the address block still selected (reselect it, otherwise), choose Object &gt; Align and Distribute.
+    Click on the <b>Align baseline anchors of texts horizontally</b> icon. The two lines of address text line up
+    against the left guide line.<br>
+    <figure>
+        <img src = "images/AlignAddress.png"
+        alt = "Aligning the address block" width = "700"
+        class = "img-fluid">
+        <figcaption>Left-justifying the address block using the <b>Align and Distribute</b> function.</figcaption>
+    </figure>
+    The <b>Align and Distribute</b> function is a very powerful feature of Inkscape that allows you to arrange
+    text and art objects with great precision. To find out more about it, see Help &gt; Inkscape manual &gt;
+    5. Positioning and Transforming &gt; Alignment and Distribution of Objects.<br><br>
+    </li>
+    <li>Click away from the artwork to deselect it, and then choose File > Save.
+    </li>
+</ol>
+</section>
+
+<section>
+<h2>Reflecting Objects</h2>
+<p>You can make mirror reflections of objects by flipping them across an invisible vertical or horizontal mirror.
+There are two reflect functions available when the Select tool (<img src = "images/SelectionTool.gif"
+alt = "Selection tool" width = "26">) is active. They are located in the Commands Bar.</p>
+    <figure>
+        <img src = "images/ReflectionIcons.png" alt = "Reflection icons"
+        class = "img-fluid">
+        <figcaption>Reflection Icons.</figcaption>
+    </figure>
+    <p>Now you'll use the Vertical Reflect tool (<img src = "images/VerticalReflectTool.gif"
+    alt = "Vertical Reflect tool" width = "26" >) to make a mirror image of the
+    orange slice in the logo.</p>
+
+    <ol>
+        <li>Use the Select tool (<img src = "images/SelectionTool.gif"
+alt = "Selection tool" width = "26">) to select the orange slice in the logo.<br><br>
+        </li>
+        <li>Zoom in if necessary.<br><br>
+        </li>
+        <li>Press &lt;Ctrl&gt;-D to make a copy of the orange slice. You'll see the image flicker a little
+        bit as the copy is made and placed directly on top of the original orange slice.<br><br>
+        </li>
+        <li>With the duplicated orange slice still selected, click on the Vertical Reflect tool
+        (<img src = "images/VerticalReflectTool.gif" alt = "Vertical Reflect tool" width = "26" >)
+        to make a mirror image of the object. Drag it off to the side where you will continue to manipulate it.<br>
+        <figure>
+            <img src = "images/CopyReflectSlice.gif"
+            alt = "Copying and reflecting the orange slice"
+            class = "img-fluid">
+            <figcaption>Copying, Reflecting, and Moving the Orange Slice.</figcaption>
+        </figure>
+        </li>
+        <li>With the reflected orange slice still selected, move it down below the logo, &lt;Ctrl&gt;-dragging it
+        to constrain the move vertically downward. Then &lt;Ctrl&gt;-drag a handle on the bounding box to enlarge
+        the orange slice (as shown in the illustration below).<br>
+        <figure>
+            <img src = "images/EnlargeSlice.gif"
+            alt = "Enlarge the orange slice"
+            class = "img-fluid">
+            <figcaption>Enlarge the Orange Slice.</figcaption>
+        </figure>
+        </li>
+    </ol>
+</section>
+
+<section>
+<h2>Changing the Perspective</h2>
+<p>Now you'll use the Perspective tool to change the perspective of the orange slice.
+</p>
+<aside>
+<h3>The Perspective Tool</h3>
+<p>The Perspective tool distorts a path or paths that have been grouped so that an object's original bounding box
+is mapped to the edges of a quadrilateral (square, rectangle, parallelogram, trapezoid, etc.) and a perspective
+operation is applied to the path.</p>
+To use this function,
+    <ol>
+        <li>create the envelope box that will govern how the object will be distorted. Use the Line tool
+        (<img src = "images/LineTool.gif" alt = "Line tool icon" width = "26" >), the
+        Bezier pen tool (<img src = "images/PenTool.gif" alt = "Bezier pen tool icon" width = "26">), or the Rectangle tool (<img src = "images/RectangleTool.gif" alt = "Rectangle tool"
+        width = "26">). Make sure that the first corner created is the lower left
+        corner of the quadrilateral.<br><br>
+        </li>
+        <li>Then, convert the envelope box and the object or objects to paths.  Use the Path &gt; Object to Path
+and Path &gt; Stroke to Path functions.<br><br>
+
+If you used the Rectangle tool and converted it to a path with Path &gt; Object to Path, you will most likely have
+to rotate the quadrilateral 90&deg; anticlockwise to position the first corner node from the upper left
+to the lower left corner. This is an idiosyncratic feature of the Perspective tool we have to work with.<br><br>
+
+To check for proper orientation, make the Edit nodes tool (<img src = "images/EditPathsByNodesTool.gif"
+alt = "Edit Paths by Nodes tool" width = "26">) active and press the &lt;Tab&gt; key. The lower
+left node of the rectangle should become highlighted, indicating that the rectangle is oriented corrected. If another node is highlighted instead, then rotate the rectangle until the highlighted node is the lower left corner.<br><br>
+        </li>
+        <li>Select the objects to be transformed, then select the quadrilateral,
+        &lt;Shift&gt;-clicking with the Select tool (<img src = "images/SelectionTool.gif"
+alt = "Selection tool" width = "26">).<br><br>
+        </li>
+        <li>Choose Extensions &gt; Modify Path &gt; Perspective.
+        </li>
+    </ol>
+    <p>If you forget to convert the distortion envelope into a path or any of the objects, the Perspective tool will stop and give you a warning message that one or both objects weren't converted.</p>
+    <p>One way to check whether an object was or wasn't converted is to choose the Edit nodes tool (<img src = "images/EditPathsByNodesTool.gif" alt = "Edit Paths by Nodes tool" width = "26">).
+    All path nodes show up when this tool is selected. You can determine whether any object hasn't been converted
+    by the shape and color of its path nodes.</p>
+    <p>Sometimes, the Perspective tool doesn't perform the way you want it to. To troubleshoot, experiment with
+    different techniques, such as grouping all the path objects you want to transform, and then using the
+    Perspective tool. If items are already grouped and you still receive a warning message, ungroup them and
+    then regroup them again &ndash; this technique works in various cases. Outline view (choose View &gt;
+    Display mode &gt; Outline) can be used to identify ghost outlines from objects with fills and strokes
+    set to <i>None</i>. Delete them. They can produce unexpected results that show up in the transformed object.
+    <p><b>Remember:</b> the Perspective tool works only with paths.</p>
+</aside>
+<ol>
+    <li>Make a trapezoid. It will be the perspective envelope that distorts the orange slice object.<br><br>
+    Making an envelope that the Perspective function can use is an idiosyncratic task. Use the Line tool
+    (<img src = "images/LineTool.gif" alt = "Line tool icon" width = "26" >) or the Bezier
+    Pen tool (<img src = "images/PenTool.gif" alt = "Bezier pen tool icon" width = "26">)
+    to draw the shape.<br><br>
+
+		<aside><b>Important:</b> Start drawing the trapezoid from the lower left corner. Then continue to make edges in a clockwise direction. You are creating an ordered sequence of corner points that the
+    Inkscape Perspective function understands and can work with.
+		</aside>
+		<br><br>
+
+    To check if the lower left corner is the first made corner, click on the trapezoid with the Edit Nodes tool
+    (<img src = "images/EditPathsByNodesTool.gif" alt = "Edit Paths by Nodes tool" width = "26">).
+    Then, press &lt;Tab&gt;. If the first corner is highlighted, then the envelope box is correctly oriented.
+    <figure>
+        <img src = "images/DrawTrapezoid.gif"
+        alt = "Draw the template trapezoid"
+        class = "img-fluid">
+        <figcaption>Draw the template trapezoid.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/CornerNo1.gif"
+        alt = "Checking corner number one"
+        class = "img-fluid">
+        <figcaption>Testing for Corner No. 1 at lower left corner of trapezoid.
+        The first corner is highlighted.</figcaption>
+    </figure>
+    </li>
+    <li>Select the orange slice image, then &lt;Shift&gt;-select the trapezoid to group-select it.<br>
+    <figure>
+        <img src = "images/SelectRectangleTrapezoid.gif"
+        alt = "Select both items."
+        class = "img-fluid">
+        <figcaption>Select the object to transform and the trapezoid transform shape.</figcaption>
+    </figure>
+    </li>
+    <li>With the trapezoid and orange slice selected, choose Extensions &gt; Modify Path &gt; Perspective.<br><br>
+    The Perspective function takes a number of seconds to do its number-crunching. The original shape disappears
+    and then reappears as a distortion of itself in the trapezoid.<br>
+    <figure>
+        <img src = "images/DistortedSlice.gif"
+        alt = "Distorted orange slice"
+        class = "img-fluid">
+        <figcaption>Distorted Orange Slice.</figcaption>
+    </figure>
+    </li>
+    <li>Click on the trapezoid with the Select tool (<img src = "images/SelectionTool.gif"
+alt = "Selection tool" width = "26">) and press the &lt;Delete&gt; key to delete it.<br><br>
+    </li>
+    <li>Click on the distorted orange slice with the Select tool and fine-adjust its shape and position as
+    you desire. You can resize it, shear it, and rotate it to suite your taste in the design.
+    <figure>
+        <img src = "images/FineTunePositionSlice.gif"
+        alt = "Fine-tuning the shape of the orange slice"
+        class = "img-fluid">
+        <figcaption>Fine-tuning the shape of the Orange Slice.</figcaption>
+    </figure>
+    </li>
+    <li>Choose Edit &gt; Deselect.<br>
+    <figure>
+        <img src = "images/FinishedEnvelope.gif"
+        alt = "Finished envelope"
+        class = "img-fluid">
+        <figcaption>Finished Envelope.</figcaption>
+    </figure>
+    </li>
+    <li>Choose File &gt; Save. You can either minimize the file and leave it open on your desktop,
+    or close the file. You'll use it later in this tutorial.<br><br>
+    You can find out more about how the Perspective tool works by choosing Help &gt; Inkscape Manual &gt;
+    22. Extensions &gt; Modify Path &gt; Perspective.
+    </li>
+</ol>
+</section>
+<section>
+<h2>Further Using the Perspective Tool</h2>
+<p>The Perspective tool is a multipurpose tool that, besides letting you change the perspective of an object,
+combines the functions of scaling, shearing, reflecting, and rotating.</p>
+
+<p>Now you'll use the Perspective tool to transform objects that you copy from the logo into a business card.</p>
+
+<ol>
+    <li>Choose File &gt; Open, and open the <a href = "https://github.com/Roy-Torley/Roy-Torley.github.io/blob/master/Inkscape_Tutorial/Tutorial07/Tutorial07BusinessCard.svg"><b>Tutorial07BusinessCard.svg</b></a> file in the Tutorial07 folder.<br>
+    <figure>
+        <img src = "images/CitrusLogo0.gif"
+        alt = "Tutorial07BusinessCard svg file"
+        class = "img-fluid">
+        <figcaption>Tutorial07BusinessCard file contents.</figcaption>
+    </figure>
+    You will finish the business card design and then make duplicates of the card to fill up the remaining spaces
+    on the artboard.<br><br>
+    </li>
+    <li>Choose File &gt; Save As, name the file <b>Buscards.svg</b>, select the Lesson07 folder, and click <b>Save</b>.
+    <br><br>
+    </li>
+    <li>Click on the <b>Zoom</b> tool (<img src = "images/ZoomInOut.gif" alt = "Zoom In/Out tool icon" width = "26">) in the toolbox and draw a marquee around the image in the upper left corner of the artboard to
+    magnify it.<br>
+    <figure>
+        <img src = "images/BusCard01.gif"
+        alt = "Magnify the card image."
+        class = "img-fluid">
+        <figcaption>Magnify the card image.</figcaption>
+    </figure>
+    </li>
+    <li>Choose the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26">), and click to select the logo.<br><br>
+    The logo is a grouped image. You will ungroup it to isolate the image of the full lime slice in the background,
+    copy it, and distort the copy.<br>
+    <figure>
+        <img src = "images/CitrusLogo1.gif"
+        alt = "Select the logo."
+        class = "img-fluid">
+        <figcaption>Select the logo.</figcaption>
+    </figure>
+    </li>
+    <li>Use the hot key combination &lt;Shift&gt;-&lt;Ctrl&gt;-G to ungroup the first of
+    several groups of logo images.<br>
+    <figure>
+        <img src = "images/CitrusLogo2.gif"
+        alt = "Ungroup the first level of groups."
+        class = "img-fluid">
+        <figcaption>Ungroup the first level of groups.</figcaption>
+    </figure>
+    Note how the upper text and lower fruit images are in their own separate groups. Dashed bounding boxes define
+    their borders.<br><br>
+    </li>
+    <li>Click off the logo to deselect the groups and then click on the fruit image to select it.<br>
+    <figure>
+        <img src = "images/CitrusLogo3.gif"
+        alt = "Select the grouped fruit image."
+        class = "img-fluid">
+        <figcaption>Select the grouped fruit image.</figcaption>
+    </figure>
+    </li>
+    <li>
+    The fruit image is a group of three individual fruit images. Press &lt;Shift&gt;-&lt;Ctrl&gt;-G
+    to ungroup them.<br>
+    <figure>
+        <img src = "images/CitrusLogo4.gif"
+        alt = "Ungroup the three individual fruit images."
+        class = "img-fluid">
+        <figcaption>Ungroup the three individual fruit images.</figcaption>
+    </figure>
+    </li>
+    <li>Click off the image to deselect it and then click on the background lime slice in the logo to select it.<br>
+    <figure>
+        <img src = "images/CitrusLogo5.gif"
+        alt = "Select the background lime slice."
+        class = "img-fluid">
+        <figcaption>Select the background lime slice.</figcaption>
+    </figure>
+    </li>
+    <li>
+    Press &lt;Ctrl&gt;-D to make a copy of the object. Note how the copy appears topmost over the over fruit objects.<br>
+    <figure>
+        <img src = "images/CitrusLogo6.gif"
+        alt = "Make a copy of the lime slice."
+        class = "img-fluid">
+        <figcaption>Make a copy of the lime slice.</figcaption>
+    </figure>
+    </li>
+    <li>
+    Position the new lime slice below and slightly to the right of the logo.<br>
+    <figure>
+        <img src = "images/CitrusLogo7.gif"
+        alt = "Move the copy of the lime slice."
+        class = "img-fluid">
+        <figcaption>Move the copy of the lime slice down and to the right.</figcaption>
+    </figure>
+    Now you'll use the &lt;Ctrl&gt; and &lt;Shift&gt; keys in combination with the Select tool to scale the
+    new lime slice. Note that using the &lt;Ctrl&gt; and &lt;Shift&gt; keys together with the Select tool
+    allows you to resize an object from the center of its bounding box and maintain its aspect.<br>
+    <figure>
+        <img src = "images/CitrusLogo8.gif"
+        alt = "Rescale the lime slice so it is larger."
+        class = "img-fluid">
+        <figcaption>Resize the lime slice.</figcaption>
+    </figure>
+</li>
+    <li>With the lime slice still selected, hold down both the &lt;Ctrl&gt; and &lt;Shift&gt; keys
+    and drag the bottom right corner handle down to scale the object from its center and make the lime slice bigger.
+    <br><br>
+    You will now distort the lime slice using the Perspective tool.<br><br>
+
+    You need to prepare the lime slice object for the Perspective function before you apply it. You will ungroup
+    the component parts of the image, eliminate the color gradient (the Perspective tool does not work with gradients
+    at this point in time, only solid colors), convert the individual objects into paths, and then distort.<br><br>
+    </li>
+    <li>With the lime slice image still selected (reselect it if it is deselected), use the &lt;Ctrl&gt;-&lt;Shift&gt;-G
+    hot key combination to ungroup the component parts that make up the slice.<br>
+    <figure>
+        <img src = "images/UngroupLimeSlice.gif"
+        alt = "Ungroup the lime slice."
+        class = "img-fluid">
+        <figcaption>Ungroup the lime slice.</figcaption>
+    </figure>
+    </li>
+    <li>Select one of the lime sections in the image. Bring up the Color palette, click on the <b>Fill</b> tab if it isn't
+    active already, and click on the <b>Flat color</b> icon. The gradient is now a solid color. The Perspective function
+    can work with the image more effectively now.<br>
+    <figure>
+        <img src = "images/EliminateGradient.gif"
+        alt = "Eliminate the gradient."
+        class = "img-fluid">
+        <figcaption>Eliminate the gradient.</figcaption>
+    </figure>
+    </li>
+    <li>You will now make a shape consisting of the rib "spokes" and the white inner circle. Start by selecting only
+    the individual ribs using &lt;Shift&gt;-Select tool and color them red. Red is a good color to work with here
+    because the spokes can get lost against any white background. Red prevents that from happening.<br>
+    <figure>
+        <img src = "images/SelectRibsColorRed.gif"
+        alt = "Select the ribs and color them red."
+        class = "img-fluid">
+        <figcaption>&lt;Shift&gt;-select the ribs and color them red.</figcaption>
+    </figure>
+    </li>
+    <li>Draw a red circle that completely covers the inner white circle and ribs.<br>
+    <figure>
+        <img src = "images/MakeRedCircle.gif"
+        alt = "Draw a red circle."
+        class = "img-fluid">
+        <figcaption>Draw a red circle.</figcaption>
+    </figure>
+    </li>
+    <li>Set the circle's stroke to <b>4</b> pixels and the fill to <b>None</b>.<br>
+    <figure>
+        <img src = "images/RedWheel.gif"
+        alt = "Turn the circle into a red wheel rim."
+        class = "img-fluid">
+        <figcaption>Turn the circle into a red wheel rim.</figcaption>
+    </figure>
+    </li>
+    <li>&lt;Shift&gt;-select the red circumference and the red ribs. You will now convert them into paths.<br>
+    <figure>
+        <img src = "images/RibsAndRimSelected.gif"
+        alt = "Select image ribs and circumference."
+        class = "img-fluid">
+        <figcaption>Select image ribs and circumference.</figcaption>
+    </figure>
+    </li>
+    <li>With the red components selected, click on the Edit nodes tool (<img src = "images/EditPathsByNodesTool.gif" alt = "Edit paths by nodes tool" width = "26">) so you can see how the conversion process
+    works. Choose Path &gt; Object to Path and then choose Path &gt; Stroke to Path. You can see individual nodes
+    when the Edit nodes tool is active.<br>
+    <figure>
+        <img src = "images/Convert2Paths.gif"
+        alt = "Convert objects and strokes to paths."
+        class = "img-fluid">
+        <figcaption>Convert objects and strokes to paths.</figcaption>
+    </figure>
+    </li>
+    <li>You will now convert the individual rib and circumference paths into one path using the <b>Union</b> function.
+    With the paths still selected, choose Path &gt; Union. The individual paths combine into one path, something
+    that the Perspective function can work with more effectively.<br>
+    <figure>
+        <img src = "images/PathsUnionized.gif"
+        alt = "Path union."
+        class = "img-fluid">
+        <figcaption>Apply the path union function.</figcaption>
+    </figure>
+    </li>
+    <li>The outer lime-colored circle has a lime-colored stroke and a white fill. Change the white fill to lime so
+    the background circle has just one color.<br>
+    <figure>
+        <img src = "images/TotalLimeGreen.gif"
+        alt = "Background lime-green circle."
+        class = "img-fluid">
+        <figcaption>Change the white circle fill to lime green.</figcaption>
+    </figure>
+    </li>
+    <li>Select the combined red spoke-and-red figure and change its fill color to white.<br>
+    <figure>
+        <img src = "images/Red2White.gif"
+        alt = "Change red components to white."
+        class = "img-fluid">
+        <figcaption>Change the red ribs and circumference to white.</figcaption>
+    </figure>
+    </li>
+    <li>Because the image originally had a gradient in its make-up, there might be a remnant figure
+    left behind when you replaced the gradient with a solid color. An artefact like this can produce
+    unexpected and undesired side-effects in the distortion process. To find out, choose View &gt;
+    Display mode &gt; Outline. If you see a figure like the one below, select the inner spurious circle
+    while you're still in Outline mode and press the &lt;Delete&gt; button on the keyboard.<br>
+    <figure style = "float: left;" >
+        <img src = "images/SpuriousCircle.gif"
+        alt = "Artefact circle left from gradient"
+        class = "img-fluid">
+        <figcaption>Spurious circle left from original gradient function.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/SpuriousCircleRemoved.gif"
+        alt = "Artefact circle removed."
+        class = "img-fluid">
+        <figcaption>Spurious circle removed.</figcaption>
+    </figure>
+    <div style = "clear: left;"></div>
+    </li>
+    <li>Choose View &gt; Normal to return to normal view. Draw a bounding box around the lime slice object and
+    choose Path &gt; Object to Path convert the box into a path. Here, the bounding box is colored lime green,
+    which was the last color used from the Color palette. Group the converted box (now a path) and the
+    lime slice object using the &lt;Ctrl&gt;-G hot key combination.<br>
+    <figure>
+        <img src = "images/FigureAndBoundingBoxGrouped.gif"
+        alt = "Group the lime image and the bounding box."
+        class = "img-fluid">
+        <figcaption>Group the lime image and the bounding box.</figcaption>
+    </figure>
+    </li>
+    <li>If you haven't done so already, draw a distortion bounding box starting from the lower left corner of
+    the box shape. You can use the Line tool (<img src = "images/LineTool.gif" alt = "Line tool icon"
+    width = "26" >) or the Bezier Pen tool (<img src = "images/PenTool.gif"
+    alt = "Bezier pen tool icon" width = "26">). If you use the the Rectangle tool, you'll need
+    to rotate the rectangle or square anticlockwise by 90&deg; so the initial corner (consider it as Corner #1)
+    is the bottom left corner. Test to see if this is the case by choosing the <b>Edit nodes</b> tool (<img src =
+    "images/EditPathsByNodesTool.gif" alt = "Edit paths by nodes tool" >) while the box is
+    still highlighted and pressing the &lt;Tab&gt; key. If the lower left corner is highlighted, then the
+    distortion box is oriented correctly.<br>
+    <figure>
+        <img src = "images/TrapezoidDistortionBox.gif"
+        alt = "Draw the trapezoid distortion box."
+        class = "img-fluid">
+        <figcaption>Draw the trapezoid distortion box and test for correct orientation.</figcaption>
+    </figure>
+    </li>
+    <li>At long last, you will distort the slice of lime. Select the lime slice plus box (it is grouped now, so it
+    is all one object) and &lt;Shift&gt;-select the trapezoid. Choose Extensions &gt; Modify Path &gt; Perspective.
+    The Perspective function will chug away for several seconds and the 'Perspective working' diagnostic box will
+    flicker as the program performs geometrical calculations behind the scenes.<br>
+    <figure>
+        <img src = "images/PerspectiveWorking.gif"
+        alt = "Perspective diagnostic box."
+        class = "img-fluid">
+        <figcaption>Diagnostic box for Perspective function.</figcaption>
+    </figure>
+    </li>
+    <li>Then, the lime figure will disappear and reappear inside the trapezoid distortion box.<br>
+    <figure>
+        <img src = "images/DistortionResult.gif"
+        alt = "Result of distorting original shape."
+        class = "img-fluid">
+        <figcaption>Result of distorting original shape.</figcaption>
+    </figure>
+    </li>
+    <li>You will now fine-tune the shape. Start by moving the lime shape out of the bounding trapezoid.
+    Select the lime shape with the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool"
+    width = "26">) and then choosing Object &gt; Ungroup.<br>
+    <figure>
+        <img src = "images/Preparing4FineTuning.gif"
+        alt = "Ungroup the resulting shape."
+        class = "img-fluid">
+        <figcaption>Select the resulting shape,<br>move it out of the trapezoid,<br>and ungroup it.</figcaption>
+    </figure>
+    </li>
+    <li>Click on the Edit nodes tool (<img src = "images/EditPathsByNodesTool.gif" alt = "Edit paths by nodes
+    tool" class = "center" width = "26">). Nodes that define all the various paths appear.<br>
+    <figure>
+        <img src = "images/UngroupResult.gif"
+        alt = "Nodes are visible."
+        class = "img-fluid">
+        <figcaption>Click on the Edit nodes tool.<br>Nodes are now visible for editing.</figcaption>
+    </figure>
+    </li>
+    <li>Click on the leftmost node on the lime skin and move it further to the left until it touches the
+    left edge of the bounding trapezoid.<br>
+    <figure>
+        <img src = "images/ExtendLeftEndUsingEditNodesTool.gif"
+        alt = "Extend the left end of the lime shape."
+        class = "img-fluid">
+        <figcaption>Extend the left end of the lime shape<br>
+        using the Edit nodes tool.</figcaption>
+    </figure>
+    </li>
+    <li>Click on the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26">), then click on the bounding trapezoid box. Press the &lt;Delete&gt; key to delete the box.<br>
+    <figure>
+        <img src = "images/NoMoreBoundingTrapezoid.gif"
+        alt = "Delete the bounding trapezoid."
+        class = "img-fluid">
+        <figcaption>Delete the bounding trapezoid.</figcaption>
+    </figure>
+    </li>
+    <li>With the lime image still selected, choose Object &gt; Transform &gt; Rotate. Type <b>70</b> into the text
+    field and click on the Rotate Anticlockwise icon (<img src = "images/RotateAnticlockwiseIcon.gif"
+    alt = "Rotate Anticlockwise icon" width = "26">).<br>
+    <figure>
+        <img src = "images/RotateResult70Anticlockwise.gif"
+        alt = "Rotate the figure 70 degrees anticlockwise."
+        class = "img-fluid">
+        <figcaption>Rotate the figure anticlockwise.</figcaption>
+    </figure>
+    </li>
+    <li>With the lime figure still selected, bring up the Color palette, click on the <b>Fill</b> tab, and change the
+    transparency to 25 percent. Then move the figure onto the logo. You can still fine-tune the shape of the lime slice
+    as you see fit.<br>
+    <figure>
+        <img src = "images/MoveResultIntoLogo.gif"
+        alt = "Move result shape into logo."
+        class = "img-fluid">
+        <figcaption>Move the transformed lime slice into the logo.</figcaption>
+    </figure>
+    </li>
+    <li>Move the lime slice to the bottom of the logo image stack by clicking on the <b>Lower Selection to Bottom</b> icon
+    (<img src = "images/LowerSelection2BottomIcon.gif" alt = "Lower Selection to Bottom icon" width = "26">) in the Command bar.<br>
+    <figure>
+        <img src = "images/MoveResult2BottomLevel.gif"
+        alt = "Move result shape to bottom of image stack."
+        class = "img-fluid">
+        <figcaption>Move the transformed lime slice to the bottom level.</figcaption>
+    </figure>
+    </li>
+    <li>Click away from the logo to deselect it and choose File &gt; Save.<br>
+    <figure>
+        <img src = "images/CardResult.gif" alt = "Finished card."
+        class = "img-fluid">
+        <figcaption>Finished card.</figcaption>
+    </figure>
+    </li>
+    </ol>
+</section>
+<section>
+<h2>Making Multiple Transformations</h2>
+<p>Now you'll create multiple copies of the business card in a few easy steps.</p>
+
+<ol>
+    <li>Click on the <b>Zoom</b> tool (<img src = "images/ZoomInOut.gif" alt = "Zoom In/Out tool"
+    width = "26">) and press the <b>5</b> key to fit the artboard in the work window.<br>
+    <figure>
+        <img src = "images/Replicate1.gif" alt = "Entire artboard."
+        class = "img-fluid">
+        <figcaption>Current artboard.</figcaption>
+    </figure>
+    </li>
+    <li>Choose Edit &gt; Select All to select all the objects on the business card.
+    <figure>
+        <img src = "images/SelectAll.gif"
+        alt = "Select all objects on the artboard."
+        class = "img-fluid">
+        <figcaption>Select all objects on the artboard.</figcaption>
+    </figure>
+    </li>
+    <li>Press &lt;Ctrl&gt;-D to make a duplicate of the card figure.<br><br>
+    </li>
+    <li>Choose Object &gt; Transform. Click on the <b>Move</b> tab in the <b>Transform</b> palette.<br><br>
+    The Move option in the <b>Transform</b> palette lets you move objects in a specified direction either
+    relative to a selected object or in an absolute direction relative to the origin specified by the
+    horizontal and vertical rulers. Now you'll move the duplicate of the selected objects down 2 inches from the
+    original objects.<br><br>
+    </li>
+    <li>Type <b>-2</b> in the <b>Vertical:</b> text field. A negative number means that you are moving an object either
+    down or to the left, as if they were on a number line. Make sure that the <b>Relative move</b> checkbox is checked
+    and that the unit of measurement is <b>in</b>. Click on the <b>Apply</b> button.<br>
+    <figure>
+        <img src = "images/MoveDuplicateCard1.gif"
+        alt = "Move the duplicated card down 2 inches."
+        class = "img-fluid">
+        <figcaption>Move the duplicated card down 2 inches.</figcaption>
+    </figure>
+    </li>
+    <li>Press &lt;Ctrl&gt;-D to duplicate the card you just moved. It is still selected so the copy function will
+    work on it. Click on the <b>Apply</b> button.<br>
+    <figure>
+        <img src = "images/MoveDuplicateCard2.gif"
+        alt = "Make and move a second copy of the original down yet 2 inches."
+        class = "img-fluid">
+        <figcaption>Make and move a second duplicate card.</figcaption>
+    </figure>
+    </li>
+    <li>Deselect the card figure by click away from it. Now group select the lower two card figures, press &lt;Ctrl&gt;-D to duplicate them, and type <b>-4</b> in the <b>Vertical:</b> text field.<br>
+    <figure>
+        <img src = "images/SelectLower2Cards.gif"
+        alt = "Select the lower two cards."
+        class = "img-fluid">
+        <figcaption>Select the lower two cards.</figcaption>
+    </figure>
+    </li>
+    <li>Click on the <b>Apply</b> button to move the duplicate card pair down 4 inches.<br>
+    <figure>
+        <img src = "images/FullColumnOfCards.gif"
+        alt = "Duplicate and move the lower two cards."
+        class = "img-fluid">
+        <figcaption>Duplicate and move the selected two cards.</figcaption>
+    </figure>
+    The first column of card images is completed. You can duplicate the entire column and fill in the
+    second column with the copy.<br><br>
+    </li>
+    <li>Click off the images to deselect them. Then marquee-select all the card objects in
+    the column you just created.<br>
+    <figure>
+        <img src = "images/MarqueeSelectColumn.gif"
+        alt = "Marquee select the column of cards."
+        class = "img-fluid">
+        <figcaption>Marquee-select the column of cards.</figcaption>
+    </figure>
+    </li>
+    <li>In the <b>Move</b> palette, change the <b>Horizontal:</b> entry to <b>3.5</b> (3&frac12; inches)
+    and the <b>Vertical:</b> entry to <b>0</b>. Click on <b>Apply</b>. The second column is instantly
+    populated.<br>
+    <figure>
+        <img src = "images/MakeSecondColumn.gif"
+        alt = "Make the second column of cards."
+        class = "img-fluid">
+        <figcaption>Make the second column of cards.</figcaption>
+    </figure>
+    </li>
+    <li>Click off the artwork to deselect the second column.<br>
+    <figure>
+        <img src = "images/ColumnDeselected.gif"
+        alt = "Deselect the column."
+        class = "img-fluid">
+        <figcaption>Deselect the second column.</figcaption>
+    </figure>
+    </li>
+    <li>Choose View &gt; Guides. The <b>Guides</b> option is checked. You uncheck it when you click on it.<br>
+    <figure>
+        <img src = "images/HideGuides.gif"
+        alt = "Hide the guide lines."
+        class = "img-fluid">
+        <figcaption>Hide the guide lines.</figcaption>
+    </figure>
+    </li>
+    <li>Choose File &gt; Save to save your artwork.
+    </li>
+</ol>
+</section>
+
+<hr>
+
+<section>
+<h2>Review Questions</h2>
+<ol>
+    <li>How do you resize an object?
+    </li>
+    <li>What transformations can you make using the <b>Transform</b> palette?
+    </li>
+    <li>How do you copy an object from one Inkscape file to another?
+    </li>
+    <li>How can you change perspective or distort an object?
+    </li>
+</ol>
+</section>
+
+<section>
+<h2>Review Answers</h2>
+<ol>
+    <li>There are two ways you can resize an object:
+        <ul>
+            <li>You can select an object with the Select tool (<img src = "images/SelectionTool.gif"
+            alt = "Selection tool" width = "26">) and drag a directional handle. To rescale
+            an object proportionately as you change its size, hold down the &lt;Ctrl&gt; key as you drag the
+            directional handle.
+            </li>
+            <li>You can resize an object using the <b>Scale</b> option in the <b>Transform</b> palette. You can
+            enter its exact height, width, unit of measurement (inch, percent, millimeter, centimeter, pixel,
+            pica), and resize individual objects separately. The object is resized relative to the center of its
+            bounding box.
+            </li>
+        </ul>
+    </li>
+    <li>The <b>Transform</b> palette allows you to make the following transformations:
+        <ul>
+            <li><b>Move:</b> by moving or strategically placing objects in your artwork
+            (by specifying the x and y coordinates and the point of origin).
+            </li>
+            <li><b>Scale:</b> by specifying the width and height of selected objects, and whether
+            proportionally or not.
+            </li>
+            <li><b>Rotate:</b> by specifying the angle of rotation clockwise or anticlockwise.
+            </li>
+            <li><b>Skew:</b> by specifying the amount of vertical and/or horizontal shear in a unit of
+            measurement of your choice.
+            </li>
+            <li><b>Matrix:</b> by editing the entries in a transformation matrix that controls the
+            amount of translation, scaling, rotation, and skewing, all in one operation.
+            </li>
+        </ul>
+    </li>
+    <li>You can copy an Inkscape object by:
+        <ol type = "a">
+            <li>selecting it in the source file with the Select tool <img src = "images/SelectionTool.gif"
+            alt = "Selection tool" width = "26">), and then choosing Edit &gt; Copy
+            or pressing the hot key combination &lt;Ctrl&gt;-C (<b>C</b> for <b>C</b>opy) to make a duplicate,
+            </li>
+            <li>making the destination file active by bring up its Inkscape window, and
+            </li>
+            <li>choosing Edit &gt; Paste or pressing the hot key combination &lt;Ctrl&gt;-V to paste the
+            object into its new home.
+            </li>
+        </ol>
+    </li>
+    <li>You can change the perspective of or distort an object by:
+        <ol type = "a">
+            <li>Converting all objects into paths using the Path &gt; Object to Path function and converting
+            all strokes to paths using the Path &gt; Stroke to Path function.
+            </li>
+            <li>Drawing a 4-sided distortion envelope (a quadrilateral) using the Line tool
+        (<img src = "images/LineTool.gif" alt = "Line tool icon" width = "26" >), the
+        Bezier pen tool (<img src = "images/PenTool.gif" alt = "Bezier pen tool icon" width = "26">), or the Rectangle tool (<img src = "images/RectangleTool.gif" alt = "Rectangle tool"
+        width = "26">). The first node must be the lower left corner of the quadrilateral.
+            </li>
+            <li>Selecting both the object or objects to be transformed, and then selecting the distortion
+            envelope, and finally
+            </li>
+            <li>Choosing Extensions &gt; Modify Path &gt; Perspective.
+            </li>
+        </ol>
+    </li>
+</ol>
+</section>
+
+<!-- Creative Commons ShareAlike 4.0 International License information -->
+<footer>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" >
+  <img src = "images/CreativeCommonsLicenseLogo88x31.png"
+  alt = "Creative Commons ShareAlike License" class = "img-fluid">&nbsp;This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</footer>
+		</div>
+	</div>
+</div>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

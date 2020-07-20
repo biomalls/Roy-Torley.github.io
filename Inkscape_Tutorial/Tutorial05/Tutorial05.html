@@ -1,0 +1,1039 @@
+<!doctype html>
+
+<html lang = "en-us" >
+<head>
+  <meta charset = "utf-8" >
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+	<meta name = "viewport" content = "width=device-width, initial-scale=1">
+  <title>Inkscape Tutorial 5 &ndash; Painting</title>
+  <meta name = "author" content = "Roy F. Torley" >
+  <link href="https://fonts.googleapis.com/css?family=Source+Serif+Pro" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" rel="stylesheet" crossorigin="anonymous">
+</head>
+
+<body>
+<div class = "container">
+	<div class = "row">
+		<div class = "col-md-10 offset-md-1">
+<header>
+  <h1>Tutorial 5 &ndash; Painting</h1>
+  <figure>
+    <img src = "images/Tutorial05FinishedImages.gif"
+    alt = "Finished practice image file for Tutorial 5"
+    class = "img-fluid">
+  </figure>
+<p>The Fill, Stroke paint, and Swatches palettes let you apply, modify, and save colors in your artwork.
+You can paint with HSL, RGB, CMS, RGB, or CMYK colors; patterns; and gradients of blended colors.
+With the Brushes palette, you can apply art or patterns to the path of an object.</p>
+</header>
+
+<hr>
+
+<section>
+<header>
+<h4>In this tutorial on the work area, you will learn how to:</h4>
+  <ul>
+    <li>Paint with, create, and edit colors.</li>
+    <li>Name and save colors and build a color palette.</li>
+    <li>Copy paint and appearance attributes from one object to another.</li>
+    <li>Adjust the saturation of a color.</li>
+    <li>Paint with gradients, patterns, and brushes.</li>
+  </ul>
+</header>
+  <h2>Getting Started</h2>
+
+<p>In this lesson, you'll learn about the variety of paint options in Inkscape as you paint an illustration of four hats. First, open the finished art file for this lesson to see what you'll create.</p>
+<ol>
+    <li><p>If you haven't opened Inkscape, open it now.</p>
+    </li>
+    <li><p>Choose File &gt; Open, and open the <b>Tutorial05FinishedImages.svg</b> file in the Tutorial05 folder.</p>
+        <figure>
+            <img src = "images/Tutorial05FinishedImages.gif"
+            alt = "Tutorial 05 finished images"
+            class = "img-fluid">
+        </figure>
+    </li>
+    <li><p>If you like, choose View &gt; Zoom &gt; Zoom Out to make the finished artwork smaller and leave it on your
+    screen as you work. (Use &lt;Shift&gt;-roll the mouse wheel and roll without using the &lt;Shift&gt; key to
+    move the artwork where you want it in the window.) If you don't want to leave the image open,
+    choose File &gt; Close.</p>
+
+    <aside><i><b>Tip:</b> For an illustration of the finished artwork in this tutorial, go to the beginning of this tutorial.</i>
+    </aside>
+    <p>Now open the start file to begin this lesson.</p>
+    </li>
+    <li><p>Choose File &gt; Open, and open the <b>Tutorial05StartingImages.svg</b> file in the Tutorial05 folder.</p>
+        <figure>
+            <img src = "images/Tutorial05StartingImages.gif"
+            alt = "Tutorial 05 starting images"
+            class = "img-fluid">
+        </figure>
+    </li>
+    <li><p>Choose File &gt; Save As, name the file <b>Hats.svg</b>, and select the Tutorial05 folder in the Save As menu.</p>
+    </li>
+</ol>
+</section>
+<section>
+<header><h2>Filling with Color</h2></header>
+<p>Painting objects with colors, gradients, or patterns is done using a combination of palettes and tools &mdash;
+including the Color palette, the Swatches palette, the Gradient palette, the Stroke palette, and the paint buttons
+in the toolbox &mdash; that let you select and change an object's paint and line attributes.</p>
+<p>You'll begin by filling an object with color. Filling an object paints the area enclosed by the path.</p>
+<p>The Color palette appears automatically on-screen when starting Inkscape.</p>
+<p>(If the Color palette isn't visible, display it by choosing View &gt; Show/Hide &gt; Palette; a check mark
+indicates that the palette is open on-screen.)</p>
+<figure>
+    <img src = "images/ColorPalette1.gif" alt = "Color palette 1"
+    class = "img-fluid">
+    <figcaption>Left-most portion of the Color palette. Note the <b>None</b> color box on the far left.</figcaption>
+</figure>
+<figure>
+    <img src = "images/ColorPalette2.gif" alt = "Color palette 2"
+    class = "img-fluid">
+    <figcaption>Scrolling right on the Color palette. See how you get a pop-up box showing you
+    the hexadecimal code for the color pointed at.</figcaption>
+</figure>
+<figure>
+    <img src = "images/ColorPalette3.gif" alt = "Color palette 3"
+    class = "img-fluid">
+    <figcaption>Scrolling right on the Color palette.</figcaption>
+</figure>
+<aside><i><b>Note:</b> you can scroll across the Color palette by placing the mouse cursor on the palette and rolling
+the mouse wheel one way or the other. There are more colors on the palette than are shown here. Scroll across the
+whole palette to get a sense of how colors are organized.</i>
+</aside>
+<ol>
+    <li><p>Choose Edit &gt; Preferences &gt; Tools &gt; Selector &gt; Per-object selection cue &gt; None. Exit out
+    of the dialog window by clicking on the <b>X</b> box in the upper right-hand corner of the dialog box. The bounding
+    box is useful for moving and resizing objects. You won't need this option for this tutorial.</p>
+    </li>
+    <li><p>Choose the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26">) in the toolbox, and then click on the rectangular border around the top left block in
+    the artwork to select the object.</p>
+<figure>
+    <img src = "images/SelectBoxBorder.gif" alt = "Selecting a box border"
+    class = "img-fluid">
+    <figcaption>The selected object's paint attributes appear in the toolbox.</figcaption>
+</figure>
+<p>In the dialog box, notice that the <b>Fill</b> tab is active, indicating that it is selected.
+(This is the default.) The <b>RGB</b> tab is active, indicating that we are using the <b>Red-Green-Blue</b>
+mode of identifying color (this mode is Inkscape's default way of describing color). The <b>Opacity</b> box
+indicates that the border color is 100% opaque. Note the R, G, and B color settings. The <b>A</b> (Alpha
+channel or Opacity setting) is set to 100%.  The <b>Blur (%)</b> setting is set to 0.</p>
+<figure>
+    <img src = "images/FillAndStroke1.gif" alt = "The Fill Dialog box"
+    class = "img-fluid">
+    <figcaption>The <b>Fill</b> Dialog box.</figcaption>
+</figure>
+
+<p>The <b>Opacity</b> and <b>Blur</b> settings both can affect the color of your artwork. You'll change transparency and blurring later in this lesson. For more information on using Opacity, see Help &gt; Inkscape Manual &gt; Comprehensive Index &gt; O &gt; Opacity &gt; Display.  There is a lot of information in the manual, so be prepared for a deluge of good information and technique.</p>
+</li>
+<li>
+<p>Click on the <b>Stroke paint</b> tab. The <b>Stroke paint</b> color icon is selected and the Opacity is set to 100%.
+See how the RGB color settings are different from the Fill tab color settings, reflecting the color inside
+the box border.</p>
+<figure>
+    <img src = "images/FillAndStroke2.gif"
+    alt = "The Stroke Paint Dialog box"
+    class = "img-fluid">
+    <figcaption>The <b>Stroke Paint</b> Dialog box.</figcaption>
+</figure>
+</li>
+<li>
+<p>Click on the <b>Stroke style</b> tab. See how the box border has a width of <b>5.000 pixels</b>. Immediately
+underneath the Stroke width fields, you can see that corner joints are set to a square <b>Miter join</b>.
+We shall discuss the Caps, Dashes, and Markers fields later in the tutorial.</p>
+<figure>
+    <img src = "images/FillAndStroke3.gif"
+    alt = "The Stroke Style Dialog box"
+    class = "img-fluid">
+    <figcaption>The <b>Stroke Style</b> Dialog box.</figcaption>
+</figure>
+
+    </li>
+</ol>
+<aside><i><b>Tip:</b> If you are not familiar with the different options in the dialog boxes, hover the mouse cursor over
+them and a tip tool box will appear, giving you a quick explanation of what they are. Follow up with the Inkscape Manual
+if you need further information about them.</i>
+</aside>
+
+<div class = "tip">
+<p>We will use the <b>CMYK</b> color scheme in this tutorial.  <b>CMYK</b> stands <b>C</b>yan, <b>M</b>agenta,
+<b>Y</b>ellow, and blac<b>K</b>. CMYK colors are known as <i>process colors</i> in that cyan, magenta, yellow,
+and black inks are typically used for color separations in the printing industry. Click on the <b>Fill</b> tab,
+and then on the <b>Flat color</b> icon. Click on the <b>CMYK</b> button to activate the CMYK color feature.
+The CMYK sliders in the <b>Fill</b> palette show the colors' percentages of cyan, magenta, yellow, and black.
+The Style Indicator, in the lower left of the screen, displays the current color for the fill and stroke.
+<br>
+<figure>
+    <img src = "images/FillAndStrokeCMYK.png"
+    alt = "The CMYK Fill Dialog box"
+    class = "img-fluid">
+    <figcaption>The <b>CMYK Option</b> Dialog box.</figcaption>
+</figure>
+
+<p>For more information on color schemes, see Help &gt; Inkscape Manual &gt; 10. Attributes &gt; Fill and
+Stroke Paint.</p>
+</div>
+<ol start = "5">
+    <li>Now click a yellow color in the color bar to select the color. You can adjust the color by dragging
+    the CMYK sliders in the Color palette. (We selected a yellow color with these values: C = 0%,
+    M = 2%, Y = 49%, K = 0%, and A = 100%.) The color is updated in the Fill box in the Attribute box and in
+    the Color Palette, as well as in the artwork.
+    <figure>
+    <img src = "images/AttributeBox.png" alt = "Updated Attribute box"
+    class = "img-fluid">
+    <img src = "images/YellowBackground.png" alt = "Updated artwork"
+    class = "img-fluid">
+    <img src = "images/ColorPalette1.png" alt = "Update Color palette"
+    width = "230" class = "img-fluid">
+    <figcaption>The updated Style Indicator, artwork, and Fill palette.</figcaption>
+    </figure>
+    </li>
+</ol>
+<p>The paint attributes you choose are applied to all new objects you create until you change the
+    attributes again. You will see the new paint attributes in the Attribute box in the lower left-hand
+    corner of the screen.</p>
+</section>
+
+<section>
+<header><h2>Stroking with Color</h2>
+</header>
+<p>Next, you&rsquo;ll outline the squiggly area around the bottom left hat. Painting just the outline of an
+object is called <i>stroking</i>.</p>
+
+<ol>
+    <li>Using the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26">), click the squiggly shape around the hat in the bottom left rectangle to select it.
+        <figure>
+    <img src = "images/AttributeBox2.png" alt = "Updated Attribute box"
+    class = "img-fluid">
+    <img src = "images/SquigglyThingSelected.png"
+    class = "img-fluid"alt = "Squiggly area selected" >
+    <img src = "images/ColorPalette2.png"
+    class = "img-fluid" alt = "Update Color palette" width = "230">
+    <figcaption>Select the squiggly shape in the bottom left rectangle.</figcaption>
+    </figure>
+    <p>The Fill box in the Style Indicator displays a pale green color. The Stroke box is transparent against the background
+        and has the word <i>None</i>, which is the current color value of the object's stroke.</p>
+    <p>You'll start by exchanging the fill color and the stroke color.</p>
+    </li>
+    <li>Click on the <b>Stroke paint</b> tab in the Color palette.  Click on the <b>Flat color</b> icon in the palette. If
+    you haven't been working with stroke colors earlier, the Color palette for stroke color will show you that the
+    squiggly shape now has a black stroke, as you can see below.
+        <figure>
+        <img src = "images/AttributeBox3.png"
+        alt = "Updated Attribute box" class = "img-fluid">
+        <img src = "images/SquigglyThingBlackStroke.png"
+        alt = "Squiggly area how has a black stroke"
+        class = "img-fluid">
+        <img src = "images/ColorPalette3.png"
+        alt = "Update Color palette" width = "230"
+        class = "img-fluid">
+        <figcaption>The squiggly shape has a black stroke.</figcaption>
+        </figure>
+    </li>
+    <li>Click on the <b>Dropper tool</b> icon (<img src = "images/PickColorFromImage.gif" alt = "Pick color from image icon" width = "26" >). The icon now has a dotted outline showing that it is active.</li>
+    <li>Move the cursor onto the squiggly shape. Note how the cursor has changed into an eyedropper with a crosshair at its
+    tip (the color selection point). The dotted square to the right indicates that the <i>stroke color</i> is to be changed.
+    <br><br>
+    <aside><b>Note:</b> If you see a square with a <u>solid border</u>, that means that you are going to change the <i>fill color</i>
+    of a shape.
+        <figure>
+        <img src = "images/SelectingColor.gif" alt = "Selecting a color"
+        class = "img-fluid">
+        <figcaption>Selecting a color.</figcaption>
+        </figure>
+		</aside>
+    </li>
+    <li>Click on the squiggly shape and see how it expands a little bit as the non-colored stroke now has the same color as the
+    inside of the shape. The <b>Style Indicator</b> and <b>Stroke paint</b> palette have updated accordingly.
+        <figure>
+        <img src = "images/AttributeBox4.gif"
+        alt = "Updated Style Indicator" class = "img-fluid">
+        <img src = "images/SquigglyStrokeSameColor.gif"
+        alt = "Squiggly area now has a green stroke"
+        class = "img-fluid">
+        <img src = "images/ColorPalette4.gif"
+        alt = "Update Color palette" width = "230"
+        class = "img-fluid">
+        <figcaption>The squiggly shape now has a green fill and a green stroke.</figcaption>
+        </figure>
+        <p>We now eliminate the fill color.</p>
+    </li>
+    <li>Click on the <b>Fill</b> tab and then click on the <b>No paint</b> button. There is a green stroke, but no fill
+    color.
+        <figure>
+        <img src = "images/AttributeBox5.gif" alt = "Updated Attribute box"
+        class = "img-fluid">
+        <img src = "images/SquigglyShapeNoFill.gif"
+        alt = "Squiggly area now has no fill"
+        class = "img-fluid">
+        <img src = "images/ColorPalette5.gif"
+        alt = "Update Color palette" width = "230"
+        class = "img-fluid">
+        <figcaption>The squiggly shape now has no fill.</figcaption>
+        </figure>
+      The Fill box now has no fill (a fill of "None"), and the Stroke box has a pale green color. (The color will become apparent in the next step.) With a fill of None, you can see through to the fill underneath — in this case, the gray color of the rectangle's fill.
+      <p>
+      Now you'll change the weight of the curve that you just stroked using the <b>Stroke style</b> palette.
+      <i>Stroke weight</i> is the thickness of a line. The <b>Stroke style</b> palette is grouped with the <b>Fill</b>
+      and <b>Stroke paint</b> palettes. The green curve has a weight of 1 point.
+      </p>
+      </li>
+      <li>
+      With the squiggly shape still selected, click on the <b>Stroke style</b> tab.  If the shape has been deselected,
+      then the features in the <b>Stroke style</b> palette will be appear grey and unhighlighted.  Click on the curve
+      to reselect it, if this is the case.  Features in the <b>Stroke palette</b> become highlighted, and thus active.
+        <figure>
+        <img src = "images/StrokeStylePalette1.gif"
+        alt = "Stroke style palette"
+        class = "img-fluid">
+        <figcaption><b>Stroke style</b> palette.</figcaption>
+        </figure>
+      </li>
+      <li>Type <b>7</b> in the <b>Width</b> text box and press &lt;Enter&gt; or &lt;Return&gt; to change the stroke weight to 7 points. The squiggly line now stands out.
+        <figure>
+        <img src = "images/Stroke7px.gif" alt = "Stroke 7 pixels wide"
+        class = "img-fluid">
+        <img src = "images/Curve7px.gif" alt = "Curve 7 pixels wide"
+        class = "img-fluid">
+        <figcaption>Stroke width changed to 7 pixels and result.</figcaption>
+        </figure>
+        Next, you'll use the Stroke style palette's options to change the line from solid to dashed.<br><br>
+      </li>
+      <li>Click on the <b>Dashes</b> drop-down arrow to bring up (or down) a selection of dashed line styles. Scroll down
+      to see the different styles available to you to choose from.<br>
+        <figure style = "float: left;">
+        <img src = "images/DashDropDownArrow.gif"
+        alt = "Dashes drop-down arrow" class = "img-fluid">
+        <figcaption>Available dashed line styles.</figcaption>
+        </figure>
+        <figure style = "float: left;">
+        <img src = "images/DashOption1.gif"
+        alt = "Top of dash styles list"
+        class = "img-fluid">
+        <figcaption>Top of list.</figcaption>
+        </figure>
+        <figure style = "float: left;">
+        <img src = "images/DashOption2.gif"
+        alt = "Bottom of dash styles list"
+        class = "img-fluid">
+        <figcaption>Bottom of list.</figcaption>
+        </figure>
+      </li>
+      <li style = "clear: both;">Select a dashed line style. The curve immediately changes to the style you selected.
+        <figure>
+        <img src = "images/SelectDashStyle.gif"
+        alt = "Select a dash style"
+        class = "img-fluid">
+        <figcaption>Selecting a dash style for the curve.</figcaption>
+        </figure>
+      </li>
+      <li>Click on the <b>Round cap</b> option. The dashed curve now has rounded ends on its segments. The result
+      doesn't fall so jarringly on the eyes.
+        <figure>
+        <img src = "images/RoundCap.gif"
+        alt = "Select the Round cap end style"
+        class = "img-fluid">
+        <img src = "images/RoundCapResult.gif"
+        alt = "Round cap result"
+        class = "img-fluid">
+        <figcaption>Selecting a seqment cap style for the curve and resulting appearance.</figcaption>
+        </figure>
+      </li>
+  </ol>
+  <aside><b>Tip:</b> For examples of other effects you can create, and information on stroking lines, see "10. Attributes, Stroke Style" in the Inkscape Manual.
+	</aside>
+
+  <p>You can select objects by a common paint attribute (such as their stroke color or weight) and change them all at once.
+  </p>
+  <ol>
+    <li>Select the border of one of the rectangles, and click the <b>Stroke style</b> tab.<br>
+    </li>
+    <li>In the Main Menu, choose Edit &gt; Select Same &gt; Stroke Color to select the strokes of all the objects
+    that have the same stroke color in the artwork (in this case, all of the rectangles).<br>
+    </li>
+    <li>In the <b>Stroke style</b> palette, type <b>2</b> in the <b>Width</b> text box and press &lt;Enter&gt; or
+    &lt;Return&gt;, and change the unit of measurement from <b>px</b> (pixel) to <b>pt</b> (point) to globally
+    change the stroke weight to <b>2</b> points.<br>
+    </li>
+    <li>Click away from the artwork to deselect it, and choose File &gt; Save.
+    <figure>
+        <img src = "images/Stroke2pt.gif"
+        alt = "Rectangles are now 2 points thick"
+        class = "img-fluid">
+        <figcaption>Globally changing rectangle stroke width to 2 points.</figcaption>
+    </figure>
+    </li>
+  </ol>
+</section>
+
+<section>
+<header><h2>Building Custom Swatches</h2>
+</header>
+<p>You'll start to create a custom color using the CMYK sliders in the Color palette. First you'll mix a fill color.</p>
+<ol>
+    <li>In the <b>Fill and Stroke</b> palette, click the <b>Fill</b> tab to make it active, if it isn't already.
+    </li>
+    <li>Using the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26">), click the middle of the hat in the bottom left rectangle to select it.<br>
+    <figure style = "margin-left: 0; float: left;">
+        <img src = "images/LowerLeftHatColorAttributes.gif"
+        alt = "Color attributes for middle of lower left hat"
+        class = "img-fluid">
+        <figcaption>Color attributes for the middle<br>part of the lower left hat.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/SelectLowerLeftHat.gif"
+        alt = "Select middle part of lower left hat"
+        width = "300" class = "img-fluid">
+        <figcaption>Selecting the middle part of the lower left hat.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/LowerLeftHatColorPalette.gif"
+        alt = "Color palette for the middle part of the lower left hat"
+        width = "240" class = "img-fluid">
+        <figcaption><b>Fill</b> palette for the middle part<br>of the lower left hat.</figcaption>
+    </figure>
+    <p style = "clear: both;">
+    In the <b>Fill</b> palette, notice that the hat color is grayscale &ndash; that is, a percentage of black &ndash;
+    and only the K (black) slider shows a value. The color bar changes to display a scale ramp from white to black.
+    The other colors have a <b>0</b> value.
+    </p>
+    <p>Now you'll mix colors using the CMYK color model.</p>
+
+    <p>The <b>Fill</b> and <b>Stroke paint</b> palettes let you edit and mix colors &ndash; either colors that
+    you create or colors that you have selected from a Swatches palette, from an object, or from a color library.
+    In this case, you're selecting colors using the CMYK color model.</p>
+    </li>
+    <li>In the <b>Fill</b> palette, drag the CMYK sliders to select a light orange color, or type values in the text boxes and press &lt;Enter&gt; or &lt;Return&gt; to apply the changes. (We specified C = 0%, M = 25%, Y = 54%, and B = 0%.)<br>
+    <figure style = "margin-left: 0; float: left;">
+        <img src = "images/ColorAttributesOrange.gif"
+        alt = "Color attributes for middle of lower left hat"
+        class = "img-fluid">
+        <figcaption>Color attributes for the middle<br>part of the lower left hat.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/LowerLeftHatOrange.gif"
+        alt = "Middle part of lower left hat changed to orange"
+        width = "300" class = "img-fluid">
+        <figcaption>The middle of the lower left hat changed<br>to orange.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/OrangeFillPalette.gif"
+        alt = "Color palette now registers orange"
+        width = "240" class = "img-fluid">
+        <figcaption>Fill palette now registers orange.</figcaption>
+    </figure>
+    <p style = "clear: both;">You can use the different color models (RGB, HSL, CMYK, Wheel, CMS) in conjunction
+    with the <b>Fill</b> palette sliders to precisely select a color by its different color values.</p>
+    </li>
+    <li>Click away from the artwork to deselect it, and choose File &gt; Save.
+    </li>
+</ol>
+<aside><p><b>Tip:</b> For information on the color models that Inkscape uses, see Help &gt; Inkscape Manual
+&gt; 10. Attributes &gt; Fill and Stroke Paint.</p>
+</aside>
+
+<p>You can use the different color models in conjunction with the Color palette sliders to precisely select a color by its different color values. However, if you mix color models (such as CMYK and RGB) in the same file, Inkscape will convert the
+colors to the RGB mode in which the file is saved, RGB being Inkscape's native color storage mode.</p>
+</section>
+
+<section>
+<h2>Saving and Naming a Color Swatch</h2>
+<p>The <b>Swatch</b> palette stores the colors, gradients, and patterns that have been preloaded into Inkscape, as well as those you create and save for reuse. New colors added to the <b>Swatch</b> palette are saved with the current file. Opening a new artwork file displays the default set of swatches that comes with the Inkscape program.</p>
+
+<p>You will now add the light orange color you just mixed to the <b>Swatch</b> palette so it will be stored
+with this artwork file. You can select a color to add from either the <b>Fill</b> or <b>Stroke paint</b> palettes.
+Even though you deselected the artwork, the light orange color is still the current color in the <b>Fill</b> box
+in both the Style Indicator and the Fill palette.</p>
+
+  <ol>
+    <li>If the artwork is deselected, select the orange area you just created in the middle of the lower left hat.
+    Note how the Style Indicator and Fill palette change to reflect the color status of the orange area.<br>
+    <figure style = "margin-left: 0; float: left;">
+        <img src = "images/ColorAttributesOrange.gif"
+        alt = "Color attributes for middle of lower left hat"
+        class = "img-fluid">
+        <figcaption>Color attributes for the middle<br>part of the lower left hat.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/LowerLeftHatOrange.gif"
+        alt = "Middle part of lower left hat changed to orange"
+        width = "300" class = "img-fluid">
+        <figcaption>Orange area of the lower left hat selected.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/OrangeFillPalette.gif"
+        alt = "Color palette now registers orange"
+        width = "240" class = "img-fluid">
+        <figcaption>Fill palette registers orange.</figcaption>
+    </figure>
+    <div style = "clear: both;"></div>
+    </li>
+    <li>Click on the <b>Swatch</b> icon in the <b>Fill</b> palette (<img src = "images/SwatchIcon.gif"
+    alt = "Swatch icon" >). The <b>Swatch</b> palette comes up with the new light orange color
+    added to the <b>Swatch fill</b> list.<br>
+    <figure>
+        <img src = "images/SwatchFillAdded.gif"
+        alt = "New swatch fill added to list"
+        class = "img-fluid">
+        <figcaption>New swatch added to swatch list.</figcaption>
+    </figure>
+    </li>
+    <li>Click in the Name field in the <b>Swatch fill</b> palette to highlight the number, type in something
+    like &ldquo;background-orange&rdquo;, and click away from the field to set the name.<br>
+    <figure>
+      <img src = "images/BackgroundOrangeSwatch.gif"
+      alt = "Naming the background-orange swatch"
+      class = "img-fluid">
+      <figcaption>Naming the background-orange swatch.</figcaption>
+    </figure>
+    </li>
+  </ol>
+    <p>If you create a series of new colors that are subtley different from each other, naming them in an organized
+    way can help you keep track of them in your custom swatches palette.</p>
+</section>
+
+<section>
+<h2>Copying Paint Attributes</h2>
+<p>Inkscape lets you copy paint attributes of objects (such as their fill and stroke colors) in various ways and apply the attributes to other objects.</p>
+
+<p>You'll use the Dropper tool to copy colors from your artwork into the <b>Fill</b> palette. Also called
+<i>sampling</i>, copying colors lets you replicate paint attributes even when you don&lsquo;t know their exact values.</p>
+
+<ol>
+    <li>In the bottom left rectangle, click the gray top of the hat with the Select tool
+    (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26">) to highlight it.<br>
+    <figure>
+        <img src = "images/SelectHatTop.gif" alt = "Hat top selected"
+        class = "img-fluid">
+        <figcaption>Select top of hat.</figcaption>
+    </figure>
+    </li>
+    <li>Select the Dropper tool (<img src = "images/PickColorFromImage.gif" alt = "Eyedropper pointer" >) in the <b>Fill</b> palette. The highlighting arrows around the top of the hat
+    disappear temporarily.<br><br>
+    By default, the Dropper tool samples the color fill and stroke attributes of an object.<br><br>
+    <aside><b>Note:</b> the Dropper tool is not active when an object is not selected.
+    Once an object to be painted or repainted is selected, the Dropper tool is active and ready
+    for color sampling.<br>
+    </aside>
+    <figure>
+        <img src = "images/EyedropperToolSelected.gif"
+        alt = "Dropper tool selected"
+        class = "img-fluid">
+        <figcaption>Select Dropper tool.</figcaption>
+    </figure>
+    </li>
+    <li>Put the Dropper tool on the red brim of the hat and click to replace the color of the top of the hat.
+    Highlighting arrows appear again around the hat top.<br>
+    <figure style = "float: left;">
+        <img src = "images/EyedropperToolOnRedHatBrim.gif"
+        alt = "Dropper tool on red brim of hat"
+        class = "img-fluid">
+        <figcaption>Dropper tool on red brim of hat.</figcaption>
+    </figure>
+    <figure>
+        <img src = "images/RedColorReplacementResult.gif"
+        alt = "Result of color replacement"
+        class = "img-fluid">
+        <figcaption>Result.</figcaption>
+    </figure>
+    </li>
+</ol>
+</section>
+
+<section>
+<h2>Copying Appearance Attributes</h2>
+<p>Inkscape lets you copy appearance attributes that include both the fill and the stroke of an object as well as its transparency and effects.</p>
+
+<p>You'll create a drop shadow shape and change its transparency. Then you'll apply the shadow's appearance to another shape.</p>
+
+<ol>
+    <li>Select the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26">) in the toolbox, and click the hat brim in the upper right rectangle.<br>
+    </li>
+
+    <li>With the hat brim selected, press &lt;Ctrl&gt;-d to make a copy of the brim (think <b>d</b> for
+    <b>d</b>uplicate), and drag the copy slightly down and to the right. Release the mouse button to leave
+    a copy of the hat brim. This copy will become a drop shadow.<br>
+    </li>
+
+    <li>Choose Object > Lower 5 times to move the shadow shape underneath the hat brim. You should still be able to see both the shadow shape and the hat brim.<br><br>
+    <aside><b>Note:</b> Pressing the &lt;page down&gt; key will also lower the hat brim in the figure stacking order. It's a good feature to memorize.
+    </aside>
+    <br>
+    </li>
+
+    <li>With the object (in this case, the hat's shadow) still selected, use the Stroke paint palette to
+    change its stroke to <b>None</b> by clicking on the <b>No paint</b> icon.<br>
+    <figure style = "float: left;">
+        <img src = "images/NoPaintIcon.gif" alt = "No paint icon"
+        class = "img-fluid">
+        <figcaption>Click on the <b>No paint</b> icon.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/HatBrimNoPaintStroke.gif"
+        alt = "Edge of hat brim de-painted"
+        class = "img-fluid">
+        <figcaption>Hat brim edge is not painted.</figcaption>
+    </figure>
+    <br>
+    <div style = "clear: left;"></div>
+    </li>
+    <li>Change the fill to a medium brown. (I used C = 0%, M = 58%, Y = 90%, B = 35%, A = 100%.)<br>
+    <figure style = "float: left;">
+        <img src = "images/MediumBrownFillPalette.gif"
+        alt = "Fill color set to medium brown"
+        class = "img-fluid">
+        <figcaption>Fill color set to medium brown.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/DuplicatedHatBrimMediumBrown.gif"
+        alt = "Hat brim shadow set to medium brown"
+        class = "img-fluid">
+        <figcaption>Hat brim shadow set to medium brown.</figcaption>
+    </figure>
+    <div style = "clear: left;"></div>
+    </li>
+    <li>Using the <b>Opacity (%)</b> control at the bottom of the <b>Fill</b> palette, change the shadow
+    shape's transparency from 100% to 50%.  You can type <b>50</b> at the right end of the slider bar and
+    press &lt;Enter&gt; to set the transparency, or drag the slider bar indicator to 50.0 using the mouse. If
+    you choose to use the slider bar indicator, note how the cursor pointer changes from an arrowhead to an
+    upward-pointing stylized arrow (<img src = "images/UpwardPointingArrow.gif" alt = "Upward-pointing arrow" >).<br>
+    <figure style = "float: left;">
+        <img src = "images/Transparency50percent.gif"
+        alt = "Hat brim drop shadow 50 percent transparency"
+        class = "img-fluid">
+        <figcaption>Hat brim at 50 percent transparency.</figcaption>
+    </figure>
+    <figure style = "float: left;">
+        <img src = "images/TransparentHatBrim.gif"
+        alt = "Hat brim shadow at 50 percent transparency"
+        class = "img-fluid">
+        <figcaption>Hat brim shadow at 50 percent transparency.</figcaption>
+    </figure>
+    <div style = "clear: left;"></div>
+    </li>
+    <li>Choose the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26">) in the toolbox and click on the side of the hat in the lower right-hand rectangle.<br>
+    <figure>
+        <img src = "images/HatSideSelected.gif"
+        alt = "Select the hat side in the lower right-hand rectangle"
+        class = "img-fluid">
+        <figcaption>Select the side of the hat.</figcaption>
+    </figure>
+    </li>
+    <li>Click on the Dropper tool icon (<img src = "images/PickColorFromImage.gif"
+    alt = "Dropper tool" width = "26" >) in the <b>Fill</b> palette and click on the shadowed area
+    under the hat brim in the upper right-hand rectangle. The side of the hat in the lower right-hand
+    rectangle turns brown.<br>
+    <figure>
+        <img src = "images/HatSideBrown.gif"
+        alt = "Side of hat changed to brown"
+        class = "img-fluid">
+        <figcaption>Side of the hat changed to brown.</figcaption>
+    </figure>
+    </li>
+    <li>Now make the side of the hat partially transparent by moving the opacity slider to <b>50.0</b> or typing <b>50</b>
+    in the right end of the slider bar and pressing &lt;Enter&gt; to set the transparency.<br>
+    <figure>
+        <img src = "images/TransparentHatSide.gif"
+        alt = "Transparent hat side"
+        class = "img-fluid">
+        <figcaption>Side of the hat made 50 percent transparent.</figcaption>
+    </figure>
+    </li>
+    <li>We will now render the hat side edge invisible. Click on the <b>Stroke paint</b> tab and
+    click on the <b>No paint</b> button. The edge of the hat's side disappears.<br>
+    <figure>
+        <img src = "images/HatSideNoEdge.gif"
+        alt = "Hat side disappears."
+        class = "img-fluid">
+        <figcaption>Edge of the hat side disappears.</figcaption>
+    </figure>
+    </li>
+    <li>The side of the hat looks too faint. We will enhance the contrast of the brown color while keeping
+    the transparency about the same. Move the black <b><u>K</u></b> slider to <b>60</b> to make the brown
+    color darker and move the <b>Opacity</b> slider to <b>40</b>. The darker, and yet still transparent brown
+    is more visible, letting you know that there is a shape there.<br>
+    <figure>
+        <img src = "images/DarkerSide.gif" alt = "Hat side made darker."
+        class = "img-fluid">
+        <figcaption>Hat side made a darker transparent brown.</figcaption>
+    </figure>
+    </li>
+    <li>Click away from the artwork to deselect it, and choose File &lt; Save.<br>
+    <figure>
+        <img src = "images/CurrentResult1.gif" alt = "Current result."
+        class = "img-fluid">
+        <figcaption>Current result.</figcaption>
+    </figure>
+    </li>
+</ol>
+<aside><b>Tip:</b> For (much) more information on using the <b>Fill and
+Stroke</b> palette, see Help &gt; Inkscape Manual &gt; Attributes &gt; Fill and Stroke Paint,
+and Stroke Style.
+</aside>
+</section>
+<section>
+<header>
+    <h2>Saturating a Color</h2>
+</header>
+<p>Next, you&rsquo;ll adjust the saturation of the new color you added to the hat&rsquo;s top by
+changing the percentage of black in the color.</p>
+
+<ol>
+    <li>Using the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26">), click the top of the hat in the bottom left rectangle to select it. Make sure that the
+    <b>Fill</b> palette is selected.<br>
+    <figure>
+        <img src = "images/HatTopSelected.gif" alt = "Hat top selected."
+        class = "img-fluid">
+        <figcaption>Hat top selected.</figcaption>
+    </figure>
+    </li>
+
+    <li>In the Fill palette, hold down &lt;Shift&gt; and drag the <b>M</b> slider to the left to desaturate
+    the color. As you &lt;Shift&gt;-drag, the sliders all move in tandem, changing the color intensity.<br>
+    <figure style = "float: left;">
+        <img src = "images/HatTopDesaturated.gif"
+        alt = "Magenta in hat top desaturated."
+        class = "img-fluid">
+        <figcaption>Magenta in hat top desaturated.</figcaption>
+    </figure><br>
+    <figure style = "float: left;">
+        <img src = "images/MagentaDesaturated.gif"
+        alt = "Magenta desaturated."
+        class = "img-fluid">
+        <figcaption>&lt;Shift&gt;-drag left to desaturate<br>the magenta in the color mix.</figcaption>
+    </figure>
+    <div style = "clear: left;" ></div>
+
+    <p>Adjusting the saturation lets you change the strength of a color without affecting the hue. (However, if you drag a slider that is set to 0%, you will change the hue or color of the object, rather than the color's saturation.)</p>
+    </li>
+    <li>Click away from the artwork, and choose File &gt; Save.<br>
+        <figure>
+            <img src = "images/LessMagenta.gif"
+            alt = "Magenta desaturated."
+            class = "img-fluid">
+            <figcaption>Magenta desaturated.</figcaption>
+        </figure>
+    </li>
+</ol>
+</section>
+<section>
+<h2>Painting with Patterns</h2>
+<p>In addition to process and spot colors, you can also create your own pattern swatches. Inkscape provides features
+with which you can create your own patterns.</p>
+<p>Now you'll fill some objects with a pattern, working with the hat in the top right rectangle.</p>
+
+<ol>
+    <li>Using the Select tool (<img src = "images/SelectionTool.gif" alt = "Selection tool" width = "26">), click in the center of the hat ribbon shape in the top right rectangle. The Fill box in the Attribute
+    box shows that the shape's current fill is a very light yellow (<b>Y</b> = <b>4</b>).<br>
+    <figure style = "float: left;" >
+        <img src = "images/AttributeBoxLightYellowFill.gif"
+        alt = "Attribute Box shows a light yellow fill."
+        class = "img-fluid">
+        <figcaption>Attribute box shows a<br>very light yellow fill.</figcaption>
+    </figure>
+    <figure style = "float: left;" >
+        <img src = "images/HatRibbonSelected.gif"
+        alt = "Hat ribbon selected."
+        class = "img-fluid">
+        <figcaption>Hat ribbon selected.</figcaption>
+    </figure>
+    <figure style = "float: left;" >
+        <img src = "images/FillPaletteLightYellow.gif"
+        alt = "Fill palette shows a light yellow fill."
+        class = "img-fluid">
+        <figcaption>Fill palette shows a very light yellow fill.</figcaption>
+    </figure>
+    <br>
+    <div style = "clear: left;" ></div>
+    </li>
+    <li>We will now create a new Inkscape-style repeating pattern from an a previously made <b>.svg</b> file.
+    Choose File &gt; Open, and open the <b>Colorfetti.svg</b> file in the Tutorial05 folder.<br>
+    <figure>
+        <img src = "images/Colorfetti.gif" alt = "Colorfetti svg file."
+        class = "img-fluid">
+        <figcaption>Colorfetti.svg image</figcaption>
+    </figure>
+    </li>
+    <li>Click on the image and choose Edit &gt; Copy or press &lt;Ctrl&gt;-C to copy the image to the clipboard.
+    </li>
+    <li>Return to the <b>Hats.svg</b> window and paste the copy of the Colorfetti image to your workspace. (I
+    pasted the image to the right of the four hats.)<br>
+    <figure>
+        <img src = "images/ColorfettiPasted.gif"
+        alt = "Colorfetti image pasted into the Hats.svg workspace"
+        class = "img-fluid">
+        <figcaption>Colorfetti images pasted into the Hats.svg workspace.</figcaption>
+    </figure>
+    </li>
+    <li>With the Colorfetti image still selected, choose Object &gt; Pattern &gt; Objects to Pattern. You'll see
+    the screen flicker as the image is converted into a pattern and stored in the Pattern Swatch library. You
+    can now use the Colorfetti image as a fill pattern.<br><br>
+    <aside>The <b>Pattern fill</b> palette appears in the Fill palette after you choose Objects to Pattern.
+    The pattern is given a label. Here, it is <b>pattern11286</b>.
+    <figure>
+        <img src = "images/pattern11286.gif"
+        alt = "New pattern stored as pattern17089."
+        class = "img-fluid">
+        <figcaption>The new pattern is stored as <b>pattern11286</b>.</figcaption>
+    </figure>
+    </aside>
+    </li>
+    <li>Delete the copied Colorfetti image. Colorfetti still resides in the Pattern Swatch library. If
+    the ribbon area of the hat is deselected, reselect it. Click on the <b>Pattern</b> button. The Colorfetti
+    pattern fills the ribbon band.<br>
+    <figure>
+        <img src = "images/ColorfettiRibbonBand.gif"
+        alt = "Colorfetti pattern now fills the ribbon band."
+        class = "img-fluid">
+        <figcaption>The Colorfetti pattern now fills the ribbon band.</figcaption>
+    </figure>
+    </li>
+    <li>Now select the background of the top right rectangle. Make sure that the Fill palette is selected,
+    and click the same pattern swatch so the rectangle's fill is with the same pattern.<br>
+    <figure>
+        <img src = "images/ColorfettiBackground.gif"
+        alt = "Colorfetti pattern now fills the background."
+        class = "img-fluid">
+        <figcaption>The Colorfetti pattern now fills the background.
+        (Background hasn&rsquo;t been deselected yet.)</figcaption>
+    </figure>
+    </li>
+</ol>
+    <aside>The new pattern swatch that you created exists only for this workspace. If you want to use this pattern
+    in another image file, you will have to copy the original <b>.svg</b> image into your workspace just as you
+    did earlier here, and transform it from an object into a pattern by using Object &gt; Pattern
+    &gt; Objects to Pattern. Then you can use it as a fill pattern.
+    </aside>
+</section>
+
+<section>
+<h2>Applying a Gradient</h2>
+<p>Now you'll apply an orange-to-yellow gradient to the first block in the illustration.</p>
+<ol>
+    <li>In the top left rectangle, select the squiggly curve around the hat with the Edit by nodes tool (<img src =
+    "images/EditPathsByNodesTool.gif" alt = "Edit Paths by Nodes tool" width = "26">), and make sure
+    that the Fill palette is active.<br>
+    <figure>
+        <img src = "images/SelectSquigglyLine.gif"
+        alt = "Select the squiggly line."
+        class = "img-fluid">
+        <figcaption>Select the squiggly curve with the Edit nodes tool.</figcaption>
+    </figure>
+    </li>
+    <li>Click on the Radial gradient button. Note that two control circles and a control square appear
+    over the hat image. These control points will help you create a gradient background.<br>
+    <figure>
+        <img src = "images/GradientControls.gif"
+        alt = "Gradient controls"
+        class = "img-fluid">
+        <figcaption>Gradient controls appear to help you create a gradient background.</figcaption>
+    </figure>
+    </li>
+    <li>Click on one of the two control circles (it doesn't matter which one). The circle turns red when the
+    cursor hovers over it, and turns blue when you click on it. The <b>Fill</b> palette appears, awaiting you to
+    define the outer color of the gradient's span.<br>
+    <figure style = "float: left;" >
+        <img src = "images/GradientControlCircle1.gif"
+        alt = "Control circle"
+        class = "img-fluid">
+        <figcaption>Gradient controls</figcaption>
+    </figure>
+    <figure style = "float: left;" >
+        <img src = "images/GradientControlCircle2.gif"
+        alt = "Control circle hover"
+        class = "img-fluid">
+        <figcaption>Gradient control red circle</figcaption>
+    </figure>
+    <figure style = "clear: left;" >
+        <img src = "images/GradientControlCircle3.gif"
+        alt = "Control circle active"
+        class = "img-fluid">
+        <figcaption>Gradient control blue circle</figcaption>
+    </figure>
+    </li>
+    <li>The control circle represents the outer color limit of the gradient that you are creating. We will
+    make it orange. Click on the CMYK tab. The CYMK color percentages are C = 0%, M = 54%, Y = 92%, K = 1%,
+    and we want the opacity A = 100% (fully opague orange). <br>
+    <figure>
+        <img src = "images/CMYKOrange.gif" alt = "Orange background"
+        class = "img-fluid">
+        <figcaption>Orange background.</figcaption>
+    </figure>
+    </li>
+    <li>To complete the gradient, click on the square control in the middle of the hat image.
+    The control turns red when the cursor hovers over it, then blue when you click on it, showing
+    that it's active.<br>
+    <figure>
+        <img src = "images/BlueSquare.gif" alt = "Blue active square"
+        class = "img-fluid">
+        <figcaption>Blue square active.</figcaption>
+    </figure>
+    </li>
+    <li>With the square active, we can set the color of the center of the radial gradient. Set it to yellow,
+    C = 0%, M = 0%, Y = 100%, B = 0%, and A = 100%.<br>
+    <figure>
+        <img src = "images/YellowGradientCenter.gif"
+        alt = "Set the gradient center to yellow."
+        class = "img-fluid">
+        <figcaption>Set the gradient center to yellow.</figcaption>
+    </figure>
+    </li>
+    <li>Click off the upper left hat image to deselect it. Here is our result.<br>
+    <figure>
+        <img src = "images/GradientResult.gif" alt = "Result"
+        class = "img-fluid">
+        <figcaption>Yellow-to-orange gradient result.</figcaption>
+    </figure>
+    </li>
+</ol>
+</section>
+
+<section>
+<h2>Painting with the Pattern Along Path Extension</h2>
+<p>Patterns can be applied to existing paths or objects using an <b>extension</b>. Extensions are scripts or
+programs that have been added to Inkscape to enhance its capabilities and functionality.</p>
+<p>Here, we will use the <b>Pattern Along Path</b> extension.</p>
+
+<ol>
+    <li>Open the <b>OliveBranch.svg</b> file in the Tutorial05 folder.</li>
+    <li>Select the figure of the olive branch with the Select tool (<img src = "images/SelectionTool.gif"
+    alt = "Selection tool" width = "26">). It is a small figure. Don't be surprised at
+    its size. There is a reason for it as you will see shortly.<br>
+    <figure>
+        <img src = "images/SelectedOliveBranch.gif"
+        alt = "Selected olive branch"
+        class = "img-fluid">
+        <figcaption>Select the olive branch.</figcaption>
+    </figure>
+    </li>
+    <li>Choose <b>Edit</b> &gt; <b>Copy</b> or press &lt;Ctrl&gt;-c to copy the figure to your computer's
+    clipboard.</li>
+    <li>Return to the screen that contains the four hats, position the cursor where you can easily work
+    with the copied and pasted figure, and press &lt;Ctrl&gt;-v to paste the laurel branch figure into
+    your workspace.<br>
+    <figure>
+        <img src = "images/PastedOliveBranch.gif"
+        alt = "Pasted olive branch"
+        class = "img-fluid">
+        <figcaption>Pasted olive branch.</figcaption>
+    </figure>
+    </li>
+    <li>Select both the olive branch figure and the edge of the squiggly area around the lower right-hand hat.
+    Remember: when selecting more than one object, use &lt;Shift&gt;+click to include other objects to your
+    first one. See Tutorial 2, Selecting Objects, for review.<br>
+    <figure>
+        <img src = "images/SelectOliveBranchAndSquigglyArea.gif"
+        alt = "Select the olive branch and the squiggly
+        area under the lower right-hand hat."
+        class = "img-fluid">
+        <figcaption>Select the olive branch and the squiggly area under the lower right-hand hat.</figcaption>
+    </figure>
+    </li>
+    <li>Choose <b>Extensions</b> &gt; <b>Generate from Path</b> &gt; <b>Pattern along Path...</b> The
+    Pattern along Path dialog box appears. Select <b>Copies of the pattern: Repeated</b>,
+    <b>Deformation type: snake</b>, and check the boxes for <b>Duplicate the pattern before deformation</b>
+    and <b>Live preview</b> to view different settings applied to the artwork without closing the dialog box.<br>
+    <figure>
+        <img src = "images/PatternAlongPathDialogBox.gif"
+        alt = "Pattern along Path dialog box."
+        class = "img-fluid">
+        <figcaption>Pattern along Path dialog box.</figcaption>
+    </figure>
+    </li>
+    <li>Click the <b>Apply</b> button. The "'Pattern along Path' working" box appears for a few seconds while the
+    extension program creates duplicates of the olive branch figure and places them over the edge of the
+    squiggly area.<br>
+    <figure>
+        <img src = "images/PatternAlongPathDiagnostic.gif"
+        alt = "Pattern along Path diagnostic."
+        class = "img-fluid">
+        <figcaption>Pattern along Path diagnostic box.</figcaption>
+    </figure>
+    </li>
+    <li>The diagnostic box disappears and the edge of the squiggly area is now dressed with an olive-branch
+    design.<br>
+    <figure>
+        <img src = "images/OliveBranchEdge.gif"
+        alt = "Olive branch design around the hat's squiggly area."
+        class = "img-fluid">
+        <figcaption>Result.</figcaption>
+    </figure>
+    </li>
+    <li>Try out different settings to see how they affect the pattern on the squiggly shape, such as <b>Single,
+    stretched</b>, or changing the <b>Space between copies</b>, <b>Normal offset</b>, and/or <b>Tangential offset</b>.
+    When you're satisfied with the settings, click <b>OK</b> to apply them to the artwork.
+    <br>
+    </li>
+    <li>Choose File > Save.
+    <br>
+    </li>
+    <li>Close the file.
+    </li>
+</ol>
+    <p>You've completed painting the hat artwork using a variety of painting tools. Compare your results with the illustration at the very beginning of this lesson.</p>
+    <figure>
+    <img src = "images/FinalVersionOfArtwork.gif"
+    alt = "Finished practice image file for Tutorial 5"
+    class = "img-fluid">
+    <figcaption>Final version of artwork.</figcaption>
+    </figure>
+    <p>See these topics to learn more about the following painting techniques:</p>
+    <ul>
+        <li>For (much more) information on using extensions and creating your own custom designs,
+        see Help &gt; Inkscape Manual &gt; 22. Extensions.
+        </li>
+        <li>For more information on transparency, styles, appearance attributes, effects, and
+        how to create other blending effects, see Help &gt; Inkscape Manual &gt; 10. Attributes.
+        </li>
+    </ul>
+</section>
+
+<hr>
+
+<section>
+<h2>Review Questions</h2>
+<ol>
+    <li>Describe at least three ways to fill an object with color.</li>
+    <li>How do you name a new color?</li>
+    <li>How do you paint a shape with a transparent color?</li>
+    <li>How can you desaturate a CMYK color?</li>
+</ol>
+</section>
+<section>
+<h2>Review Answers</h2>
+<ol>
+    <li>To fill an object with color, select the object and the <b>Fill</b> or <b>Stroke paint</b> tabin the <b>Fill and Stroke paint</b> palette. Then do one of the following:
+        <ul>
+            <li>Click a color in the color bar in the Color palette.</li>
+            <li>Drag the color sliders or type in values in the text boxes in the Fill palette.</li>
+            <li>Click a color swatch in the Swatches palette.</li>
+            <li>Select the Dropper pointer (<img src = "images/PickColorFromImage.gif"
+								alt = "Eyedropper pointer" >), and click a color in the artwork.</li>
+        </ul>
+    </li>
+    <li>To name a color, click on the Swatch icon in the Fill palette (<img src = "images/SwatchIcon.gif"
+    alt = "Swatch icon" >). Click in the Name field in the Swatch fill palette to
+    highlight the number, type the name of the new color in the name field, and click away from the
+    field to set the name.</li>
+    <li>To paint a shape with a transparent color, select the shape and fill it with any color. Then adjust
+    the <b>Opacity (%)</b> control at the bottom of the <b>Fill</b> or <b>Stroke paint</b> palette to less than 100%.</li>
+    <li>To desaturate a CMYK color, select the color and drag its slider to the left in the Fill or Stroke paint palette. Dragging the slider causes the other sliders to move in tandem so the hue won't change.</li>
+</ol>
+</section>
+
+<!-- Creative Commons ShareAlike 4.0 International License information -->
+<footer>
+<a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/" >
+  <img src = "images/CreativeCommonsLicenseLogo88x31.png"
+  alt = "Creative Commons ShareAlike License" class = "img-fluid">&nbsp;This work is licensed under a Creative Commons Attribution-ShareAlike 4.0 International License</a>.
+</footer>
+		</div>
+	</div>
+</div>
+
+<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src = "https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+</body>
+</html>

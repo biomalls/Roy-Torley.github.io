@@ -1,0 +1,136 @@
+html, body {
+	margin: 0;
+	padding: 0;
+	width: 1180px;
+	height: 680px;
+	background: #999 url( "../images/Background_1180x680.jpg" ) no-repeat;
+}
+
+#main-container {
+	margin: 0;
+	padding: 0;
+	width: 100%;
+	height: 100%;
+}
+
+#logo-element {
+	margin-top: 30px;
+	margin-left: 30px;
+	width: 251px;		/* The width of the logo element has to match the main-content width! */
+	height: 354px;	/* Otherwise, there's a space between the image and the drop-shadow. */
+	background: url( "../images/Fig02.png" ) no-repeat;
+	background-size: 251px 354px;
+	box-shadow: 8px 8px 8px #050505;
+}
+
+#sheet-music, #sheet-music-overlay {
+	position: absolute;
+	margin-top: -344px;
+	margin-left: 330px;
+	width: 510px;		/* The width of the logo element has to match the main-content width! */
+	height: 344px;	/* Otherwise, there's a space between the image and the drop-shadow. */
+	background: url( "../images/Dorozhkin-sample3.png" ) no-repeat;
+	background-size: 510px 344px;
+	box-shadow: 8px 8px 8px #050505;
+}
+
+#sheet-music-overlay {
+	background: transparent;
+	-moz-box-shadow: inset 0 0 7em #C76114;
+  -webkit-box-shadow: inset 0 0 7em #C76114;
+  box-shadow: inset 0 0 7em #C76114;
+	z-index: 2;
+	content: "";
+}
+
+#thumbnail-container {
+	position: relative;
+	margin: 90px auto;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  }
+
+.thumbnail {
+	float: left;
+	display: block;
+	width: 120px;
+	height: 80px;
+	background-color: #999;
+	margin: 10px;
+	border: 3px solid black;	 /* White inner border, black outer border */
+	border-top-colors: black white white;
+	border-bottom-colors: black white white;
+	border-left-colors: black white white;
+	border-right-colors: black white white;
+	-o-border-top-colors: black white white;
+	-o-border-bottom-colors: black white white;
+	-o-border-left-colors: black white white;
+	-o-border-right-colors: black white white;
+	-moz-border-top-colors: black white white;
+	-moz-border-bottom-colors: black white white;
+	-moz-border-left-colors: black white white;
+	-moz-border-right-colors: black white white;
+	-webkit-border-top-colors: black white white;
+	-webkit-border-bottom-colors: black white white;
+	-webkit-border-left-colors: black white white;
+	-webkit-border-right-colors: black white white;
+
+	transition: all 1s ease-out;
+	-o-transition: all 1s ease-out;
+	-moz-transition: all 1s ease-out;
+	-webkit-transition: all 1s ease-out;
+}
+
+.thumbnail:hover {
+	transform: scale( 1.5 );
+	-o-transform: scale( 1.5 );
+	-moz-transform: scale( 1.5 );
+	-webkit-transform: scale( 1.5 );
+}
+
+#sidebar-left {
+	float: left;
+	width: 148px;
+	height: 100%;
+	background: url( "../images/SideBannerLeft.png" ) no-repeat;
+}
+
+#main-content {
+	float:left;
+	margin: 0;
+	width: 884px;
+	height: 100%;
+}
+#sidebar-right {
+	float: left;
+	width: 148px;
+	height: 100%;
+	background: url( "../images/SideBannerRight.png" ) no-repeat;
+}
+
+a#back {
+    z-index: 1;
+    position: absolute;
+    top: 0.5rem;
+    left: 9.8rem;
+    top: 27.7rem;
+	color: black;
+	background-color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 90%;
+	font-weight: bold;
+	padding: 0.25em 0.6em;
+	border: 1px solid black;
+	border-radius: 3px;
+	-moz-border-radius: 3px;
+	-ms-border-radius: 3px;
+	-o-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	box-shadow: 1px 1px 1px #333;
+	text-decoration: none;
+	outline: none;
+}

@@ -1,0 +1,102 @@
+.lightblue {
+  background-color: lightblue;
+}
+
+.lightyellow {
+  background-color: lightyellow;
+}
+
+.yellowgreen {
+	background-color: yellowgreen;
+}
+
+.rotating-earth {
+  float: right;
+  border: 4px inset;
+}
+
+.playfair-header {
+  font-family: 'Playfair Display SC', serif;
+  font-size: 190%;
+  line-height: 1;
+  margin-top: 0.6rem;
+  color: #000000;
+}
+
+.navbar {
+  margin: 0 -1.5rem 0 -1.5rem;
+}
+
+.navbar-right {
+  margin-right: 1rem;
+}
+
+#become-member {
+	margin-top: 4.9rem;
+}
+
+#volunteer {
+	margin-top: 2.9rem;
+}
+
+.carousel-top-spacing {
+	margin-top: 2.5rem;
+}
+
+.itinerary-top-spacing {
+	margin-top: 2.5rem;
+}
+
+.separator {
+		width: 100%;
+		height: 1rem;
+}
+
+.color01 {
+	background-color: blue;
+}
+
+.color02 {
+	background-color: yellowgreen;
+}
+
+.color03 {
+	background-color: pink;
+}
+
+.color04 {
+	background-color: yellow;
+}
+
+.color05 {
+	background-color: goldenrod;
+}
+
+.color06 {
+	background-color: brown;
+}
+
+.color07 {
+	background-color: aquamarine;
+}
+
+.color08 {
+	background-color: seagreen;
+}
+
+.color09 {
+	background-color: pink;
+}
+
+.color10 {
+	background-color: red;
+}
+
+.color11 {
+	background-color: orchid;
+}
+
+.color12 {
+	background-color: chartreuse;
+}
+
