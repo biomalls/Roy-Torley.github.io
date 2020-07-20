@@ -226,8 +226,8 @@ function initGL( canvas ) {
 }
 
 function initShaders() {
-  var fragmentShader = getShader( gl, "shader-fs" );
-  var vertexShader = getShader( gl, "shader-vs" );
+  const fragmentShader = getShader( gl, "shader-fs" );
+  const vertexShader = getShader( gl, "shader-vs" );
 
   shaderProgram = gl.createProgram();
   gl.attachShader( shaderProgram, vertexShader );
@@ -254,7 +254,7 @@ function initShaders() {
 }
 
 function getShader( gl, id ) {
-  var shaderScript = document.getElementById( id );
+  const shaderScript = document.getElementById( id );
   if( !shaderScript ) {
     return null;
   }
@@ -302,7 +302,7 @@ function tick() {
 }
 
 function webGLStart() {
-  var canvas = document.getElementById( "galaxy-canvas" );
+  const canvas = document.getElementById( "galaxy-canvas" );
   initGL( canvas );
   initShaders();
   initBuffers();
